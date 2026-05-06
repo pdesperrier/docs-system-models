@@ -1,89 +1,64 @@
 # Documentation System Models
 
-This portfolio shows how documentation can make product behavior explicit in complex systems.
+This repository explores how documentation architecture can make complex system behavior explicit.
 
+It focuses on situations where documentation explains individual elements clearly, but users still have to reconstruct how those elements interact across workflows, permissions, states, events, and API behavior.
 
-## What this portfolio demonstrates
+## Focus areas
 
-Complex product documentation often explains individual elements clearly:
+- API workflows
+- permissions and roles
+- lifecycle states
+- authentication flows
+- operational dependencies
+- event-driven behavior
+- developer onboarding
+- support knowledge alignment
 
-- roles
-- workflows
-- statuses
-- API responses
-- webhooks
-- exceptions
+## Core model
 
-The friction appears when users need to understand how those elements interact.
+```text
+condition + role + state + action
+→ outcome + event + next action
+```
 
-This portfolio focuses on making those relationships visible.
+## Cases
 
-
-## Featured case
-
-### PaymentBehaviorModel — Payment Validation
-
-A fictional payment API case used to demonstrate how documentation architecture can reduce inference in developer-facing documentation.
-
-→ cases/PaymentBehaviorModel-payment-validation.md
-
+| Case | Focus | Core friction |
+|---|---|---|
+| [PaymentBehaviorModel — Payment Validation](cases/payment-behavior-model/README.md) | Payment validation workflows | Roles, approval rules, statuses, and webhooks are documented separately |
+| [Cloudflare — Secrets Store Behavior Model](cases/cloudflare-secrets-store-behavior-model/README.md) | Secrets lifecycle, bindings, BYOK, and access control | Access behavior depends on role, scope, environment, bindings, and downstream integrations |
+| [Shopify — Customer Account Authentication Behavior Model](cases/shopify-customer-account-auth-behavior-model/README.md) | OAuth, endpoint discovery, token exchange, GraphQL responses, and rate limits | Authentication and request behavior are distributed across multiple flows |
 
 ## Method
 
-This work follows a consistent approach:
+Each case follows the same structure:
 
-1. Identify where documentation makes system behavior hard to understand  
-2. Make implicit relationships explicit: conditions, roles, states, outcomes, events  
-3. Provide a structured model of behavior  
-4. Show how this model improves clarity, predictability, and reuse  
+1. Detect a documentation friction
+2. Identify implicit relationships
+3. Build a behavior model
+4. Restructure the documentation flow
+5. Reduce user inference
 
-
-## Offers
-
-### • Entry point — Diagnostic
-
-Documentation Friction Audit
-
-- Identify high-friction documentation areas  
-- Map implicit relationships  
-- Produce behavior models and recommendations  
-
-
-### • Focused execution
-
-Workflow Documentation Rewrite
-
-- Restructure a critical workflow  
-- Make behavior predictable  
-- Connect roles, states, and outcomes  
-
-
-### • System-level work
-
-Documentation Architecture Sprint
-
-- Define a reusable documentation model  
-- Align concepts, workflows, and references  
-- Establish long-term structure and governance  
-
-
-## Portfolio structure
+## Repository structure
 
 ```text
-portfolio/
+README.md
+about.md
+cases/
   README.md
-  about.md
-  cases/
-    PaymentBehaviorModel-payment-validation.md
-  methods/
-    behavior-model.md
-    documentation-architecture.md
-  offers/
-    documentation-friction-audit.md
-    workflow-rewrite.md
-    documentation-architecture-sprint.md
+  payment-behavior-model/
+  cloudflare-secrets-store-behavior-model/
+  shopify-customer-account-auth-behavior-model/
+methods/
+  behavior-model.md
+  documentation-architecture.md
+offers/
+  documentation-friction-audit.md
+  workflow-rewrite.md
+  documentation-architecture-sprint.md
+LICENSE
 ```
-
 
 ## Useful for
 
@@ -94,17 +69,15 @@ portfolio/
 - support knowledge alignment
 - docs-as-code portfolio review
 
-
 ## Contact context
 
 This portfolio is designed for:
 
-- Heads of Documentation  
-- Developer Experience leaders  
-- Product leaders  
-- Engineering managers  
-- Freelance or contract buyers  
-
+- Heads of Documentation
+- Developer Experience leaders
+- Product leaders
+- Engineering managers
+- freelance or contract buyers
 
 ## Positioning
 
@@ -112,4 +85,6 @@ This is not a writing portfolio.
 
 It is a system-level approach to documentation:
 
+```text
 friction → behavior model → documentation transformation
+```

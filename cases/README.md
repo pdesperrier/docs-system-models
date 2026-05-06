@@ -1,9 +1,18 @@
 # Cases
 
 Each case demonstrates:
+
 - a documentation friction
 - a behavior model
 - a documentation transformation
+
+## Case index
+
+| Case | Type | Focus | Read |
+|---|---|---|---|
+| PaymentBehaviorModel — Payment Validation | Fictional case study | Payment validation, roles, approval rules, statuses, webhooks | [Open case](payment-behavior-model/README.md) |
+| Cloudflare — Secrets Store Behavior Model | Concrete documentation analysis | Secrets Store, Workers bindings, role-based access, BYOK, runtime behavior | [Open case](cloudflare-secrets-store-behavior-model/README.md) |
+| Shopify — Customer Account Authentication Behavior Model | Concrete documentation analysis | Customer Account API, OAuth, endpoint discovery, token exchange, GraphQL errors, rate limits | [Open case](shopify-customer-account-auth-behavior-model/README.md) |
 
 ---
 
@@ -11,34 +20,13 @@ Each case demonstrates:
 
 Fictional case study focused on API payment validation workflows.
 
-### Problem
+### Core friction
 
 Roles, approval rules, statuses, and webhook events are documented separately.
 
 The combined payment behavior remains implicit.
 
-### Core friction
-
-A developer can understand each page independently but still cannot reliably predict:
-
-- when approval is required
-- which role can approve a payment
-- which status is returned
-- which webhook is emitted
-- what action must happen next
-
-### Documentation transformation
-
-Before:
-
-```text
-roles
-approval rules
-statuses
-webhooks
-```
-
-After:
+### Behavior model
 
 ```text
 role + amount + approval rule
@@ -55,76 +43,21 @@ role + amount + approval rule
 - before/after documentation structure
 - workflow prediction model
 
-### Files
-
-```text
-cases/payment-behavior-model/
-    README.md
-    behavior-matrix.md
-    before-after.md
-    concept-map.md
-    recommendations.md
-```
-
-### Focus areas
-
-- workflow predictability
-- API lifecycle behavior
-- approval logic
-- event-driven documentation
-- state transitions
-- role-dependent behavior
-
-### Read the case
-
 [Read the case](payment-behavior-model/README.md)
 
 ---
+
 ## Cloudflare — Secrets Store Behavior Model
 
-Documentation architecture case focused on Cloudflare Secrets Store, Workers bindings, role-based access, and AI Gateway BYOK workflows.
-
-### Problem
-
-Secrets Store documentation explains:
-
-- account secrets
-- roles and permissions
-- Wrangler commands
-- Workers bindings
-- local vs remote secrets
-- AI Gateway BYOK integration
-- alias-based key selection
-
-Each section is understandable independently.
-
-The combined operational behavior remains fragmented across multiple pages and workflows.
+Concrete documentation analysis focused on Cloudflare Secrets Store, Workers bindings, role-based access, AI Gateway BYOK workflows, and runtime configuration behavior.
 
 ### Core friction
 
-A developer or platform engineer can understand each page separately but still cannot reliably predict:
+Secrets Store documentation explains account secrets, roles, permissions, Workers bindings, local vs remote secrets, BYOK integration, and key aliases separately.
 
-- which role can perform which action
-- when a secret is accessible locally vs remotely
-- how Workers bindings relate to Secrets Store permissions
-- how BYOK aliases affect runtime behavior
-- which workflow breaks after secret deletion or rotation
-- how role, scope, binding, and environment interact
+The combined operational behavior remains fragmented across multiple pages and workflows.
 
-### Documentation transformation
-
-Before:
-
-```text
-roles
-permissions
-Wrangler commands
-Workers bindings
-BYOK setup
-key aliases
-```
-
-After:
+### Behavior model
 
 ```text
 role + environment + secret scope + binding
@@ -143,27 +76,37 @@ role + environment + secret scope + binding
 - binding dependency map
 - before/after documentation structure
 
-### Files
+[Read the case](cloudflare-secrets-store-behavior-model/README.md)
+
+---
+
+## Shopify — Customer Account Authentication Behavior Model
+
+Concrete documentation analysis focused on Shopify Customer Account API authentication, endpoint discovery, OAuth client types, token exchange, GraphQL response behavior, and rate-limit handling.
+
+### Core friction
+
+The documentation explains discovery endpoints, authorization, PKCE, token exchange, refresh tokens, GraphQL endpoint discovery, status codes, and rate limits in separate sections.
+
+The combined authentication and request behavior remains distributed across the flow.
+
+### Behavior model
 
 ```text
-cases/cloudflare-secrets-store-behavior-model/
-    README.md
-    behavior-matrix.md
-    before-after.md
-    concept-map.md
-    recommendations.md
+client type + discovery endpoint + auth parameters
+→ token exchange outcome
+→ API endpoint selection
+→ response pattern
+→ next action
 ```
 
-### Focus areas
+### Key outputs
 
-- role-based behavior
-- operational predictability
-- environment-dependent behavior
-- secret lifecycle
-- binding dependencies
-- AI Gateway BYOK workflows
-- runtime configuration behavior
+- authentication behavior matrix
+- client-type decision model
+- discovery endpoint map
+- token-error troubleshooting matrix
+- GraphQL response model
+- before/after documentation structure
 
-### Read the case
-
-[Read the case](cloudflare-secrets-store-behavior/README.md)
+[Read the case](shopify-customer-account-auth-behavior-model/README.md)
