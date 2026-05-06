@@ -166,4 +166,4 @@ cases/cloudflare-secrets-store-behavior-model/
 
 ### Read the case
 
-[Read the case](cases/cloudflare-secrets-store-behavior/README.md)
+[Read the case](cloudflare-secrets-store-behavior/README.md)
