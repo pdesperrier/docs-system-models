@@ -11,7 +11,7 @@ Each case demonstrates:
 | Case | Type | Focus | Read |
 |---|---|---|---|
 | PaymentBehaviorModel — Payment Validation | Fictional case study | Payment validation, roles, approval rules, statuses, webhooks | [Open case](payment-behavior-model/README.md) |
-| Cloudflare — Secrets Store Behavior Model | Concrete documentation analysis | Secrets Store, Workers bindings, role-based access, BYOK, runtime behavior | [Open case](cloudflare-secrets-store-behavior/README.md) |
+| Cloudflare — Secrets Store Behavior Model | Concrete documentation analysis | Secrets Store, Workers bindings, role-based access, BYOK, runtime behavior | [Open case](cloudflare-secrets-store-behavior-model/README.md) |
 | Shopify — Customer Account Authentication Behavior Model | Concrete documentation analysis | Customer Account API, OAuth, endpoint discovery, token exchange, GraphQL errors, rate limits | [Open case](shopify-customer-account-auth-behavior-model/README.md) |
 
 ---
