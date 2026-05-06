@@ -56,7 +56,7 @@ Typical duration:
 
 ## Example
 
-For PayFlow:
+For PaymentBehaviorModel:
 
 Before:
 

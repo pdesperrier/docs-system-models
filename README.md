@@ -21,11 +21,11 @@ This portfolio focuses on making those relationships visible.
 
 ## Featured case
 
-### PayFlow — Payment Validation
+### PaymentBehaviorModel — Payment Validation
 
 A fictional payment API case used to demonstrate how documentation architecture can reduce inference in developer-facing documentation.
 
-→ cases/payflow-payment-validation.md
+→ cases/PaymentBehaviorModel-payment-validation.md
 
 
 ## Method
@@ -74,7 +74,7 @@ portfolio/
   README.md
   about.md
   cases/
-    payflow-payment-validation.md
+    PaymentBehaviorModel-payment-validation.md
   methods/
     behavior-model.md
     documentation-architecture.md

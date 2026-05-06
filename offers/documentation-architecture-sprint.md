@@ -64,7 +64,7 @@ Typical duration:
 
 ## Example architecture
 
-For PayFlow payment validation:
+For PaymentBehaviorModel payment validation:
 
 ```text
 Payment concept

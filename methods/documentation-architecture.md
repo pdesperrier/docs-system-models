@@ -61,7 +61,7 @@ It should make visible:
 
 ## Example
 
-In the PayFlow case:
+In the PaymentBehaviorModel case:
 
 - roles are documented
 - approval rules are documented

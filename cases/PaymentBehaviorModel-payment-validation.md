@@ -1,4 +1,4 @@
-# PayFlow — Payment Validation
+# PaymentBehaviorModel — Payment Validation
 
 ## Case type
 
@@ -8,7 +8,7 @@ This example is designed to demonstrate how documentation architecture can make 
 
 ## Product context
 
-PayFlow provides a Payment API.
+PaymentBehaviorModel provides a Payment API.
 
 Developers can create payments through an API endpoint.
 
