@@ -29,6 +29,7 @@ condition + role + state + action
 | [PaymentBehaviorModel — Payment Validation](cases/payment-behavior-model/README.md) | Payment validation workflows | Roles, approval rules, statuses, and webhooks are documented separately |
 | [Cloudflare — Secrets Store Behavior Model](cases/cloudflare-secrets-store-behavior-model/README.md) | Secrets lifecycle, bindings, BYOK, and access control | Access behavior depends on role, scope, environment, bindings, and downstream integrations |
 | [Shopify — Customer Account Authentication Behavior Model](cases/shopify-customer-account-auth-behavior-model/README.md) | OAuth, endpoint discovery, token exchange, GraphQL responses, and rate limits | Authentication and request behavior are distributed across multiple flows |
+| [Atlassian — Extension Runtime Behavior Model](cases/atlassian-extension-runtime-behavior-model/README.md) | Extension runtime, permissions, rendering constraints, deployment flow, and environment behavior | Extension behavior depends on runtime context, extension target, permissions, deployment state, and rendering limitations |
 
 ## Method
 

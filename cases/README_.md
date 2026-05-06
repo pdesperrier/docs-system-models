@@ -13,6 +13,7 @@ Each case demonstrates:
 | PaymentBehaviorModel — Payment Validation | Fictional case study | Payment validation, roles, approval rules, statuses, webhooks | [Open case](payment-behavior-model/README.md) |
 | Cloudflare — Secrets Store Behavior Model | Concrete documentation analysis | Secrets Store, Workers bindings, role-based access, BYOK, runtime behavior | [Open case](cloudflare-secrets-store-behavior-model/README.md) |
 | Shopify — Customer Account Authentication Behavior Model | Concrete documentation analysis | Customer Account API, OAuth, endpoint discovery, token exchange, GraphQL errors, rate limits | [Open case](shopify-customer-account-auth-behavior-model/README.md) |
+| Atlassian — Extension Runtime Behavior Model | Concrete documentation analysis | Extension runtime, permissions, deployment flow, rendering constraints, and environment behavior | [Open case](atlassian-extension-runtime-behavior-model/README.md) |
 
 ---
 
@@ -110,3 +111,36 @@ client type + discovery endpoint + auth parameters
 - before/after documentation structure
 
 [Read the case](shopify-customer-account-auth-behavior-model/README.md)
+
+---
+
+## Atlassian — Extension Runtime Behavior Model
+
+Concrete documentation analysis focused on extension runtime behavior, deployment workflows, rendering constraints, authentication context, and environment-dependent execution logic.
+
+### Core friction
+
+The documentation explains extension targets, rendering environments, deployment workflows, authentication contexts, permissions, runtime APIs, and UI limitations separately.
+
+The combined operational behavior remains fragmented across platform, extension, runtime, and deployment documentation.
+
+### Behavior model
+
+```text
+extension type + runtime context + permission scope + deployment state
+→ rendering capability
+→ API access
+→ lifecycle behavior
+→ operational constraints
+```
+
+### Key outputs
+
+- runtime behavior matrix
+- extension target dependency map
+- deployment-state transition model
+- permission and scope matrix
+- rendering constraint analysis
+- before/after documentation structure
+
+[Read the case](atlassian-extension-runtime-behavior-model/README.md)
