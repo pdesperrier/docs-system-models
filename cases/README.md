@@ -14,6 +14,7 @@ Each case demonstrates:
 | Cloudflare — Secrets Store Behavior Model | Concrete documentation analysis | Secrets Store, Workers bindings, role-based access, BYOK, runtime behavior | [Open case](cloudflare-secrets-store-behavior-model/README.md) |
 | Shopify — Customer Account Authentication Behavior Model | Concrete documentation analysis | Customer Account API, OAuth, endpoint discovery, token exchange, GraphQL errors, rate limits | [Open case](shopify-customer-account-auth-behavior-model/README.md) |
 | Atlassian — Extension Runtime Behavior Model | Concrete documentation analysis | Extension runtime, permissions, deployment flow, rendering constraints, and environment behavior | [Open case](atlassian-extension-runtime-behavior-model/README.md) |
+|                       Doctolib — Connector Synchronization Behavior Model                       |                 Concrete documentation analysis                |                                                 Connector synchronization, patient ownership, duplicate handling, runtime activation, and external identifiers                                                 |                                  [Open case](doctolib-connector-behavior-model/README.md)                                 |
 
 ---
 
@@ -144,3 +145,36 @@ extension type + runtime context + permission scope + deployment state
 - before/after documentation structure
 
 [Read the case](atlassian-extension-runtime-behavior-model/README.md)
+
+---
+
+## Doctolib — Connector Synchronization Behavior Model
+
+Concrete documentation analysis focused on synchronization behavior, patient ownership constraints, connector activation, external identifiers, duplicate handling, and runtime dependencies.
+
+### Core friction
+
+The documentation explains synchronization, ownership constraints, connector runtime behavior, external identifiers, duplicate handling, and troubleshooting separately.
+
+The combined operational behavior remains fragmented across multiple workflows and support articles.
+
+### Behavior model
+
+```text
+connector type + synchronization direction + ownership authority + runtime activation
+→ synchronization behavior
+→ modification capability
+→ duplicate handling
+→ troubleshooting outcome
+```
+
+### Key outputs
+
+- synchronization behavior matrix
+- ownership authority model
+- connector activation dependency map
+- duplicate-resolution workflow
+- runtime activation model
+- synchronization direction mapping
+- before/after documentation structure
+- troubleshooting dependency model
