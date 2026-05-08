@@ -14,7 +14,10 @@ Each case demonstrates:
 | Cloudflare — Secrets Store Behavior Model | Concrete documentation analysis | Secrets Store, Workers bindings, role-based access, BYOK, runtime behavior | [Open case](cloudflare-secrets-store-behavior-model/README.md) |
 | Shopify — Customer Account Authentication Behavior Model | Concrete documentation analysis | Customer Account API, OAuth, endpoint discovery, token exchange, GraphQL errors, rate limits | [Open case](shopify-customer-account-auth-behavior-model/README.md) |
 | Atlassian — Extension Runtime Behavior Model | Concrete documentation analysis | Extension runtime, permissions, deployment flow, rendering constraints, and environment behavior | [Open case](atlassian-extension-runtime-behavior-model/README.md) |
-|                       Doctolib — Connector Synchronization Behavior Model                       |                 Concrete documentation analysis                |                                                 Connector synchronization, patient ownership, duplicate handling, runtime activation, and external identifiers                                                 |                                  [Open case](doctolib-connector-behavior-model/README.md)                                 |
+| Doctolib — Connector Synchronization Behavior Model | Concrete documentation analysis | Connector synchronization, patient ownership, duplicate handling, runtime activation, and external identifiers | [Open case](doctolib-connector-behavior-model/README.md)|
+| Qonto — Role, Permission, and Payment Behavior Model | Concrete documentation analysis | Role-based access, approval workflows, SCA/2FA, direct debit mandates, payment eligibility, permission scopes | [Open case](qonto-role-permission-payment-behavior-model/README.md) |
+| Document360 — API Workspace and Content Lifecycle Behavior Model | Concrete documentation analysis | API workspaces, OpenAPI import, CI/CD resync, Try It behavior, editor switching, Drive dependencies, analytics, access behavior | [Open case](document360-api-workspace-behavior-model/README.md) |
+| Mistral AI — Developer Workflow and Runtime Behavior Model | Concrete documentation analysis | API keys, workspaces, tool calling, RAG, file lifecycle, retry strategy, rate limits, runtime dependencies | [Open case](mistral-ai-developer-workflow-behavior-model/README.md) |
 
 ---
 
@@ -178,3 +181,101 @@ connector type + synchronization direction + ownership authority + runtime activ
 - synchronization direction mapping
 - before/after documentation structure
 - troubleshooting dependency model
+
+---
+
+## Qonto — Role, Permission, and Payment Behavior Model
+
+Concrete documentation analysis focused on role-based access, payment approvals, SCA/2FA dependencies, direct debit mandate lifecycle, and operational eligibility.
+
+### Core friction
+
+Role, permission, authentication, direct debit, and approval behavior are documented separately.
+
+The combined operational model remains implicit.
+
+### Behavior model
+
+```text
+role + permission scope + authentication state + payment workflow
+→ allowed action
+→ validation path
+→ operational outcome
+```
+
+### Key outputs
+
+- role/action behavior matrix
+- permission-scope model
+- payment approval workflow map
+- SCA/2FA dependency model
+- direct debit mandate lifecycle
+- eligibility and refund-state model
+- before/after documentation structure
+
+[Read the case](qonto-role-permission-payment-behavior-model/README.md)
+
+---
+
+## Document360 — API Workspace and Content Lifecycle Behavior Model
+
+Concrete documentation analysis focused on API documentation workspaces, OpenAPI import and resync, Try It availability, editor switching, Drive dependencies, analytics, and reader access behavior.
+
+### Core friction
+
+API documentation, editor choices, workspace access, Drive assets, analytics, feedback, and publication behavior are documented separately.
+
+The combined lifecycle remains distributed.
+
+### Behavior model
+
+```text
+workspace + content type + editor state + access setting + import method
+→ publication behavior
+→ reader/developer outcome
+```
+
+### Key outputs
+
+- API workspace lifecycle matrix
+- OpenAPI import/resync behavior model
+- Try It availability dependency map
+- editor switching state model
+- Drive file dependency risk model
+- analytics scope model
+- before/after documentation structure
+
+[Read the case](document360-api-workspace-behavior-model/README.md)
+
+---
+
+## Mistral AI — Developer Workflow and Runtime Behavior Model
+
+Concrete documentation analysis focused on API keys, workspaces, chat completions, tool calling, RAG, file lifecycle, error handling, retry behavior, and usage limits.
+
+### Core friction
+
+Quickstarts, API reference, agents, RAG, files, workspaces, billing, errors, rate limits, and deployment options are documented across separate areas.
+
+Developers must reconstruct the runtime path.
+
+### Behavior model
+
+```text
+workspace + API key + model endpoint + tool/RAG/file configuration + limit state
+→ runtime behavior
+→ error/retry path
+```
+
+### Key outputs
+
+- developer runtime behavior matrix
+- tool-calling loop model
+- RAG document lifecycle model
+- API key/workspace dependency map
+- file lifecycle model
+- error and retry path model
+- rate-limit and billing-state model
+- before/after documentation structure
+
+[Read the case](mistral-ai-developer-workflow-behavior-model/README.md)
