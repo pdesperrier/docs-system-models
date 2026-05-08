@@ -26,3 +26,5 @@ jobs:
 
       - name: Run Vale on repository
         run: vale .
+
+# test rerun
