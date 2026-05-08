@@ -1,0 +1,39 @@
+# styles/Documentation/Terminology.yml
+
+extends: substitution
+message: "Use '%s' instead of '%s'"
+level: warning
+
+swap:
+  apikey: API key
+  API-Key: API key
+  api key: API key
+
+  webhooks: webhook events
+
+  retry handling: retry behavior
+  error handling: runtime error behavior
+
+  user flow: workflow state transition
+  flow: workflow
+
+  auth: authentication
+  perms: permissions
+
+  setup: configuration
+
+  sync: synchronization
+
+  env: environment
+
+  config: configuration
+
+  behaviour: behavior
+
+  role based access: role-based access
+
+  state machine: workflow state model
+
+  edge case: conditional behavior
+
+  issue: operational issue

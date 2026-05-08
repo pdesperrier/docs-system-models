@@ -1,0 +1,26 @@
+# styles/Documentation/OperationalVocabulary.yml
+
+extends: existence
+message: "Prefer operational vocabulary: condition/state/action/outcome."
+level: suggestion
+
+tokens:
+  - workflow
+  - process
+  - handling
+  - management
+  - integration
+  - orchestration
+  - interaction
+  - functionality
+  - feature
+  - mechanism
+  - support
+  - capability
+  - operation
+  - logic
+  - system
+  - architecture
+  - dependency
+  - coordination
+  - lifecycle
