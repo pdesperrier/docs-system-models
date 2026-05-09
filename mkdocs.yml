@@ -1,0 +1,12 @@
+site_name: Documentation System Models
+site_description: Behavior models for documentation architecture and docs-as-code governance
+site_author: Patrick Desperrier
+
+theme:
+  name: mkdocs
+
+nav:
+  - Home: index.md
+  - Cases: cases/index.md
+  - Methods: methods/index.md
+  - Offers: offers/index.md
