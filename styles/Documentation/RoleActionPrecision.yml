@@ -1,0 +1,18 @@
+extends: existence
+message: "Role/action wording detected: verify that the role, allowed action, blocked action, and next step are explicit."
+level: suggestion
+ignorecase: true
+
+tokens:
+  - role
+  - permission
+  - access
+  - admin
+  - owner
+  - manager
+  - employee
+  - contributor
+  - reviewer
+  - developer
+  - user
+  - reader

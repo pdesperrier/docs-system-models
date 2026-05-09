@@ -1,5 +1,3 @@
-# styles/Documentation/ForbiddenWords.yml
-
 extends: existence
 message: "Avoid vague or non-operational wording: '%s'"
 level: warning
@@ -31,3 +29,5 @@ tokens:
   - elegantly
   - obvious
   - clearly
+  - cutting-edge
+  - effortless

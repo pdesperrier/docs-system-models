@@ -1,8 +1,7 @@
-# styles/Documentation/OperationalVocabulary.yml
-
 extends: existence
-message: "Prefer operational vocabulary: condition/state/action/outcome."
+message: "Check whether '%s' hides a condition, state, action, or outcome."
 level: suggestion
+ignorecase: true
 
 tokens:
   - workflow
@@ -15,7 +14,6 @@ tokens:
   - functionality
   - feature
   - mechanism
-  - support
   - capability
   - operation
   - logic
