@@ -1,5 +1,5 @@
 # Offers
 
-## Service Offers
+## Documentation Friction Audit
 
-- [Documentation Friction Audit](../../offers/documentation-friction-audit.md)
+[Open on GitHub](https://github.com/pdesperrier/docs-system-models/blob/main/offers/documentation-friction-audit.md)

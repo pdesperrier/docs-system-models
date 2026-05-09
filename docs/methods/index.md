@@ -1,7 +1,11 @@
 # Methods
 
+## Behavior Model Method
+
+[Open on GitHub](https://github.com/pdesperrier/docs-system-models/blob/main/methods/behavior-model.md)
+
+---
+
 ## Documentation Architecture
 
-- [Behavior Model Method](../../methods/behavior-model.md)
-
-- [Documentation Architecture](../../methods/documentation-architecture.md)
+[Open on GitHub](https://github.com/pdesperrier/docs-system-models/blob/main/methods/documentation-architecture.md)

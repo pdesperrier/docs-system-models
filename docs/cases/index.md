@@ -1,21 +1,39 @@
 # Cases
 
-## Fictional Case
+## **Fictional Case**
 
-- [PaymentBehaviorModel — Payment Validation](../../cases/payment-behavior-model/README.md)
+### PaymentBehaviorModel — Payment Validation
 
-## Concrete Documentation Analyses
+[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/payment-behavior-model)
 
-- [Cloudflare — Secrets Store Behavior Model](../../cases/cloudflare-secrets-store-behavior-model/README.md)
+---
 
-- [Shopify — Customer Account Authentication Behavior Model](../../cases/shopify-customer-account-auth-behavior-model/README.md)
+## **Concrete Documentation Analyses**
 
-- [Atlassian — Extension Runtime Behavior Model](../../cases/atlassian-extension-runtime-behavior-model/README.md)
+### Cloudflare — Secrets Store Behavior Model
 
-- [Doctolib — Connector Synchronization Behavior Model](../../cases/doctolib-connector-behavior-model/README.md)
+[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/cloudflare-secrets-store-behavior-model)
 
-- [Qonto — Role Permission Payment Behavior Model](../../cases/qonto-role-permission-payment-behavior-model/README.md)
+### Shopify — Customer Account Authentication Behavior Model
 
-- [Document360 — API Workspace Behavior Model](../../cases/document360-api-workspace-behavior-model/README.md)
+[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/shopify-customer-account-auth-behavior-model)
 
-- [Mistral AI — Developer Workflow Behavior Model](../../cases/mistral-ai-developer-workflow-behavior-model/README.md)
+### Atlassian — Extension Runtime Behavior Model
+
+[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/atlassian-extension-runtime-behavior-model)
+
+### Doctolib — Connector Synchronization Behavior Model
+
+[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/doctolib-connector-behavior-model)
+
+### Qonto — Role Permission Payment Behavior Model
+
+[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/qonto-role-permission-payment-behavior-model)
+
+### Document360 — API Workspace Behavior Model
+
+[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/document360-api-workspace-behavior-model)
+
+### Mistral AI — Developer Workflow Behavior Model
+
+[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/mistral-ai-developer-workflow-behavior-model)
