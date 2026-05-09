@@ -1,0 +1,26 @@
+openapi: 3.0.0
+
+info:
+  title: Payment API
+  version: 1.0.0
+  description: Test API used to validate Spectral linting rules.
+  contact:
+    name: Documentation Architecture
+
+servers:
+  - url: https://api.example.com
+
+tags:
+  - name: Payments
+
+paths:
+  /payments:
+    get:
+      summary: List payments
+      description: Returns the list of payment records available to the authenticated user.
+      operationId: listPayments
+      tags:
+        - Payments
+      responses:
+        "200":
+          description: OK
