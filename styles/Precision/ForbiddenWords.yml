@@ -1,0 +1,10 @@
+extends: existence
+message: "Avoid vague or marketing-oriented wording."
+level: error
+
+tokens:
+  - obviously
+  - clearly
+  - simply
+  - quickly
+  - user-friendly

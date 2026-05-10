@@ -1,0 +1,9 @@
+extends: substitution
+message: "Use the approved terminology '%s'."
+level: warning
+
+swap:
+  app: application
+  apps: applications
+  auth: authentication
+  config: configuration

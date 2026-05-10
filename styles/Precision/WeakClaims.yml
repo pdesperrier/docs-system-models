@@ -1,0 +1,10 @@
+extends: existence
+message: "Weak or unverifiable claim detected. Add measurable or observable behavior."
+level: warning
+
+tokens:
+  - easy
+  - simple
+  - seamless
+  - intuitive
+  - robust

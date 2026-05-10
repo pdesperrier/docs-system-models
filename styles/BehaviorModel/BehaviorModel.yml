@@ -1,0 +1,12 @@
+extends: existence
+message: "Behavioral logic detected. Verify triggers, transitions, conditions, and outcomes."
+level: warning
+
+tokens:
+  - workflow
+  - behavior
+  - transition
+  - state
+  - dependency
+  - condition
+  - propagation

@@ -1,0 +1,11 @@
+extends: existence
+message: "Temporal dependency detected. Verify execution order and async behavior."
+level: warning
+
+tokens:
+  - before
+  - after
+  - during
+  - once
+  - immediately
+  - eventually

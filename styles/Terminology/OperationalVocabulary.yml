@@ -1,0 +1,10 @@
+extends: existence
+message: "Operational term detected. Verify execution scope and system impact."
+level: warning
+
+tokens:
+  - process
+  - execute
+  - handle
+  - manage
+  - support

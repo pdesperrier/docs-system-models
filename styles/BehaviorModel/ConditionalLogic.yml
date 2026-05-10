@@ -1,0 +1,10 @@
+extends: existence
+message: "Implicit condition detected. Verify branch behavior and exceptions."
+level: warning
+
+tokens:
+  - if needed
+  - depending on
+  - when appropriate
+  - optionally
+  - in some cases

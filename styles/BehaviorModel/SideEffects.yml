@@ -1,0 +1,10 @@
+extends: existence
+message: "Potential side effect detected. Verify propagation and downstream impact."
+level: warning
+
+tokens:
+  - triggers
+  - updates
+  - synchronizes
+  - propagates
+  - sends

@@ -1,0 +1,10 @@
+extends: existence
+message: "Role/action pair detected. Verify permissions and visibility constraints."
+level: warning
+
+tokens:
+  - admin
+  - owner
+  - editor
+  - viewer
+  - operator

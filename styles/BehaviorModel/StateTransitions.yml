@@ -1,0 +1,12 @@
+extends: existence
+message: "State detected. Verify transition, trigger, actor, and visibility."
+level: warning
+
+tokens:
+  - pending
+  - processing
+  - failed
+  - completed
+  - cancelled
+  - refunded
+  - partially_refunded
