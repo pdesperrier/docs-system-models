@@ -1,0 +1,15 @@
+extends: existence
+message: "Energy account lifecycle term detected. Verify contract status, activation, meter state, billing period, and service continuity."
+level: warning
+
+tokens:
+  - contract
+  - meter
+  - consumption
+  - tariff
+  - billing cycle
+  - grid connection
+  - activation
+  - deactivation
+  - supplier switch
+  - service address

@@ -1,0 +1,15 @@
+extends: existence
+message: "Webhook-related behavior detected. Verify event source, payload schema, ordering, retries, signature validation, and delivery guarantees."
+level: warning
+
+tokens:
+  - webhook
+  - webhooks
+  - event payload
+  - event delivery
+  - event ordering
+  - signature validation
+  - signing secret
+  - delivery attempt
+  - endpoint
+  - callback URL

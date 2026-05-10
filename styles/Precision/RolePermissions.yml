@@ -1,0 +1,20 @@
+extends: existence
+message: "Permission-related behavior detected. Verify role, action, object, scope, visibility, and restrictions."
+level: warning
+
+tokens:
+  - can view
+  - can edit
+  - can delete
+  - can create
+  - can update
+  - can approve
+  - can reject
+  - restricted to
+  - accessible by
+  - visible to
+  - hidden from
+  - permission
+  - permissions
+  - role
+  - roles

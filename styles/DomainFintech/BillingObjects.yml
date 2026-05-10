@@ -1,0 +1,15 @@
+extends: existence
+message: "Billing object detected. Verify ownership, lifecycle, status, and downstream effects."
+level: warning
+
+tokens:
+  - invoice
+  - subscription
+  - billing
+  - payout
+  - charge
+  - checkout
+  - mandate
+  - payment method
+  - card
+  - transaction

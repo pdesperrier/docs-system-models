@@ -26,14 +26,14 @@ condition + role + state + action
 
 | Case | Focus | Core friction |
 |---|---|---|
-| [PaymentBehaviorModel — Payment Validation](cases/payment-behavior-model/README.md) | Payment validation workflows | Roles, approval rules, statuses, and webhooks are documented separately |
-| [Cloudflare — Secrets Store Behavior Model](cases/cloudflare-secrets-store-behavior-model/README.md) | Secrets lifecycle, bindings, BYOK, and access control | Access behavior depends on role, scope, environment, bindings, and downstream integrations |
-| [Shopify — Customer Account Authentication Behavior Model](cases/shopify-customer-account-auth-behavior-model/README.md) | OAuth, endpoint discovery, token exchange, GraphQL responses, and rate limits | Authentication and request behavior are distributed across multiple flows |
-| [Atlassian — Extension Runtime Behavior Model](cases/atlassian-extension-runtime-behavior-model/README.md) | Extension runtime, permissions, rendering constraints, deployment flow, and environment behavior | Extension behavior depends on runtime context, extension target, permissions, deployment state, and rendering limitations |
-| [Doctolib — Connector Synchronization Behavior Model](cases/doctolib-connector-behavior-model/README.md) | Connector synchronization, patient ownership, external identifiers, runtime activation, and duplicate handling | Synchronization behavior depends on connector state, ownership authority, external identifiers, and runtime activation rules |
-| [Qonto — Role, Permission, and Payment Behavior Model](cases/qonto-role-permission-payment-behavior-model/README.md) | Role-based access, approval workflows, SCA, direct debit mandates, and payment eligibility | Payment and access behavior depends on role, permission scope, authentication state, mandate status, and approval rules |
-| [Document360 — API Workspace and Content Lifecycle Behavior Model](cases/document360-api-workspace-behavior-model/README.md) | API workspaces, OpenAPI import, Try It, editor switching, Drive dependencies, analytics, and access behavior | Content and API behavior depends on workspace, editor state, import method, access settings, and dependency state |
-| [Mistral AI — Developer Workflow and Runtime Behavior Model](cases/mistral-ai-developer-workflow-behavior-model/README.md) | API keys, workspaces, tool calling, RAG, files, errors, retry behavior, and usage limits | Runtime behavior depends on workspace, billing, API key, endpoint configuration, file state, and rate-limit conditions |
+| [PaymentBehaviorModel — Payment Validation](cases/fintech-paymentbehaviormodel-payment-behavior-model/README.md) | Payment validation workflows | Roles, approval rules, statuses, and webhooks are documented separately |
+| [Cloudflare — Secrets Store Behavior Model](cases/saas-cloudflare-secrets-store-behavior-model/README.md) | Secrets lifecycle, bindings, BYOK, and access control | Access behavior depends on role, scope, environment, bindings, and downstream integrations |
+| [Shopify — Customer Account Authentication Behavior Model](cases/saas-shopify-customer-account-auth-behavior-model/README.md) | OAuth, endpoint discovery, token exchange, GraphQL responses, and rate limits | Authentication and request behavior are distributed across multiple flows |
+| [Atlassian — Extension Runtime Behavior Model](cases/saas-atlassian-extension-runtime-behavior-model/README.md) | Extension runtime, permissions, rendering constraints, deployment flow, and environment behavior | Extension behavior depends on runtime context, extension target, permissions, deployment state, and rendering limitations |
+| [Doctolib — Connector Synchronization Behavior Model](cases/saas-doctolib-connector-behavior-model/README.md) | Connector synchronization, patient ownership, external identifiers, runtime activation, and duplicate handling | Synchronization behavior depends on connector state, ownership authority, external identifiers, and runtime activation rules |
+| [Qonto — Role, Permission, and Payment Behavior Model](cases/fintech-qonto-role-permission-payment-behavior-model/README.md) | Role-based access, approval workflows, SCA, direct debit mandates, and payment eligibility | Payment and access behavior depends on role, permission scope, authentication state, mandate status, and approval rules |
+| [Document360 — API Workspace and Content Lifecycle Behavior Model](cases/saas-document360-api-workspace-behavior-model/README.md) | API workspaces, OpenAPI import, Try It, editor switching, Drive dependencies, analytics, and access behavior | Content and API behavior depends on workspace, editor state, import method, access settings, and dependency state |
+| [Mistral AI — Developer Workflow and Runtime Behavior Model](cases/saas-mistral-ai-developer-workflow-behavior-model/README.md) | API keys, workspaces, tool calling, RAG, files, errors, retry behavior, and usage limits | Runtime behavior depends on workspace, billing, API key, endpoint configuration, file state, and rate-limit conditions |
 
 ## Method
 
@@ -52,9 +52,9 @@ README.md
 about.md
 cases/
   README.md
-  payment-behavior-model/
-  cloudflare-secrets-store-behavior-model/
-  shopify-customer-account-auth-behavior-model/
+  fintech-paymentbehaviormodel-payment-behavior-model/
+  saas-cloudflare-secrets-store-behavior-model/
+  saas-shopify-customer-account-auth-behavior-model/
 methods/
   behavior-model.md
   documentation-architecture.md

@@ -1,0 +1,15 @@
+extends: existence
+message: "Feature/configuration behavior detected. Verify availability, prerequisites, rollout scope, and configuration dependencies."
+level: warning
+
+tokens:
+  - feature flag
+  - enabled
+  - disabled
+  - configuration
+  - setting
+  - prerequisite
+  - rollout
+  - beta
+  - plan
+  - entitlement

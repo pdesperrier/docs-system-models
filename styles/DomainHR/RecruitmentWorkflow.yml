@@ -1,0 +1,16 @@
+extends: existence
+message: "Recruitment workflow term detected. Verify stage, owner, transition, visibility, and candidate impact."
+level: warning
+
+tokens:
+  - candidate
+  - application
+  - applicant
+  - interview
+  - hiring stage
+  - recruiter
+  - hiring manager
+  - offer
+  - rejection
+  - talent pool
+  - ATS

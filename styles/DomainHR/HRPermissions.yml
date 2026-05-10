@@ -1,0 +1,13 @@
+extends: existence
+message: "HR permission or visibility term detected. Verify who can see, edit, advance, reject, or export the record."
+level: warning
+
+tokens:
+  - confidential
+  - visible to recruiters
+  - visible to hiring managers
+  - candidate data
+  - interview feedback
+  - offer approval
+  - resume
+  - CV

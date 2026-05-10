@@ -1,0 +1,18 @@
+extends: existence
+message: "Payment lifecycle term detected. Verify state transition, trigger, timing, reversibility, and visibility."
+level: warning
+
+tokens:
+  - payment
+  - authorization
+  - authorized
+  - capture
+  - captured
+  - settlement
+  - settled
+  - refund
+  - refunded
+  - partially refunded
+  - partially_refunded
+  - chargeback
+  - dispute

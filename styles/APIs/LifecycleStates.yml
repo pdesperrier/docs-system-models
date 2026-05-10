@@ -1,0 +1,17 @@
+extends: existence
+message: "Lifecycle state detected. Verify allowed transitions, invalid transitions, triggers, and state visibility."
+level: warning
+
+tokens:
+  - pending
+  - processing
+  - active
+  - inactive
+  - suspended
+  - failed
+  - cancelled
+  - expired
+  - completed
+  - archived
+  - draft
+  - published

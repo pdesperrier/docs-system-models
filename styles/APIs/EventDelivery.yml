@@ -1,0 +1,15 @@
+extends: existence
+message: "Event-delivery behavior detected. Verify event source, payload schema, ordering, retries, and delivery guarantees."
+level: warning
+
+tokens:
+  - event
+  - event payload
+  - event delivery
+  - event ordering
+  - delivery attempt
+  - endpoint
+  - callback
+  - callback URL
+  - notification event
+  - subscriber

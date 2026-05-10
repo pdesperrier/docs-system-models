@@ -1,0 +1,14 @@
+extends: existence
+message: "Metering or usage term detected. Verify measurement source, period, estimation logic, correction flow, and billing impact."
+level: warning
+
+tokens:
+  - meter reading
+  - estimated usage
+  - actual usage
+  - consumption data
+  - smart meter
+  - reading period
+  - adjustment
+  - correction
+  - usage history

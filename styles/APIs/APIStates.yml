@@ -1,0 +1,18 @@
+extends: existence
+message: "API state detected. Verify lifecycle, allowed transitions, invalid transitions, and state visibility."
+level: warning
+
+tokens:
+  - authorized
+  - captured
+  - pending
+  - processing
+  - succeeded
+  - failed
+  - cancelled
+  - expired
+  - refunded
+  - partially_refunded
+  - suspended
+  - active
+  - inactive

@@ -1,0 +1,14 @@
+extends: existence
+message: "SaaS tenant model term detected. Verify hierarchy, ownership, permissions, and cross-object dependencies."
+level: warning
+
+tokens:
+  - workspace
+  - organization
+  - tenant
+  - project
+  - environment
+  - account
+  - team
+  - member
+  - seat

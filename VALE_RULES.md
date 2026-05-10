@@ -1,6 +1,4 @@
-# VALE_RULES.md
-
-## Vale Behavioral Audit Rules
+# Vale Behavioral Audit Rules
 
 Behavior-oriented Vale rules for documentation system analysis.
 
@@ -17,24 +15,15 @@ Its purpose is to:
 
 ---
 
-## Philosophy
+## Core Principle
 
-Traditional documentation linting focuses mainly on:
-- grammar
-- readability
-- punctuation
-- writing style
+The ruleset is modular.
 
-This ruleset focuses instead on:
-- workflows
-- conditions
-- state transitions
-- operational precision
-- behavioral consistency
-- role/action visibility
-- dependency traceability
+Default rules apply across all documentation audits.
 
-The objective is to treat documentation as a behavioral model of the system.
+Domain-specific rules are activated only for relevant case folders.
+
+This prevents the ruleset from becoming too fintech-oriented, too SaaS-oriented, or too tied to one product category.
 
 ---
 
@@ -50,338 +39,307 @@ The objective is to treat documentation as a behavioral model of the system.
     /BehaviorModel/
     /Terminology/
     /Precision/
+    /APIs/
+    /Localization/
+    /DomainFintech/
+    /DomainSaaS/
+    /DomainHR/
+    /DomainTravel/
+    /DomainEnergy/
 ```
 
 ---
 
-## Rule Categories
+## Default Rule Layers
 
 ### BehaviorModel
 
-Purpose:
-detect implicit or partially documented system behavior.
+Generic system-behavior rules.
 
-Focus:
+Use for:
+- workflows
 - state transitions
 - conditions
-- workflow logic
-- temporal dependencies
+- temporal logic
 - side effects
-- propagation effects
-- asynchronous behavior
+- async behavior
+- retries
 
-Typical issues detected:
-- undocumented retries
-- implicit execution order
-- invisible transitions
-- missing rollback behavior
-- undefined intermediate states
-
-Examples:
-- pending
-- processing
-- eventually
-- triggers
-- propagates
-
-Associated rules:
-- BehaviorModel.yml
-- StateTransitions.yml
-- TemporalLogic.yml
-- ConditionalLogic.yml
-- SideEffects.yml
+These rules apply across all domains.
 
 ---
 
 ### Terminology
 
-Purpose:
-maintain stable conceptual vocabulary across the documentation system.
+Generic terminology-stability rules.
 
-Focus:
-- canonical terminology
-- vocabulary normalization
-- reduction of terminology drift
-- operational consistency
-
-Typical issues detected:
-- multiple terms for the same object
-- inconsistent product naming
-- ambiguous abbreviations
-- unstable UI vocabulary
-
-Examples:
-- app → application
-- auth → authentication
-- config → configuration
-
-Associated rules:
-- Terminology.yml
-- OperationalVocabulary.yml
+Use for:
+- canonical vocabulary
+- terminology drift
+- abbreviation normalization
+- operational vocabulary consistency
 
 ---
 
 ### Precision
 
-Purpose:
-reduce ambiguity and unverifiable operational language.
+Generic ambiguity-reduction rules.
 
-Focus:
-- vague wording
+Use for:
 - weak claims
-- role ambiguity
-- undefined operational scope
+- vague wording
+- role/action ambiguity
+- permission ambiguity
 - marketing language
 
-Typical issues detected:
-- “simple”
-- “easy”
-- “seamless”
-- “quickly”
-- “manage”
-- “handle”
+---
 
-Examples:
-Bad:
-- “The system easily handles retries.”
+### APIs
 
-Better:
-- “The API retries failed requests automatically up to three times.”
+Generic technical/API documentation rules.
 
-Associated rules:
-- WeakClaims.yml
-- ForbiddenWords.yml
-- RoleActionPrecision.yml
+Use for:
+- lifecycle states
+- event delivery
+- environment behavior
+- API-specific workflows
+
+This layer must remain domain-neutral.
+
+Payment-specific terms do not belong here.
 
 ---
 
-## Severity Levels
+### Localization
 
-The ruleset uses Vale severity levels strategically.
+Generic localization and source-language stability rules.
 
-### suggestion
-
-Low-impact informational guidance.
-
-Used rarely.
-
----
-
-### warning
-
-Potential ambiguity or incomplete behavioral modeling.
-
-Examples:
-- undocumented state
-- implicit condition
-- vague operational wording
+Use for:
+- terminology drift
+- inclusive terminology
+- translation-sensitive source terms
+- UI/docs vocabulary alignment
 
 ---
 
-### error
+## Domain Rule Layers
 
-High-risk ambiguity or misleading terminology.
+Domain-specific rules are optional modules.
 
-Examples:
-- forbidden wording
-- marketing language
-- operationally misleading claims
+They are activated only for case folders matching their scope.
+
+### DomainFintech
+
+Use for:
+- payments
+- refunds
+- invoices
+- subscriptions
+- billing
+- payouts
+- checkout
+
+### DomainSaaS
+
+Use for:
+- workspaces
+- organizations
+- projects
+- environments
+- feature flags
+- account provisioning
+- tenant behavior
+
+### DomainHR
+
+Use for:
+- candidates
+- applications
+- interviews
+- hiring stages
+- ATS workflows
+- recruiter/hiring manager permissions
+
+### DomainTravel
+
+Use for:
+- reservations
+- bookings
+- availability
+- cancellations
+- guests
+- properties
+- check-in/check-out
+
+### DomainEnergy
+
+Use for:
+- contracts
+- meters
+- consumption
+- tariffs
+- billing cycles
+- grid connection
+- service activation
 
 ---
 
-## Rule Design Principles
+## Configuration Logic
 
-The rules are intentionally:
-- lightweight
-- behavior-focused
-- operational
-- maintainable
+Default case files use:
 
-The objective is not to create a massive enterprise ruleset.
+```ini
+BasedOnStyles = BehaviorModel, Terminology, Precision, APIs, Localization
+```
 
-The objective is to:
-- surface hidden complexity
-- expose implicit logic
-- improve traceability
-- strengthen behavioral consistency
+Payment or fintech cases add:
+
+```ini
+DomainFintech
+```
+
+SaaS cases add:
+
+```ini
+DomainSaaS
+```
+
+HR cases add:
+
+```ini
+DomainHR
+```
+
+Travel cases add:
+
+```ini
+DomainTravel
+```
+
+Energy cases add:
+
+```ini
+DomainEnergy
+```
+
+---
+
+## Design Principle
+
+The rules do not prove correctness automatically.
+
+They trigger focused audit questions.
+
+A Vale warning means:
+
+> This sentence may hide a condition, transition, dependency, role constraint, state, exception, or domain-specific rule.
+
+The human audit remains responsible for interpretation.
 
 ---
 
 ## Examples
 
-### Example 1 — Weak claim
+### Generic behavior
 
 Input:
 
 ```md
-The system quickly processes payments.
+The request is processed asynchronously.
 ```
-
-Result:
-- “quickly” triggers WeakClaims.yml
-
-Reason:
-“quickly” is not measurable.
-
----
-
-### Example 2 — Implicit condition
-
-Input:
-
-```md
-In some cases, the webhook may be delayed.
-```
-
-Result:
-- “in some cases” triggers ConditionalLogic.yml
-
-Reason:
-condition is undefined.
-
----
-
-### Example 3 — State transition
-
-Input:
-
-```md
-The payment becomes pending before validation.
-```
-
-Result:
-- “pending”
-- “before”
 
 Triggers:
-- StateTransitions.yml
-- TemporalLogic.yml
+- BehaviorModel/AsyncWorkflow.yml
 
-Reason:
-the sentence describes a state transition and execution order.
+Audit question:
+- What is the processing order?
+- What is visible to the user while processing?
+- What happens if processing fails?
 
 ---
 
-### Example 4 — Operational ambiguity
+### API event delivery
 
 Input:
 
 ```md
-Admins can manage subscriptions.
+The event is sent to the configured endpoint.
 ```
 
-Result:
-- “Admins”
-- “manage”
-
 Triggers:
-- RoleActionPrecision.yml
-- OperationalVocabulary.yml
+- APIs/EventDelivery.yml
+- BehaviorModel/SideEffects.yml
 
-Reason:
-the action scope is undefined.
+Audit question:
+- Is delivery guaranteed?
+- What is the payload?
+- Is ordering guaranteed?
+- Are retries documented?
 
 ---
 
-## Scope
+### Fintech-specific behavior
 
-The ruleset is designed primarily for:
-- SaaS documentation
-- API documentation
-- onboarding workflows
-- operational procedures
-- system behavior analysis
-- configuration workflows
-- cross-product interactions
+Input:
+
+```md
+The payment is captured after authorization.
+```
+
+Triggers:
+- DomainFintech/PaymentLifecycle.yml
+- BehaviorModel/TemporalLogic.yml
+
+Audit question:
+- What causes capture?
+- Can authorization expire?
+- Can capture be partial?
+- Which state is visible to each role?
+
+---
+
+### Travel-specific behavior
+
+Input:
+
+```md
+Guests can cancel a booking before check-in.
+```
+
+Triggers:
+- DomainTravel/BookingLifecycle.yml
+- Precision/RolePermissions.yml
+- BehaviorModel/TemporalLogic.yml
+
+Audit question:
+- What is the cancellation window?
+- What role can cancel?
+- What happens to payment, availability, and notifications?
 
 ---
 
 ## Non-Goals
 
-This ruleset is not intended to:
-- enforce generic marketing writing
-- maximize readability scores
-- replace editorial review
-- perform deep linguistic analysis
+This ruleset does not:
+- replace human review
+- validate full state machines
+- enforce complete permission matrices
+- replace product specifications
+- replace API schema validation
 - act as a grammar checker
 
 ---
 
 ## Usage
 
-### Run Vale
+Run Vale:
 
 ```bash
 vale .
 ```
 
----
-
-### Run Vale on a specific file
+Run Vale on one file:
 
 ```bash
-vale docs/payment-flow.md
+vale cases/fintech-paymentbehaviormodel-payment-behavior-model/README.md
 ```
-
----
-
-### Run Vale on Markdown files only
-
-```bash
-vale "*.md"
-```
-
----
-
-## Configuration
-
-The `.vale.ini` file defines:
-- active styles
-- severity threshold
-- file scope
-- linting targets
-
-Example:
-
-```ini
-StylesPath = styles
-
-MinAlertLevel = warning
-
-[README.md]
-BasedOnStyles = BehaviorModel, Terminology, Precision
-
-[cases/**/*.md]
-BasedOnStyles = BehaviorModel, Terminology, Precision
-```
-
----
-
-## Future Extensions
-
-Potential future additions:
-- API state consistency validation
-- async workflow detection
-- retry policy checks
-- localization drift detection
-- webhook terminology validation
-- role/permission matrix enforcement
-- environment-specific behavior checks
-
----
-
-## Positioning
-
-This ruleset supports a documentation approach centered on:
-- behavioral modeling
-- operational traceability
-- dependency visibility
-- documentation architecture
-- cognitive reconstruction reduction
-
-The documentation is treated as:
-- a system model
-- a behavioral surface
-- a traceability layer
-- an operational reference
-- a dependency map

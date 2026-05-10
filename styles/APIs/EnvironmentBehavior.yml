@@ -1,0 +1,15 @@
+extends: existence
+message: "Environment-specific behavior detected. Verify differences across sandbox, staging, test, and production environments."
+level: warning
+
+tokens:
+  - production
+  - staging
+  - sandbox
+  - development
+  - test environment
+  - live mode
+  - test mode
+  - environment variable
+  - API key
+  - secret key

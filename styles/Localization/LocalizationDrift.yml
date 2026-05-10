@@ -1,0 +1,15 @@
+extends: substitution
+message: "Use canonical terminology '%s' to reduce localization and terminology drift."
+level: warning
+
+swap:
+  login: sign in
+  log in: sign in
+  logout: sign out
+  log out: sign out
+  blacklist: denylist
+  whitelist: allowlist
+  master: primary
+  slave: secondary
+  config: configuration
+  auth: authentication

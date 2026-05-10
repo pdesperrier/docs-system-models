@@ -1,0 +1,14 @@
+extends: existence
+message: "Retry-related behavior detected. Verify retry limits, delay strategy, timeout behavior, and final failure handling."
+level: warning
+
+tokens:
+  - retry
+  - retries
+  - retryable
+  - retried
+  - backoff
+  - exponential backoff
+  - timeout
+  - timed out
+  - failed attempt

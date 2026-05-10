@@ -1,0 +1,16 @@
+extends: existence
+message: "Booking lifecycle term detected. Verify availability, reservation state, cancellation rules, payment effects, and notifications."
+level: warning
+
+tokens:
+  - booking
+  - reservation
+  - availability
+  - guest
+  - host
+  - property
+  - room
+  - check-in
+  - check-out
+  - cancellation
+  - no-show

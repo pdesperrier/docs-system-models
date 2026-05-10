@@ -10,14 +10,14 @@ Each case demonstrates:
 
 | Case | Type | Focus | Read |
 |---|---|---|---|
-| PaymentBehaviorModel — Payment Validation | Fictional case study | Payment validation, roles, approval rules, statuses, webhooks | [Open case](payment-behavior-model/README.md) |
-| Cloudflare — Secrets Store Behavior Model | Concrete documentation analysis | Secrets Store, Workers bindings, role-based access, BYOK, runtime behavior | [Open case](cloudflare-secrets-store-behavior-model/README.md) |
-| Shopify — Customer Account Authentication Behavior Model | Concrete documentation analysis | Customer Account API, OAuth, endpoint discovery, token exchange, GraphQL errors, rate limits | [Open case](shopify-customer-account-auth-behavior-model/README.md) |
-| Atlassian — Extension Runtime Behavior Model | Concrete documentation analysis | Extension runtime, permissions, deployment flow, rendering constraints, and environment behavior | [Open case](atlassian-extension-runtime-behavior-model/README.md) |
-| Doctolib — Connector Synchronization Behavior Model | Concrete documentation analysis | Connector synchronization, patient ownership, duplicate handling, runtime activation, and external identifiers | [Open case](doctolib-connector-behavior-model/README.md)|
-| Qonto — Role, Permission, and Payment Behavior Model | Concrete documentation analysis | Role-based access, approval workflows, SCA/2FA, direct debit mandates, payment eligibility, permission scopes | [Open case](qonto-role-permission-payment-behavior-model/README.md) |
-| Document360 — API Workspace and Content Lifecycle Behavior Model | Concrete documentation analysis | API workspaces, OpenAPI import, CI/CD resync, Try It behavior, editor switching, Drive dependencies, analytics, access behavior | [Open case](document360-api-workspace-behavior-model/README.md) |
-| Mistral AI — Developer Workflow and Runtime Behavior Model | Concrete documentation analysis | API keys, workspaces, tool calling, RAG, file lifecycle, retry strategy, rate limits, runtime dependencies | [Open case](mistral-ai-developer-workflow-behavior-model/README.md) |
+| PaymentBehaviorModel — Payment Validation | Fictional case study | Payment validation, roles, approval rules, statuses, webhooks | [Open case](fintech-paymentbehaviormodel-payment-behavior-model/README.md) |
+| Cloudflare — Secrets Store Behavior Model | Concrete documentation analysis | Secrets Store, Workers bindings, role-based access, BYOK, runtime behavior | [Open case](saas-cloudflare-secrets-store-behavior-model/README.md) |
+| Shopify — Customer Account Authentication Behavior Model | Concrete documentation analysis | Customer Account API, OAuth, endpoint discovery, token exchange, GraphQL errors, rate limits | [Open case](saas-shopify-customer-account-auth-behavior-model/README.md) |
+| Atlassian — Extension Runtime Behavior Model | Concrete documentation analysis | Extension runtime, permissions, deployment flow, rendering constraints, and environment behavior | [Open case](saas-atlassian-extension-runtime-behavior-model/README.md) |
+| Doctolib — Connector Synchronization Behavior Model | Concrete documentation analysis | Connector synchronization, patient ownership, duplicate handling, runtime activation, and external identifiers | [Open case](saas-doctolib-connector-behavior-model/README.md)|
+| Qonto — Role, Permission, and Payment Behavior Model | Concrete documentation analysis | Role-based access, approval workflows, SCA/2FA, direct debit mandates, payment eligibility, permission scopes | [Open case](fintech-qonto-role-permission-payment-behavior-model/README.md) |
+| Document360 — API Workspace and Content Lifecycle Behavior Model | Concrete documentation analysis | API workspaces, OpenAPI import, CI/CD resync, Try It behavior, editor switching, Drive dependencies, analytics, access behavior | [Open case](saas-document360-api-workspace-behavior-model/README.md) |
+| Mistral AI — Developer Workflow and Runtime Behavior Model | Concrete documentation analysis | API keys, workspaces, tool calling, RAG, file lifecycle, retry strategy, rate limits, runtime dependencies | [Open case](saas-mistral-ai-developer-workflow-behavior-model/README.md) |
 
 ---
 
@@ -48,7 +48,7 @@ role + amount + approval rule
 - before/after documentation structure
 - workflow prediction model
 
-[Read the case](payment-behavior-model/README.md)
+[Read the case](fintech-paymentbehaviormodel-payment-behavior-model/README.md)
 
 ---
 
@@ -81,7 +81,7 @@ role + environment + secret scope + binding
 - binding dependency map
 - before/after documentation structure
 
-[Read the case](cloudflare-secrets-store-behavior-model/README.md)
+[Read the case](saas-cloudflare-secrets-store-behavior-model/README.md)
 
 ---
 
@@ -114,7 +114,7 @@ client type + discovery endpoint + auth parameters
 - GraphQL response model
 - before/after documentation structure
 
-[Read the case](shopify-customer-account-auth-behavior-model/README.md)
+[Read the case](saas-shopify-customer-account-auth-behavior-model/README.md)
 
 ---
 
@@ -147,7 +147,7 @@ extension type + runtime context + permission scope + deployment state
 - rendering constraint analysis
 - before/after documentation structure
 
-[Read the case](atlassian-extension-runtime-behavior-model/README.md)
+[Read the case](saas-atlassian-extension-runtime-behavior-model/README.md)
 
 ---
 
@@ -213,7 +213,7 @@ role + permission scope + authentication state + payment workflow
 - eligibility and refund-state model
 - before/after documentation structure
 
-[Read the case](qonto-role-permission-payment-behavior-model/README.md)
+[Read the case](fintech-qonto-role-permission-payment-behavior-model/README.md)
 
 ---
 
@@ -245,7 +245,7 @@ workspace + content type + editor state + access setting + import method
 - analytics scope model
 - before/after documentation structure
 
-[Read the case](document360-api-workspace-behavior-model/README.md)
+[Read the case](saas-document360-api-workspace-behavior-model/README.md)
 
 ---
 
@@ -278,4 +278,4 @@ workspace + API key + model endpoint + tool/RAG/file configuration + limit state
 - rate-limit and billing-state model
 - before/after documentation structure
 
-[Read the case](mistral-ai-developer-workflow-behavior-model/README.md)
+[Read the case](saas-mistral-ai-developer-workflow-behavior-model/README.md)

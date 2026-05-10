@@ -1,0 +1,15 @@
+extends: existence
+message: "Async behavior detected. Verify timing, ordering, retries, visibility, and eventual consistency."
+level: warning
+
+tokens:
+  - asynchronous
+  - async
+  - eventually
+  - delayed
+  - queued
+  - background process
+  - background job
+  - scheduled job
+  - deferred
+  - event-driven

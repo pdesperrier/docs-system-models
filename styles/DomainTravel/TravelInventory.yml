@@ -1,0 +1,14 @@
+extends: existence
+message: "Travel inventory term detected. Verify inventory source, synchronization, overbooking rules, and channel consistency."
+level: warning
+
+tokens:
+  - inventory
+  - rate
+  - rate plan
+  - occupancy
+  - availability calendar
+  - channel
+  - channel manager
+  - overbooking
+  - allotment
