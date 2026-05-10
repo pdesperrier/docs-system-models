@@ -1,86 +1,46 @@
-# PaymentBehaviorModel — Before / After Documentation
+# Before / After Documentation Architecture — PaymentBehaviorModel
 
-# BEFORE
+## Current pattern
 
-## Existing Documentation Pattern
+The current or typical documentation pattern is topic-oriented.
 
-### Create Payment
-Explains:
-- endpoint
-- request body
-- response object
+- Topic page for concept
+- Topic page for setup
+- Topic page for roles
+- Topic page for states
+- Topic page for errors
+- Topic page for troubleshooting
 
-### Roles
-Explains:
-- Admin
-- Finance
-- Viewer
+This helps users find isolated information, but it does not always expose combined behavior.
 
-### Approval Rules
-Explains:
-- payments above €5,000 require approval
+## Friction created by the current pattern
 
-### Statuses
-Lists:
-- pending
-- requires_approval
-- approved
-- rejected
-- processed
-- expired
+- approval behavior is split between role rules, amount thresholds, status descriptions, and webhook documentation
+- developers must infer which webhook corresponds to which approval state
+- blocked paths are less visible than the nominal payment creation path
 
-### Webhooks
-Lists:
-- payment.created
-- payment.requires_approval
-- payment.approved
-- payment.rejected
-- payment.processed
-- payment.expired
+## Target pattern
 
-## Problem
+The target structure is behavior-oriented.
 
-Each page is understandable locally.
+- Behavior page: payment validation and approval workflow
+- Decision model: role + condition + state + outcome
+- State model: allowed and invalid transitions
+- Sequence model: actor -> system -> downstream effect
+- Exception model: failure, retry, blocked action, recovery
+- Traceability: source page -> rule -> recommendation
 
-But the combined behavior remains implicit.
+## Before / after comparison
 
-The developer must reconstruct:
+| Layer | Before | After |
+|---|---|---|
+| Concept | Defined in isolation | Linked to lifecycle, role, and dependency |
+| Workflow | Split across pages | Rebuilt as one executable path |
+| State | Listed as labels | Modeled as transitions with triggers |
+| Role | Described as permission text | Mapped to action, object, scope, and visibility |
+| Exception | Often placed in troubleshooting | Integrated into the workflow model |
+| Dependency | Mentioned near setup | Attached to the specific behavior it changes |
 
-role + amount + approval rule → status → webhook → next action
+## Success criterion
 
-# AFTER
-
-## Central Documentation Structure
-
-### Payment Approval Behavior
-
-Recommended sections:
-
-1. Core behavior rule
-2. Role-based behavior
-3. Approval thresholds
-4. Status transitions
-5. Webhook mapping
-6. Edge cases
-7. Full scenarios
-
-## Example Scenario
-
-Finance user creates an €8,000 payment.
-
-Behavior:
-
-Finance + amount > €5,000
-→ requires_approval
-→ payment.requires_approval webhook
-→ Admin action required
-
-## Outcome
-
-The workflow becomes predictable before implementation.
-
-This reduces:
-- integration errors
-- support dependency
-- webhook mistakes
-- ambiguity
+A user can answer one operational question without reading five disconnected pages.

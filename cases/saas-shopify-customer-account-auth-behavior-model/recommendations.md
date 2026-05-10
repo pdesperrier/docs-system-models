@@ -1,107 +1,60 @@
-# Shopify — Customer Account Authentication Recommendations
+# Recommendations — Shopify
 
-## Main recommendation
+## Priority 1 — Centralize the behavior model
 
-Create a central **Customer Account API Authentication Behavior** page.
-
-The page should connect client type, discovery endpoints, OAuth parameters, token exchange, GraphQL endpoint discovery, HTTP/GraphQL error behavior, and rate-limit responses.
-
-## 1. Add an end-to-end flow
-
-Recommended model:
+Create a dedicated behavior page for:
 
 ```text
-discover auth endpoints
-→ authorize customer
-→ exchange code for token
-→ refresh token when needed
-→ discover API endpoint
-→ call GraphQL endpoint
-→ inspect status + payload
-→ handle errors/cost/throttling
+Customer Account API authentication and GraphQL response behavior
 ```
 
-## 2. Add a client-type decision table
+This page should connect:
 
-| Decision | Public client | Confidential client |
-|---|---|---|
-| Can keep secret? | No | Yes |
-| Uses PKCE? | Yes | Optional / not primary |
-| Needs `code_verifier`? | Yes | No |
-| Needs Authorization header? | No | Yes |
-| Typical context | Browser/mobile | Server-side app |
+- actor;
+- role;
+- condition;
+- state;
+- exception;
+- dependency;
+- observable outcome;
+- next action.
 
-## 3. Centralize discovery endpoints
+## Priority 2 — Add lifecycle and sequence diagrams
 
-Create a small endpoint map:
+Use:
 
-| Task | Discovery endpoint | Returned value |
-|---|---|---|
-| Authenticate customer | `/.well-known/openid-configuration` | authorization/token/logout URLs |
-| Call Customer Account API | `/.well-known/customer-account-api` | GraphQL and MCP API URLs |
+- [state-model.md](state-model.md)
+- [sequence-diagram.md](sequence-diagram.md)
 
-## 4. Add a token-exchange troubleshooting matrix
+The diagrams should make state transitions, async behavior, and blocked paths visible.
 
-| Error | Likely cause | Fix |
-|---|---|---|
-| `invalid_grant` | PKCE code challenge/verifier mismatch or encoding issue | verify URL-safe encoding and padding removal |
-| `invalid_client` | incorrect `client_id` | check app/storefront settings |
-| `invalid_token` | missing/incorrect Origin header | verify Origin header and allowed JavaScript origins |
-| 403 permission message | missing user-agent | add/verify user-agent header |
-| 500 during API endpoint use | misspelled token parameters or endpoint issue | verify request parameters and endpoint source |
+## Priority 3 — Add a decision matrix
 
-## 5. Connect GraphQL HTTP status behavior to developer actions
+Use:
 
-Add a response model:
+- [behavior-matrix.md](behavior-matrix.md)
 
-| Response | Meaning | Developer action |
-|---|---|---|
-| HTTP 200 + `data` | success | process result |
-| HTTP 200 + `errors` | GraphQL error | inspect `errors[]` |
-| HTTP 200 + `THROTTLED` | rate/cost issue | reduce query cost or retry |
-| 4xx / 5xx | HTTP-level error | handle infrastructure/account/service error |
+The matrix should prevent readers from reconstructing role/state/condition behavior across multiple pages.
 
-## 6. Link rate limits to the request lifecycle
+## Priority 4 — Integrate exceptions into the main workflow
 
-Rate limits should be presented not only as a reference section, but as part of the request behavior model.
+Exceptions should not live only in troubleshooting.
 
-Recommended addition:
+They should appear directly where the user makes the decision or performs the action.
 
-```text
-query complexity → cost extensions → quota state → throttling response → next action
-```
+## Priority 5 — Add traceability
 
-## 7. Add a “what to do next” layer
+Each behavioral rule should be traceable to:
 
-For each response state, add the next developer action:
+- source page;
+- product concept;
+- affected role;
+- state transition;
+- expected outcome;
+- related exception.
 
-- retry later
-- reduce query cost
-- check app settings
-- inspect `errors[]`
-- refresh token
-- rediscover endpoint
-- verify Origin header
-- verify PKCE encoding
+## Expected impact
 
-## Expected improvements
-
-- reduced endpoint confusion
-- clearer public/confidential client decision
-- faster PKCE troubleshooting
-- better GraphQL error handling
-- more predictable authentication implementation
-- lower support dependency
-- stronger onboarding for Customer Account API developers
-
-## Priority order
-
-| Priority | Action |
-|---|---|
-| High | Add central behavior page |
-| High | Add client-type decision table |
-| High | Add discovery endpoint map |
-| High | Add token-error troubleshooting matrix |
-| Medium | Add GraphQL response model |
-| Medium | Connect rate limits to request lifecycle |
-| Low | Add diagram or sequence example |
+- Create a Customer Account API authentication behavior page.
+- Add client-type decision matrix.
+- Add GraphQL status/error and rate-limit response model.

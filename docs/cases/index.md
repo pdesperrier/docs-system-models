@@ -1,39 +1,18 @@
-# Cases
+# Case Studies
 
-## **Fictional Case**
+Behavioral documentation analyses by domain and client.
 
-### PaymentBehaviorModel — Payment Validation
+- [PaymentBehaviorModel — Payment Validation Behavior Model](fintech-paymentbehaviormodel-payment-behavior-model/)
+- [Qonto — Role, Permission, and Payment Behavior Model](fintech-qonto-role-permission-payment-behavior-model/)
+- [Atlassian — Extension Runtime Behavior Model](saas-atlassian-extension-runtime-behavior-model/)
+- [Cloudflare — Secrets Store Behavior Model](saas-cloudflare-secrets-store-behavior-model/)
+- [Doctolib — Connector Synchronization Behavior Model](saas-doctolib-connector-behavior-model/)
+- [Document360 — API Workspace and Content Lifecycle Behavior Model](saas-document360-api-workspace-behavior-model/)
+- [Mistral AI — Developer Workflow and Runtime Behavior Model](saas-mistral-ai-developer-workflow-behavior-model/)
+- [Shopify — Customer Account Authentication Behavior Model](saas-shopify-customer-account-auth-behavior-model/)
 
-[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/fintech-paymentbehaviormodel-payment-behavior-model)
+## Signature analyses
 
----
-
-## **Concrete Documentation Analyses**
-
-### Cloudflare — Secrets Store Behavior Model
-
-[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/saas-cloudflare-secrets-store-behavior-model)
-
-### Shopify — Customer Account Authentication Behavior Model
-
-[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/saas-shopify-customer-account-auth-behavior-model)
-
-### Atlassian — Extension Runtime Behavior Model
-
-[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/saas-atlassian-extension-runtime-behavior-model)
-
-### Doctolib — Connector Synchronization Behavior Model
-
-[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/saas-doctolib-connector-behavior-model)
-
-### Qonto — Role Permission Payment Behavior Model
-
-[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/fintech-qonto-role-permission-payment-behavior-model)
-
-### Document360 — API Workspace Behavior Model
-
-[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/saas-document360-api-workspace-behavior-model)
-
-### Mistral AI — Developer Workflow Behavior Model
-
-[Open case on GitHub](https://github.com/pdesperrier/docs-system-models/tree/main/cases/saas-mistral-ai-developer-workflow-behavior-model)
+- [PaymentBehaviorModel — Payment Validation Behavior Model](../../cases/fintech-paymentbehaviormodel-payment-behavior-model/signature-analysis.md)
+- [Cloudflare — Secrets Store Behavior Model](../../cases/saas-cloudflare-secrets-store-behavior-model/signature-analysis.md)
+- [Shopify — Customer Account Authentication Behavior Model](../../cases/saas-shopify-customer-account-auth-behavior-model/signature-analysis.md)

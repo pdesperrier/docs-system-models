@@ -1,42 +1,43 @@
-# PaymentBehaviorModel — Behavior Matrix
+# Behavior Matrix — PaymentBehaviorModel
 
 ## Purpose
 
-Make payment behavior explicit across roles, approval rules, statuses, and webhooks.
+This matrix converts scattered documentation elements into an operational decision surface.
 
-## Core Model
+It is used to verify whether the documentation lets a reader answer:
 
-role + amount + approval rule → status → webhook → next action
+- who can act;
+- under which condition;
+- from which state;
+- toward which next state;
+- with which visible outcome;
+- with which exception path.
 
 ## Matrix
 
-| Scenario | Role | Amount | Approval Required | Initial Status | Required Action | Final Status | Webhook |
-|---|---|---:|---|---|---|---|---|
-| Low-value payment | Finance | €500 | No | pending | none | processed | payment.processed |
-| High-value payment | Finance | €8,000 | Yes | requires_approval | Admin approval | processed | payment.requires_approval → payment.processed |
-| High-value payment | Admin | €8,000 | Yes | requires_approval | approve payment | processed | payment.approved → payment.processed |
-| Rejected payment | Admin | €8,000 | Yes | requires_approval | reject payment | rejected | payment.rejected |
-| Unauthorized creation | Viewer | €500 | No | forbidden | none | forbidden | none |
-| Approval timeout | Finance | €8,000 | Yes | requires_approval | no approval received | expired | payment.expired |
+| Actor | State / condition | Trigger | Expected documented outcome | Audit finding |
+|---|---|---|---|---|
+| Finance user | `draft` | payment validation and approval workflow reaches `draft` under documented or inferred conditions | Expected behavior must identify trigger, visibility, next action, and exception path | If `draft` is only listed, the transition remains under-modeled |
+| Admin | `created` | payment validation and approval workflow reaches `created` under documented or inferred conditions | Expected behavior must identify trigger, visibility, next action, and exception path | If `created` is only listed, the transition remains under-modeled |
+| Viewer | `requires_approval` | payment validation and approval workflow reaches `requires_approval` under documented or inferred conditions | Expected behavior must identify trigger, visibility, next action, and exception path | If `requires_approval` is only listed, the transition remains under-modeled |
+| API client | `approved` | payment validation and approval workflow reaches `approved` under documented or inferred conditions | Expected behavior must identify trigger, visibility, next action, and exception path | If `approved` is only listed, the transition remains under-modeled |
+| Webhook consumer | `processing` | payment validation and approval workflow reaches `processing` under documented or inferred conditions | Expected behavior must identify trigger, visibility, next action, and exception path | If `processing` is only listed, the transition remains under-modeled |
+| Finance user | `succeeded` | payment validation and approval workflow reaches `succeeded` under documented or inferred conditions | Expected behavior must identify trigger, visibility, next action, and exception path | If `succeeded` is only listed, the transition remains under-modeled |
 
-## Missing Documentation Relationships
+## Missing-model indicators
 
-- role → status
-- approval threshold → webhook
-- status transition → next action
-- timeout → expiration behavior
-- rejection → downstream effects
+A cell is incomplete when it does not specify:
 
-## Recommended Structural Fix
+- actor;
+- object;
+- action;
+- condition;
+- state before;
+- state after;
+- failure path;
+- visibility;
+- downstream effect.
 
-Create one central page:
+## Documentation risk
 
-Payment Approval Behavior
-
-Containing:
-- role rules
-- threshold rules
-- state transitions
-- webhook mapping
-- edge cases
-- full workflow examples
+When these cells are not explicit, users can still follow instructions but cannot predict behavior. This increases trial-and-error implementation, support dependency, and inconsistent QA coverage.

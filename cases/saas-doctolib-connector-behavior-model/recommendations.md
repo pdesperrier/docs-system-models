@@ -1,41 +1,60 @@
-# Recommendations
+# Recommendations — Doctolib
 
-## 1. Introduce synchronization-centric navigation
+## Priority 1 — Centralize the behavior model
 
-Current documentation distributes synchronization behavior across setup, troubleshooting, ownership, and duplicate-handling articles.
-
----
-
-## 2. Explicitly model ownership authority
-
-Document:
+Create a dedicated behavior page for:
 
 ```text
-patient ownership
-→ modification authority
-→ synchronization capability
+connector synchronization and ownership behavior
 ```
 
----
+This page should connect:
 
-## 3. Consolidate duplicate-resolution behavior
+- actor;
+- role;
+- condition;
+- state;
+- exception;
+- dependency;
+- observable outcome;
+- next action.
 
-Duplicate handling depends on:
+## Priority 2 — Add lifecycle and sequence diagrams
 
-- external identifiers
-- connector synchronization
-- Vitale associations
-- ownership rules
+Use:
 
-These dependencies should be modeled together.
+- [state-model.md](state-model.md)
+- [sequence-diagram.md](sequence-diagram.md)
 
----
+The diagrams should make state transitions, async behavior, and blocked paths visible.
 
-## 4. Introduce runtime dependency matrices
+## Priority 3 — Add a decision matrix
 
-Document:
+Use:
 
-```text
-connector type + startup order + organization scope
-→ activation behavior
-```
+- [behavior-matrix.md](behavior-matrix.md)
+
+The matrix should prevent readers from reconstructing role/state/condition behavior across multiple pages.
+
+## Priority 4 — Integrate exceptions into the main workflow
+
+Exceptions should not live only in troubleshooting.
+
+They should appear directly where the user makes the decision or performs the action.
+
+## Priority 5 — Add traceability
+
+Each behavioral rule should be traceable to:
+
+- source page;
+- product concept;
+- affected role;
+- state transition;
+- expected outcome;
+- related exception.
+
+## Expected impact
+
+- Create a synchronization behavior matrix.
+- Model ownership authority and external identifier dependencies.
+- Add duplicate-resolution and conflict-state diagrams.

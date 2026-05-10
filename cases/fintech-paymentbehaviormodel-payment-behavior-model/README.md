@@ -1,109 +1,86 @@
-# PaymentBehaviorModel — Payment Validation
+# PaymentBehaviorModel — Payment Validation Behavior Model
 
 ## Case type
 
-Fictional case study.
+Documentation architecture and behavioral modeling case study.
 
-This case demonstrates how documentation architecture can make API behavior easier to understand when product behavior depends on combined conditions.
+## Domain
 
-## Problem
+Fintech / payment workflow
 
-The documentation explains each element separately:
+## Client / product surface
 
-- payment creation
-- user roles
-- approval rules
-- payment statuses
-- webhook events
+PaymentBehaviorModel
 
-Each page can be understandable on its own.
+## Audited object
 
-The problem is that the combined behavior is not visible in one model.
+payment validation and approval workflow
 
-## Friction
+## Core friction
 
-A developer can understand each page separately but still cannot reliably answer:
+- approval behavior is split between role rules, amount thresholds, status descriptions, and webhook documentation
+- developers must infer which webhook corresponds to which approval state
+- blocked paths are less visible than the nominal payment creation path
 
-- Can this user create the payment?
-- Does the amount require approval?
-- Which role can approve it?
-- What status is returned by the API?
-- Which webhook is emitted?
-- What is the next required action?
+## Behavioral dependency model
 
-The documentation makes execution possible, but behavior prediction remains difficult.
+```text
+role + amount + approval threshold + payment status + webhook event -> allowed action -> state transition -> observable outcome -> next action
+```
 
-## Core scenario
+## Why this case matters
 
-A Finance user creates an €8,000 payment.
+The documentation may explain individual elements clearly, but the operational behavior appears only when several conditions are combined. The user has to reconstruct the model across concepts, role rules, lifecycle states, exceptions, and environment-specific behavior.
 
-Business rule:
+This is not only a writing problem. It is a documentation architecture problem.
 
-Payments above €5,000 require approval.
+## Main actors
 
-Role rule:
+- Finance user
+- Admin
+- Viewer
+- API client
+- Webhook consumer
 
-Finance users can create payments.
-Admin users can approve payments.
-Viewer users cannot create payments.
+## Main lifecycle states
 
-Expected behavior:
+- draft
+- created
+- requires_approval
+- approved
+- processing
+- succeeded
+- failed
+- cancelled
 
-Finance + €8,000 + approval threshold exceeded
-→ status: requires_approval
-→ webhook: payment.requires_approval
-→ next action: Admin approval required
+## Analysis outputs
 
-## Behavior model
+| File | Purpose |
+|---|---|
+| [behavior-matrix.md](behavior-matrix.md) | Maps conditions, roles, states, outcomes, and documentation gaps. |
+| [state-model.md](state-model.md) | Makes lifecycle states and transitions explicit. |
+| [sequence-diagram.md](sequence-diagram.md) | Shows runtime or operational sequence across actors. |
+| [before-after.md](before-after.md) | Compares current topic structure with behavior-oriented architecture. |
+| [concept-map.md](concept-map.md) | Maps core concepts and dependencies. |
+| [annotated-frictions.md](annotated-frictions.md) | Lists observable documentation frictions and their operational impact. |
+| [openapi-findings.md](openapi-findings.md) | Captures API/schema validation opportunities where applicable. |
+| [recommendations.md](recommendations.md) | Converts findings into concrete documentation actions. |
 
-The core model is:
+## Recommended transformation
 
-role + amount + approval rule → status → webhook → next action
-
-Detailed matrix:
-- behavior-matrix.md
-
-## Documentation transformation
-
-Current documentation pattern:
-
-Create payment
-Roles
-Approval rules
-Statuses
-Webhooks
-
-Proposed documentation structure:
-
-Payment Approval Behavior
-→ Core rule
-→ Role-based behavior
-→ Approval threshold
-→ Status and webhook mapping
-→ Full scenario
-→ Edge cases
-→ Troubleshooting
-
-Detailed before/after:
-- before-after.md
-
-## Concept map
-
-See:
-- concept-map.md
-
-## Recommendations
-
-See:
-- recommendations.md
+- Create one approval behavior page linking roles, threshold, status, webhook, and next action.
+- Add a state diagram for payment approval transitions.
+- Add an exception matrix for insufficient permission, threshold exceeded, approval rejected, and webhook delivery failure.
 
 ## Outcome
 
-The developer can predict the behavior of the payment workflow before implementing it.
+The target outcome is not more documentation. The target outcome is less reconstruction.
 
-This reduces:
-- trial and error
-- webhook handling mistakes
-- support dependency
-- incomplete QA scenarios
-- ambiguity around approval workflows
+A reader should be able to predict:
+
+- which actor can perform the action;
+- which state the object enters;
+- which exception path applies;
+- which downstream effect occurs;
+- which page explains the behavior;
+- which evidence supports the rule.

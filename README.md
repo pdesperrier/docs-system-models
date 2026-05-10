@@ -93,3 +93,24 @@ It is a system-level approach to documentation:
 ```text
 friction → behavior model → documentation transformation
 ```
+
+## Portfolio Completeness Layer
+
+This repository now includes a complete behavioral documentation analysis structure:
+
+- modular Vale rules;
+- domain-specific rulesets;
+- case-level behavior matrices;
+- state models;
+- sequence diagrams;
+- before/after documentation architecture;
+- API/schema findings;
+- annotated frictions;
+- signature analysis files;
+- reusable analysis method.
+
+The portfolio demonstrates how documentation can be treated as a system model rather than a set of isolated pages.
+
+Key method page:
+
+- [How I Analyze Documentation Systems](methods/how-i-analyze-documentation-systems.md)

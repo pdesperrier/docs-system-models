@@ -1,69 +1,60 @@
-# PaymentBehaviorModel — Recommendations
+# Recommendations — PaymentBehaviorModel
 
-## Main Recommendation
+## Priority 1 — Centralize the behavior model
 
-Create a central “Payment Approval Behavior” page.
+Create a dedicated behavior page for:
 
-## Structural Recommendations
+```text
+payment validation and approval workflow
+```
 
-### 1. Centralize Behavior
+This page should connect:
 
-Do not separate:
-- roles
-- approval rules
-- statuses
-- webhooks
+- actor;
+- role;
+- condition;
+- state;
+- exception;
+- dependency;
+- observable outcome;
+- next action.
 
-Behavior must be visible in one place.
+## Priority 2 — Add lifecycle and sequence diagrams
 
-### 2. Add Behavior Matrix
+Use:
 
-Add a matrix linking:
-- condition
-- role
-- status
-- webhook
-- next action
+- [state-model.md](state-model.md)
+- [sequence-diagram.md](sequence-diagram.md)
 
-### 3. Add Full Scenarios
+The diagrams should make state transitions, async behavior, and blocked paths visible.
 
-Include:
-- successful payment
-- approval required
-- rejection
-- timeout
-- unauthorized role
+## Priority 3 — Add a decision matrix
 
-### 4. Connect API and Workflow
+Use:
 
-API responses should reference:
-- workflow meaning
-- next action
-- emitted webhook
+- [behavior-matrix.md](behavior-matrix.md)
 
-### 5. Centralize Edge Cases
+The matrix should prevent readers from reconstructing role/state/condition behavior across multiple pages.
 
-Do not isolate:
-- expiration
-- retries
-- rejection
-- invalid roles
+## Priority 4 — Integrate exceptions into the main workflow
 
-## Expected Improvements
+Exceptions should not live only in troubleshooting.
 
-- reduced inference
-- predictable workflows
-- fewer implementation errors
-- improved onboarding
-- lower support dependency
-- better QA coverage
+They should appear directly where the user makes the decision or performs the action.
 
-## Priority Order
+## Priority 5 — Add traceability
 
-| Priority | Action |
-|---|---|
-| High | Add central behavior page |
-| High | Add behavior matrix |
-| Medium | Add scenario walkthroughs |
-| Medium | Link statuses to webhooks |
-| Low | Add troubleshooting section |
+Each behavioral rule should be traceable to:
+
+- source page;
+- product concept;
+- affected role;
+- state transition;
+- expected outcome;
+- related exception.
+
+## Expected impact
+
+- Create one approval behavior page linking roles, threshold, status, webhook, and next action.
+- Add a state diagram for payment approval transitions.
+- Add an exception matrix for insufficient permission, threshold exceeded, approval rejected, and webhook delivery failure.

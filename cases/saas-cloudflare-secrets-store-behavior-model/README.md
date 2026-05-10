@@ -2,132 +2,85 @@
 
 ## Case type
 
-Public documentation case study.
+Documentation architecture and behavioral modeling case study.
 
-This case analyzes a documentation pattern in the Cloudflare documentation excerpt around Secrets Store, Workers integration, AI Gateway BYOK, roles, permissions, bindings, and runtime access.
+## Domain
 
-## Source basis
+SaaS / cloud platform
 
-The case is based on the provided Cloudflare documentation excerpts covering:
+## Client / product surface
 
-- Cloudflare Docs directory and product surface
-- API documentation content strategy
-- Secrets Store overview
-- Secrets Store access control
-- API token permissions
-- secret lifecycle actions
-- Workers integration
-- local development mode
-- AI Gateway BYOK
-- key aliases and key deletion behavior
+Cloudflare
 
-## Problem
+## Audited object
 
-The documentation explains several important elements clearly at page or section level:
+Secrets Store lifecycle, bindings, runtime access, and BYOK behavior
 
-- what Secrets Store is
-- which Cloudflare products it currently supports
-- which roles can create, edit, deploy, or view secrets
-- which API token permissions apply
-- how to create and manage account secrets
-- how to bind a secret to a Worker
-- how a Worker accesses a bound secret at runtime
-- how AI Gateway BYOK uses Secrets Store
-- how key aliases affect AI Gateway requests
+## Core friction
 
-Each section is useful in isolation.
+- role permissions, token permissions, binding behavior, runtime access, local development, and BYOK behavior are spread across areas
+- secret existence and runtime availability are different states
+- deletion or alias changes can affect downstream AI Gateway behavior
 
-The friction appears when a developer or administrator needs to understand the combined behavior across role, permission, secret lifecycle, binding, runtime access, local development, and AI Gateway request behavior.
-
-## Friction
-
-A user can understand individual sections but still needs to reconstruct the full operational model:
+## Behavioral dependency model
 
 ```text
-actor + permission + action + target integration + environment
-→ allowed operation + runtime effect + documentation page to consult
+actor + permission + secret state + integration + environment -> allowed action -> state transition -> observable outcome -> next action
 ```
 
-The combined behavior is distributed across several documentation areas.
+## Why this case matters
 
-## Core question
+The documentation may explain individual elements clearly, but the operational behavior appears only when several conditions are combined. The user has to reconstruct the model across concepts, role rules, lifecycle states, exceptions, and environment-specific behavior.
 
-For a given user role or API token permission:
+This is not only a writing problem. It is a documentation architecture problem.
 
-- Can the user create or edit an account secret?
-- Can the user bind that secret to a Worker?
-- Can the Worker access the secret at runtime?
-- Does local development behave differently from production?
-- Can the same Secrets Store model support AI Gateway BYOK?
-- What happens when an API key is rotated, deleted, or selected by alias?
+## Main actors
 
-## Why this matters
+- Account admin
+- Developer
+- API token
+- Worker runtime
+- AI Gateway
 
-This is not a wording problem.
+## Main lifecycle states
 
-It is a documentation architecture problem.
+- not_created
+- created
+- bound
+- available_at_runtime
+- rotated
+- deleted
+- alias_changed
+- unavailable
 
-The documentation contains the necessary pieces, but the behavior model is not centralized.
+## Analysis outputs
 
-## Proposed model
+| File | Purpose |
+|---|---|
+| [behavior-matrix.md](behavior-matrix.md) | Maps conditions, roles, states, outcomes, and documentation gaps. |
+| [state-model.md](state-model.md) | Makes lifecycle states and transitions explicit. |
+| [sequence-diagram.md](sequence-diagram.md) | Shows runtime or operational sequence across actors. |
+| [before-after.md](before-after.md) | Compares current topic structure with behavior-oriented architecture. |
+| [concept-map.md](concept-map.md) | Maps core concepts and dependencies. |
+| [annotated-frictions.md](annotated-frictions.md) | Lists observable documentation frictions and their operational impact. |
+| [openapi-findings.md](openapi-findings.md) | Captures API/schema validation opportunities where applicable. |
+| [recommendations.md](recommendations.md) | Converts findings into concrete documentation actions. |
 
-Create a central documentation page or section:
+## Recommended transformation
 
-```text
-Secrets Store behavior model
-```
-
-Recommended structure:
-
-1. Core model
-2. Actor and permission matrix
-3. Secret lifecycle matrix
-4. Worker binding behavior
-5. Runtime access behavior
-6. Local vs production behavior
-7. AI Gateway BYOK behavior
-8. Key alias and deletion behavior
-9. Troubleshooting and edge cases
-
-## Core behavior model
-
-```text
-actor + permission + secret state + integration + environment
-→ allowed action + runtime behavior + next action
-```
-
-## Files in this case
-
-```text
-README.md
-behavior-matrix.md
-before-after.md
-concept-map.md
-recommendations.md
-```
+- Create a Secrets Store behavior model page.
+- Add a permission/action/runtime matrix.
+- Add lifecycle diagrams for secret creation, binding, rotation, deletion, and alias changes.
 
 ## Outcome
 
-The goal is to reduce inference for users who must operate across security administration, Workers deployment, and AI Gateway key management.
+The target outcome is not more documentation. The target outcome is less reconstruction.
 
-A central behavior model would help users understand:
+A reader should be able to predict:
 
-- which role can perform which action
-- when API token permissions are sufficient
-- how account-level secrets differ from per-Worker secrets
-- when local development diverges from production
-- how BYOK changes request behavior
-- what operational risk follows key deletion or rotation
-
-## Reusable pattern
-
-This case can be generalized to documentation where behavior depends on:
-
-- roles
-- permissions
-- API token scopes
-- resource state
-- product integration
-- runtime environment
-- security constraints
-- deployment mode
+- which actor can perform the action;
+- which state the object enters;
+- which exception path applies;
+- which downstream effect occurs;
+- which page explains the behavior;
+- which evidence supports the rule.

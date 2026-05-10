@@ -1,53 +1,48 @@
-# PaymentBehaviorModel — Concept Map
+# Concept Map — PaymentBehaviorModel
 
-## Core Concepts
+## Core model
 
-- User role
-- Payment amount
-- Approval threshold
-- Payment status
-- Webhook event
-- Next action
+```text
+role + amount + approval threshold + payment status + webhook event
+```
 
-## Relationships
+## Concept map
 
-User role + payment amount
-→ determines approval requirement
+```mermaid
+flowchart TD
+    A[payment validation and approval workflow]
+    B[Actors and roles]
+    C[Permissions and visibility]
+    D[Lifecycle states]
+    E[Conditions and prerequisites]
+    F[Exceptions and blocked paths]
+    G[Downstream effects]
+    H[Documentation page or section]
 
-Approval requirement
-→ determines initial status
+    B --> C
+    C --> A
+    E --> A
+    A --> D
+    D --> F
+    D --> G
+    H --> B
+    H --> C
+    H --> D
+    H --> E
+    H --> F
+```
 
-Initial status
-→ determines webhook event
+## Dependency list
 
-Webhook event
-→ determines downstream workflow action
+- payment validation and approval workflow
+- actors
+- roles / permissions
+- states
+- conditions
+- exceptions
+- dependencies
+- downstream effects
 
-## Role Relationships
+## Audit use
 
-| Role | Can Create | Can Approve | Can Reject |
-|---|---|---|---|
-| Admin | Yes | Yes | Yes |
-| Finance | Yes | No | No |
-| Viewer | No | No | No |
-
-## State Relationships
-
-| State | Meaning | Next Step |
-|---|---|---|
-| pending | processing started | automatic processing |
-| requires_approval | approval required | Admin approval |
-| approved | approval completed | processing |
-| rejected | payment rejected | stop workflow |
-| processed | payment completed | end |
-| expired | approval timeout | retry or recreate |
-
-## Event Relationships
-
-| Status | Webhook |
-|---|---|
-| requires_approval | payment.requires_approval |
-| approved | payment.approved |
-| rejected | payment.rejected |
-| processed | payment.processed |
-| expired | payment.expired |
+The map is used to check whether the documentation explains concepts as connected behavior or as isolated vocabulary.

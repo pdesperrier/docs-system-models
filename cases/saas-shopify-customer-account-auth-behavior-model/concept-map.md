@@ -1,99 +1,48 @@
-# Shopify — Customer Account Authentication Concept Map
+# Concept Map — Shopify
 
-## Core concepts
-
-- Storefront domain
-- OpenID discovery endpoint
-- Customer Account API discovery endpoint
-- Client type
-- Public client
-- Confidential client
-- Authorization request
-- PKCE
-- Code challenge
-- Code verifier
-- Authorization code
-- Token endpoint
-- Access token
-- Refresh token
-- ID token
-- GraphQL endpoint
-- HTTP status
-- GraphQL errors
-- Query cost
-- Throttling
-- Next action
-
-## Relationship model
+## Core model
 
 ```text
-Storefront domain
-→ discovery endpoints
-→ auth endpoint + API endpoint
+client type + discovery endpoint + auth parameters + token exchange + GraphQL response pattern
 ```
 
-```text
-Client type
-→ required security mechanism
-→ token exchange requirements
+## Concept map
+
+```mermaid
+flowchart TD
+    A[Customer Account API authentication and GraphQL response behavior]
+    B[Actors and roles]
+    C[Permissions and visibility]
+    D[Lifecycle states]
+    E[Conditions and prerequisites]
+    F[Exceptions and blocked paths]
+    G[Downstream effects]
+    H[Documentation page or section]
+
+    B --> C
+    C --> A
+    E --> A
+    A --> D
+    D --> F
+    D --> G
+    H --> B
+    H --> C
+    H --> D
+    H --> E
+    H --> F
 ```
 
-```text
-Authorization request
-→ authorization code
-→ token exchange
-→ access token / refresh token
-```
+## Dependency list
 
-```text
-GraphQL request
-→ HTTP status
-→ data or errors payload
-→ cost / throttling information
-→ next action
-```
+- Customer Account API authentication and GraphQL response behavior
+- actors
+- roles / permissions
+- states
+- conditions
+- exceptions
+- dependencies
+- downstream effects
 
-## Client type relationships
+## Audit use
 
-| Client type | Can keep secret? | Required mechanism | Token exchange input |
-|---|---|---|---|
-| Public | No | PKCE | `code_verifier` |
-| Confidential | Yes | Client credentials | Authorization header |
-
-## Endpoint relationships
-
-| Source | Endpoint | Returns | Used by |
-|---|---|---|---|
-| Storefront domain | `/.well-known/openid-configuration` | auth URLs | OAuth login/token flow |
-| Storefront domain | `/.well-known/customer-account-api` | GraphQL and MCP URLs | API requests |
-
-## Token lifecycle
-
-```text
-authorization code
-→ access token
-→ expires_in elapsed
-→ refresh token
-→ new access token
-```
-
-## Error-response relationships
-
-| Response pattern | Meaning | Next action |
-|---|---|---|
-| HTTP 200 + `data` | GraphQL success | use data |
-| HTTP 200 + `errors` | GraphQL-level error | inspect `errors[]` |
-| `THROTTLED` | rate/cost issue | reduce cost or retry |
-| `invalid_grant` | PKCE/code issue | verify verifier/challenge |
-| `invalid_client` | client ID issue | verify app settings |
-| `invalid_token` | origin/token issue | verify headers/settings |
-
-## Documentation architecture implication
-
-The documentation should not present authentication, discovery, tokens, GraphQL response behavior, and rate limits as disconnected topics.
-
-They form one behavior chain:
-
-```text
-client type → auth setup → token outcome → API endpoint → response handling
-```
+The map is used to check whether the documentation explains concepts as connected behavior or as isolated vocabulary.

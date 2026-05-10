@@ -1,0 +1,8 @@
+fintech-paymentbehaviormodel-payment-behavior-model
+fintech-qonto-role-permission-payment-behavior-model
+saas-atlassian-extension-runtime-behavior-model
+saas-cloudflare-secrets-store-behavior-model
+saas-doctolib-connector-behavior-model
+saas-document360-api-workspace-behavior-model
+saas-mistral-ai-developer-workflow-behavior-model
+saas-shopify-customer-account-auth-behavior-model

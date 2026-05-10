@@ -1,139 +1,60 @@
-# Recommendations
+# Recommendations — Qonto
 
-## 1. Introduce a role/action/approval matrix
+## Priority 1 — Centralize the behavior model
 
-Current documentation distributes payment behavior across:
-
-- role descriptions
-- approval permissions
-- transfer workflows
-- SCA/2FA setup
-- direct debit documentation
-- troubleshooting articles
-
-The operational model emerges only when these elements are combined.
-
-Documentation should expose:
+Create a dedicated behavior page for:
 
 ```text
-role
-→ allowed action
-→ approval requirement
-→ authentication requirement
-→ operational consequence
+role-dependent payment permission workflow
 ```
 
-This should become a central navigation layer.
+This page should connect:
 
----
+- actor;
+- role;
+- condition;
+- state;
+- exception;
+- dependency;
+- observable outcome;
+- next action.
 
-## 2. Model direct debit collection as a lifecycle
+## Priority 2 — Add lifecycle and sequence diagrams
 
-Current documentation explains:
+Use:
 
-- SCI eligibility
-- mandate signature
-- collection processing
-- refund windows
-- settlement timing
+- [state-model.md](state-model.md)
+- [sequence-diagram.md](sequence-diagram.md)
 
-in separate places.
+The diagrams should make state transitions, async behavior, and blocked paths visible.
 
-The developer or financial operator must reconstruct the actual collection lifecycle manually.
+## Priority 3 — Add a decision matrix
 
-Recommended structure:
+Use:
 
-```text
-eligibility
-→ SCI generation
-→ mandate request
-→ signature state
-→ collection processing
-→ holding period
-→ payout
-→ refund window
-```
+- [behavior-matrix.md](behavior-matrix.md)
 
-This lifecycle should explicitly expose blocked states and next actions.
+The matrix should prevent readers from reconstructing role/state/condition behavior across multiple pages.
 
----
+## Priority 4 — Integrate exceptions into the main workflow
 
-## 3. Introduce authentication-state branches
+Exceptions should not live only in troubleshooting.
 
-Profile updates and sensitive actions currently depend on:
+They should appear directly where the user makes the decision or performs the action.
 
-- SCA activation
-- phone availability
-- email access
-- fallback verification
-- support intervention
+## Priority 5 — Add traceability
 
-These branches are operationally critical but fragmented.
+Each behavioral rule should be traceable to:
 
-Documentation should expose:
+- source page;
+- product concept;
+- affected role;
+- state transition;
+- expected outcome;
+- related exception.
 
-```text
-authentication state
-→ available recovery path
-→ required verification
-→ resulting account capability
-```
+## Expected impact
 
----
-
-## 4. Connect role descriptions to concrete workflows
-
-Role pages currently describe permissions abstractly.
-
-The documentation should instead expose:
-
-```text
-role
-→ invoice workflow capability
-→ payment workflow capability
-→ transfer approval capability
-→ card management capability
-→ blocked actions
-```
-
-This removes the need to infer workflow behavior from isolated permission lists.
-
----
-
-## 5. Expose blocked states and operational consequences
-
-Many workflows fail because of:
-
-- expired mandate links
-- insufficient permissions
-- missing SCA
-- account ineligibility
-- refund timing constraints
-
-These states should expose:
-
-```text
-blocked condition
-→ operational impact
-→ visible symptom
-→ recovery action
-```
-
-instead of remaining buried in troubleshooting documentation.
-
----
-
-## 6. Replace feature navigation with behavior navigation
-
-Current navigation prioritizes features.
-
-Operational users actually need:
-
-```text
-condition
-→ allowed action
-→ validation path
-→ operational result
-```
-
-Documentation should pivot toward executable workflow behavior rather than isolated product capabilities.
+- Create a role/action/payment matrix.
+- Separate authentication blockers from approval blockers.
+- Document visibility for each role at each payment state.

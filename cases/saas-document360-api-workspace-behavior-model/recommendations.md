@@ -1,184 +1,60 @@
-# Recommendations
+# Recommendations — Document360
 
-## 1. Create an API workspace lifecycle page
+## Priority 1 — Centralize the behavior model
 
-Current documentation distributes operational behavior across:
-
-- OpenAPI import
-- URL-based generation
-- CI/CD synchronization
-- Try It configuration
-- publishing
-- editor selection
-- access management
-- troubleshooting
-
-Developers reconstruct the lifecycle manually.
-
-Recommended structure:
+Create a dedicated behavior page for:
 
 ```text
-workspace creation
-→ API import
-→ validation
-→ publication
-→ Try It activation
-→ synchronization
-→ reader access
-→ troubleshooting
+API workspace and content publication lifecycle
 ```
 
-This lifecycle should become the primary navigation path.
+This page should connect:
 
----
+- actor;
+- role;
+- condition;
+- state;
+- exception;
+- dependency;
+- observable outcome;
+- next action.
 
-## 2. Introduce an API workspace behavior matrix
+## Priority 2 — Add lifecycle and sequence diagrams
 
-Current pages explain individual features locally.
+Use:
 
-The documentation should explicitly expose:
+- [state-model.md](state-model.md)
+- [sequence-diagram.md](sequence-diagram.md)
 
-```text
-workspace state
-+ import method
-+ editor type
-+ visibility setting
-→ publication behavior
-→ reader behavior
-→ synchronization behavior
-```
+The diagrams should make state transitions, async behavior, and blocked paths visible.
 
-This prevents developers from reconstructing operational states manually.
+## Priority 3 — Add a decision matrix
 
----
+Use:
 
-## 3. Model OpenAPI import and resync as a state machine
+- [behavior-matrix.md](behavior-matrix.md)
 
-Import workflows currently depend on:
+The matrix should prevent readers from reconstructing role/state/condition behavior across multiple pages.
 
-- file upload
-- remote URL availability
-- CI/CD synchronization
-- API key validity
-- path configuration
-- server URL configuration
+## Priority 4 — Integrate exceptions into the main workflow
 
-These relationships remain fragmented.
+Exceptions should not live only in troubleshooting.
 
-Documentation should expose:
+They should appear directly where the user makes the decision or performs the action.
 
-```text
-import source
-→ validation state
-→ synchronization capability
-→ generated API behavior
-→ failure conditions
-```
+## Priority 5 — Add traceability
 
----
+Each behavioral rule should be traceable to:
 
-## 4. Connect Try It behavior to configuration dependencies
+- source page;
+- product concept;
+- affected role;
+- state transition;
+- expected outcome;
+- related exception.
 
-Try It availability currently depends on:
+## Expected impact
 
-- server URL presence
-- security scheme definition
-- BearerAuth configuration
-- CORS behavior
-- endpoint visibility
-
-These dependencies should be documented together.
-
-Recommended structure:
-
-```text
-server configuration
-→ security configuration
-→ endpoint visibility
-→ Try It availability
-→ expected runtime behavior
-```
-
----
-
-## 5. Explicitly model editor transitions
-
-The editor-switching workflow contains irreversible transitions.
-
-This operational consequence is easy to miss.
-
-Documentation should expose:
-
-```text
-editor type
-→ allowed transition
-→ irreversible state
-→ resulting editing capability
-```
-
-This prevents accidental content-state changes.
-
----
-
-## 6. Connect Drive actions to dependency risk
-
-Drive documentation currently explains uploads and deletion behavior separately from content dependencies.
-
-Operationally, deleting a file can invalidate:
-
-- article links
-- embedded references
-- CDN URLs
-- downloaded assets
-
-Documentation should expose:
-
-```text
-Drive action
-→ dependency count
-→ affected resources
-→ resulting publication behavior
-```
-
----
-
-## 7. Align analytics documentation with workspace scope
-
-Analytics behavior currently depends on:
-
-- workspace selection
-- language scope
-- date filters
-- API documentation visibility
-- user access level
-
-These conditions should be modeled explicitly.
-
-Documentation should expose:
-
-```text
-workspace scope
-+ language scope
-+ visibility state
-→ analytics interpretation
-```
-
-This reduces misinterpretation of cross-workspace metrics.
-
----
-
-## 8. Replace feature-centric onboarding with behavior-centric onboarding
-
-Current onboarding explains features independently.
-
-Developers actually need:
-
-```text
-configuration
-→ publication behavior
-→ synchronization behavior
-→ reader experience
-→ troubleshooting path
-```
-
-The onboarding flow should prioritize operational predictability.
+- Create an API workspace lifecycle model.
+- Map editor state to reader/developer behavior.
+- Add import validation and access-state matrices.
