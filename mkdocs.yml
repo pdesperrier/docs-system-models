@@ -7,6 +7,25 @@ theme:
 
 nav:
   - Home: index.md
-  - Cases: cases/index.md
-  - Methods: methods/index.md
-  - Offers: offers/index.md
+
+  - Cases:
+      - Overview: cases/index.md
+      - Cloudflare Secrets Store: cases/saas-cloudflare-secrets-store-behavior-model/index.md
+      - Qonto Role Permission Payment: cases/fintech-qonto-role-permission-payment-behavior-model/index.md
+      - Shopify Customer Account Auth: cases/saas-shopify-customer-account-auth-behavior-model/index.md
+      - Mistral AI Developer Workflow: cases/saas-mistral-ai-developer-workflow-behavior-model/index.md
+      - Document360 API Workspace: cases/saas-document360-api-workspace-behavior-model/index.md
+      - Atlassian Extension Runtime: cases/saas-atlassian-extension-runtime-behavior-model/index.md
+
+  - Methods:
+      - Overview: methods/index.md
+      - Behavioral Reconstructibility Audit: methods/behavioral-reconstructibility-audit.md
+      - Evidence Lineage Method: methods/evidence-lineage-method.md
+      - Reconstructive Burden: methods/reconstructive-burden.md
+      - Topology-Preserving Documentation Analysis: methods/topology-preserving-documentation-analysis.md
+
+  - Offers:
+      - Overview: offers/index.md
+      - Reconstructibility Audit Sprint: offers/reconstructibility-audit-sprint.md
+      - Documentation Topology Assessment: offers/documentation-topology-assessment.md
+      - Behavioral Debt Map: offers/behavioral-debt-map.md
