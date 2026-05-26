@@ -23,3 +23,8 @@ Thumbs.db
 
 # Local archive
 _archive/
+# MkDocs build output
+site/
+
+# MkDocs build output
+site/
