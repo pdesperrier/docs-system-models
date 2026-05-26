@@ -35,4 +35,4 @@ Avoid:
 - “The system does…”
 - “Users can…”
 - “The workflow is…”
-- “The documentation should simply…”
+- “The documentation should define the observable behavior…”
