@@ -2,7 +2,7 @@
 
 ## Portfolio case status
 
-- Status: fallback case skeleton
+- Status: later fallback
 - Source audit status: partial
 - Public-safe: not publishable
 - Domain: Fintech
@@ -10,7 +10,11 @@
 
 ## Current use
 
-This folder is a fallback case skeleton.
+This folder is a later fallback case.
+
+It is outside the Phase 0 active flow.
+
+Use it only if both Document360 and Cloudflare fail to produce usable public proof.
 
 It must not be presented as an analyzed portfolio case until evidence has been collected, validated, and reduced into a portfolio-safe narrative.
 
@@ -48,4 +52,4 @@ How Qonto role and plan conditions determine request visibility and payment-requ
 
 ## Rule
 
-Do not add raw internal evidence unless sanitized.
+Do not expand this case during Phase 0 unless Document360 and Cloudflare both block.

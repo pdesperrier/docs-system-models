@@ -2,21 +2,21 @@
 
 ## Portfolio case status
 
-- Status: cold backlog skeleton
+- Status: primary scoping case
 - Source audit status: partial
 - Public-safe: not publishable
 - Domain: SaaS
-- Focus: API workspace creation, import, regeneration, and interactive reference behavior
+- Focus: API workspace creation, import, regeneration, warning handling, and interactive reference behavior
 
 ## Current use
 
-This folder is a cold backlog skeleton.
+This folder is the Phase 0 primary scoping case.
 
-It must not be presented as an analyzed portfolio case until evidence has been collected, validated, and reduced into a portfolio-safe narrative.
+It must not be presented as a completed or publishable portfolio case until evidence has been collected, validated, and reduced into a public-safe narrative.
 
 ## Purpose
 
-This case demonstrates behavioral reconstructibility analysis applied to API workspace, specification import, reference generation, regeneration, warning handling, and interactive API reference behavior.
+This case demonstrates behavioral reconstructibility analysis applied to API workspace behavior, specification import, reference generation, regeneration, warning handling, and interactive API reference behavior.
 
 It does not present a single stabilized workflow.
 
@@ -33,6 +33,17 @@ It preserves:
 
 How Document360 turns an API specification file, URL, or CI/CD flow into an API reference and how warnings, regeneration, workspace separation, and interactive behavior affect documentation operations.
 
+## Phase 0 role
+
+Document360 is selected first because it can connect:
+
+- API workspace behavior
+- generated documentation behavior
+- warning and regeneration behavior
+- AI-ready documentation structure
+- knowledge architecture
+- acquisition context around documentation tooling
+
 ## Case files
 
 - `case-brief.md`
@@ -47,4 +58,8 @@ How Document360 turns an API specification file, URL, or CI/CD flow into an API 
 
 ## Rule
 
-Do not add raw internal evidence unless sanitized.
+Do not publish this case until the public-safe version is validated.
+
+Do not convert primary scoping status into publication status.
+
+Do not invent missing transitions, permissions, retries, rollback semantics, or causal links.

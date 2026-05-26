@@ -1,12 +1,12 @@
-# Case Brief — SaaS Document360 API Workspace Behavior Model
+# Case Brief, SaaS Document360 API Workspace Behavior Model
 
 ## Domain
 
-SaaS
+SaaS.
 
 ## Behavior analyzed
 
-API workspace, specification import, reference generation, regeneration, warning handling, and interactive API reference behavior
+API workspace behavior, specification import, reference generation, regeneration, warning handling, and interactive API reference behavior.
 
 ## Reconstructive question
 
@@ -18,15 +18,29 @@ How Document360 turns an API specification file, URL, or CI/CD flow into an API 
 
 ## Why this case matters
 
-This case matters because API documentation products create operational dependencies between source specifications, generated references, warnings, custom content, developer-facing workspaces, and resync behavior. The reconstruction problem sits between documentation tooling and developer experience.
+This case matters because API documentation products create operational dependencies between source specifications, generated references, warnings, custom content, developer-facing workspaces, and resync behavior.
+
+The reconstruction problem sits between documentation tooling, developer experience, knowledge architecture, and AI-ready documentation.
 
 ## Current status
 
+- Phase 0 role: primary scoping case
 - Corpus collected: partial
 - Internal audit completed: no
 - Evidence validated: partial
 - Portfolio-safe version prepared: no
+- Publication status: not publishable
 
 ## Public-safe summary
 
-Document360 exposes a reconstruction problem around API documentation workspaces: API references can be generated from files, URLs, or CI/CD flows, warnings may appear during import, regenerated references reflect updated specifications, custom content is retained, and API workspaces are separate from the standard knowledge base. The case is useful later but remains a cold backlog skeleton until deeper validation is performed.
+Document360 exposes a reconstruction problem around API documentation workspaces: API references can be generated from files, URLs, or CI/CD flows, warnings may appear during import, regenerated references reflect updated specifications, custom content is retained, and API workspaces are separate from the standard knowledge base.
+
+The case is now used as the Phase 0 primary scoping case.
+
+It is not yet a publishable portfolio case.
+
+## Current output level
+
+This folder is a working scoping case with partial evidence.
+
+It is not a finished public portfolio case.

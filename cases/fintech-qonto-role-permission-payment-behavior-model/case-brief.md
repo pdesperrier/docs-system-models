@@ -20,6 +20,10 @@ How Qonto role and plan conditions determine request visibility and payment-requ
 
 This case matters because fintech documentation must make role boundaries operationally reconstructible. When request visibility, payment-request actions, plan limits, sub-account access, and approval workflow rules sit on different documentation surfaces, users and integrators must rebuild the access model manually.
 
+## Phase 0 role
+
+Later fallback outside the active flow.
+
 ## Current status
 
 - Corpus collected: partial

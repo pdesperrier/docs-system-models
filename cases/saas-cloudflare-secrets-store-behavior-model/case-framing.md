@@ -2,7 +2,7 @@
 
 ## Case decision
 
-Primary portfolio case.
+Fallback portfolio case.
 
 ## Exact scope
 
@@ -29,6 +29,10 @@ The documentation exposes the pieces, but the operational behavior must be recon
 Complex SaaS teams need dependency visibility when permissions, runtime behavior, and deployment steps interact.
 
 This case shows how behavioral documentation can reduce reconstruction effort for documentation teams, developer experience teams, support teams, and AI-assisted knowledge workflows.
+
+## Phase 0 fallback rule
+
+Use this case if the Document360 case does not produce enough validated evidence within the Phase 0 proof criteria.
 
 ## Offer supported
 

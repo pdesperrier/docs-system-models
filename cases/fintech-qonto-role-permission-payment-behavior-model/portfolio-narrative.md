@@ -8,6 +8,10 @@ The analysis does not force a single workflow.
 
 It separates reconstructible behavior from not-yet-reconstructible behavior and keeps unresolved gaps visible.
 
+## Phase 0 role
+
+This case is a later fallback. It is not the immediate Phase 0 fallback.
+
 ## What this demonstrates
 
 - ability to analyze behavioral documentation

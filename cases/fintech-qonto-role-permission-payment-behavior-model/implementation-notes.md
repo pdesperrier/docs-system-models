@@ -27,8 +27,12 @@
 - [x] Branches remain visible
 - [x] Uncertainty remains explicit
 
+## Phase 0 role
+
+Later fallback outside the active flow.
+
 ## Publication status
 
 Not publishable as a complete case.
 
-Usable as a backlog or fallback scaffold.
+Usable as a later fallback scaffold outside the Phase 0 active flow.

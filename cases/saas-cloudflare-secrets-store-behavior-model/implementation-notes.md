@@ -31,6 +31,10 @@
 - [ ] Screenshots excluded or sanitized
 - [ ] Final claims reviewed against source evidence
 
+## Phase 0 role
+
+Fallback case.
+
 ## Current implementation status
 
 This case folder is ready for a repository commit as case scaffolding plus evidence snapshot.

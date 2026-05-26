@@ -1,10 +1,14 @@
-# Implementation Notes — SaaS Document360 API Workspace Behavior Model
+# Implementation Notes, SaaS Document360 API Workspace Behavior Model
 
 ## Source reconstructive engine folder
 
 ```text
 /work_structure/09_reconstructive_engine/clients/saas-document360-api-workspace-behavior-model/
 ```
+
+## Phase 0 role
+
+Primary scoping case.
 
 ## Frozen artifacts used
 
@@ -26,9 +30,12 @@
 - [x] No internal arbitration leaked
 - [x] Branches remain visible
 - [x] Uncertainty remains explicit
+- [ ] Source URLs validated immediately before publication
+- [ ] Public case narrative validated
+- [ ] Final claims reduced to validated evidence
 
 ## Publication status
 
 Not publishable as a complete case.
 
-Usable as a backlog or fallback scaffold.
+Usable as the Phase 0 primary scoping case.

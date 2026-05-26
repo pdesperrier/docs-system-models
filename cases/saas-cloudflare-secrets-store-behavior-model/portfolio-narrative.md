@@ -8,6 +8,10 @@ The analysis does not force a single workflow.
 
 It separates what is reconstructible from what remains not-yet-reconstructible: role failure paths, binding traceability, runtime error behavior, UI/API divergence, and update propagation.
 
+## Phase 0 role
+
+This case is the fallback case. It is not the current primary scoping case.
+
 ## What this demonstrates
 
 - ability to analyze behavioral documentation

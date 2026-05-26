@@ -21,28 +21,55 @@ This portfolio demonstrates behavioral documentation.
 
 It does not present documentation as wording, formatting, or content cleanup.
 
-It focuses on dependency visibility: how roles, permissions, states, transitions, exceptions, and distributed workflows shape what users and teams can understand operationally.
+It focuses on dependency visibility: how roles, permissions, states, transitions, API behavior, support paths, and workflow surfaces interact.
 
-The differentiator is not producing better pages.
+## Canonical Phase 0 case alignment
 
-The differentiator is making system behavior reconstructible from evidence.
+| Role | Case | Folder | Status |
+|---|---|---|---|
+| Primary scoping case | Document360 API Workspace Behavior Model | `05_portfolio/cases/saas-document360-api-workspace-behavior-model/` | Active for Phase 0 scoping, not publishable yet |
+| Fallback case | Cloudflare Secrets Store Behavior Model | `05_portfolio/cases/saas-cloudflare-secrets-store-behavior-model/` | More mature working scaffold, used if Document360 blocks |
+| Later fallback | Qonto Role Permission Payment Behavior Model | `05_portfolio/cases/fintech-qonto-role-permission-payment-behavior-model/` | Outside the Phase 0 active flow |
 
-## Portfolio implications
 
-Primary case: Cloudflare Secrets Store behavior model.
+## Current proof strategy
 
-Fallback case: Qonto role, permission, and payment behavior model.
+Document360 is the primary scoping case because it connects API workspace behavior, generated references, regeneration, warnings, interactive reference behavior, knowledge architecture, and AI-ready documentation.
 
-Primary offer supported: Reconstructibility Audit Sprint.
+Cloudflare is the fallback case because its folder is more mature and already exposes a narrow dependency problem across permissions, account secrets, Workers bindings, and runtime behavior.
 
-Secondary offer supported: Documentation Topology Assessment.
+Qonto is the later fallback because its role, permission, request visibility, and payment-request behavior remain useful, but the case should not compete with Document360 or Cloudflare during Phase 0.
 
-Target audience: documentation leaders, product operations teams, developer experience teams, support operations teams, and AI documentation owners.
+## Positioning consequence
 
-The selected case must show how visible documentation still creates reconstruction effort when behavior is distributed across roles, configuration, runtime access, and product boundaries.
+The current positioning should not say:
+
+```text
+Cloudflare is the primary case.
+Qonto is the fallback case.
+Document360 is the Phase 0 primary scoping case. It is not yet a publishable portfolio case.
+```
+
+The current positioning should say:
+
+```text
+Document360 is the primary scoping case.
+Cloudflare is the fallback case.
+Qonto is the later fallback outside the Phase 0 active flow.
+```
 
 ## Offer connection
 
-The Cloudflare Secrets Store case supports a Reconstructibility Audit Sprint by showing how role permissions, secret binding, and runtime access create reconstruction effort across documentation surfaces.
+| Offer | Case support |
+|---|---|
+| Documentation Friction Audit | Supported by Document360 and Cloudflare |
+| Behavioral Documentation Sprint | Supported after proof criteria are validated |
+| Documentation Topology Assessment | Strongly supported by Document360 |
+| Reconstructibility Audit Sprint | Strongly supported by Cloudflare and Qonto |
+| Behavioral Debt Map | Supported by Qonto as later fallback |
 
-The audit output can produce a behavior matrix, a dependency visibility map, and a portfolio-safe narrative linking documentation friction to operational risk.
+## Publication boundary
+
+Primary scoping status does not mean publishable status.
+
+Document360 must remain unpublished until source validation, evidence cleanup, and public-safe narrative reduction are complete.

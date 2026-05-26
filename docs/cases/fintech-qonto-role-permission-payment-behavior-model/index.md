@@ -6,9 +6,19 @@ This public case page is derived from the internal portfolio case folder:
 cases/fintech-qonto-role-permission-payment-behavior-model/
 ```
 
+## Current role
+
+Later fallback outside the Phase 0 active flow.
+
 ## Focus
 
-role, permission, and payment behavior
+Role, permission, request visibility, and payment behavior.
+
+## Use
+
+Do not use this case as the immediate Phase 0 fallback.
+
+Use it only if both Document360 and Cloudflare fail to produce usable public proof.
 
 ## Read locally
 

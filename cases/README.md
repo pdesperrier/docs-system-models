@@ -6,56 +6,42 @@ The folders are not raw audit repositories.
 
 They contain sanitized case material, candidate evidence, findings, public-safe narratives, and backlog scaffolds.
 
+## Canonical Phase 0 case decision
+
+| Role | Case | Folder | Status |
+|---|---|---|---|
+| Primary scoping case | Document360 API Workspace Behavior Model | `05_portfolio/cases/saas-document360-api-workspace-behavior-model/` | Active for Phase 0 scoping, not publishable yet |
+| Fallback case | Cloudflare Secrets Store Behavior Model | `05_portfolio/cases/saas-cloudflare-secrets-store-behavior-model/` | More mature working scaffold, used if Document360 blocks |
+| Later fallback | Qonto Role Permission Payment Behavior Model | `05_portfolio/cases/fintech-qonto-role-permission-payment-behavior-model/` | Outside the Phase 0 active flow |
+
+
 ## Status categories
 
 | Status | Meaning |
 |---|---|
-| Active case | Current case being analyzed or prepared. |
-| Fallback case skeleton | Secondary case kept available if the active case blocks. |
-| Warm backlog skeleton | Candidate case likely useful soon, but not yet analyzed. |
+| Primary scoping case | Current case used to test whether a visible portfolio proof can be produced during Phase 0. |
+| Fallback case | Secondary case kept available if the primary scoping case blocks. |
+| Later fallback | Case kept outside the Phase 0 active flow, used only if both the primary scoping case and fallback case fail. |
+| Warm backlog skeleton | Candidate case likely useful soon, but not part of Phase 0 execution. |
 | Cold backlog skeleton | Candidate case kept for later positioning or evidence exploration. |
 
 ## Current case inventory
 
 | Case | Status | Use |
 |---|---|---|
-| `saas-cloudflare-secrets-store-behavior-model` | Active case | Primary portfolio case. |
-| `fintech-qonto-role-permission-payment-behavior-model` | Fallback case skeleton | Use only if the Cloudflare case blocks. |
-| `saas-shopify-customer-account-auth-behavior-model` | Warm backlog skeleton | Candidate for authentication and token behavior. |
-| `saas-mistral-ai-developer-workflow-behavior-model` | Warm backlog skeleton | Candidate for Libraries, ingestion, processing status, and retrieval behavior. |
-| `saas-document360-api-workspace-behavior-model` | Cold backlog skeleton | Candidate for knowledge base workspace and API behavior. |
-| `saas-atlassian-extension-runtime-behavior-model` | Cold backlog skeleton | Candidate for Forge manifest-driven runtime behavior. |
+| `saas-document360-api-workspace-behavior-model` | Primary scoping case | Use first for Phase 0 proof selection. Not publishable yet. |
+| `saas-cloudflare-secrets-store-behavior-model` | Fallback case | Use if Document360 does not produce enough validated evidence within the Phase 0 proof criteria. |
+| `fintech-qonto-role-permission-payment-behavior-model` | Later fallback | Keep outside the Phase 0 active flow. Use only if Document360 and Cloudflare both block. |
+| `saas-shopify-customer-account-auth-behavior-model` | Warm backlog skeleton | Keep for later proof exploration. |
+| `saas-mistral-ai-developer-workflow-behavior-model` | Warm backlog skeleton | Keep for later proof exploration. |
+| `saas-atlassian-extension-runtime-behavior-model` | Cold backlog skeleton | Keep for later positioning or evidence exploration. |
 
-## Removed folders
+## Operating rule
 
-Non-public archives and fictional examples are excluded from the public cases directory.
+A case can be the primary scoping case without being publishable.
 
-## Inclusion rule
+Document360 is currently selected for scoping because it connects API workspace behavior, knowledge architecture, AI-ready documentation, and acquisition context. It must not be presented as a finished portfolio case until evidence has been validated and reduced into a public-safe narrative.
 
-A folder may remain in `cases/` only when it is one of the following:
+Cloudflare is more mature as a folder, but it is not the current primary scoping case.
 
-- active case
-- fallback case skeleton
-- warm backlog skeleton
-- cold backlog skeleton
-
-## Evidence rule
-
-Do not include:
-
-- raw proprietary material
-- unvalidated internal notes
-- speculative transitions
-- inferred permissions presented as documented
-- undocumented runtime behavior presented as verified
-
-## Portfolio rule
-
-A case is publishable only when:
-
-1. the object is narrow
-2. public evidence is listed
-3. visible behavior is separated from missing behavior
-4. reconstructibility findings are evidence-bound
-5. unresolved branches remain visible
-6. public narrative does not overclaim
+Qonto is no longer the immediate fallback. It is a later fallback outside Phase 0 execution.

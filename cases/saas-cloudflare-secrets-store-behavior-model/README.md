@@ -2,11 +2,19 @@
 
 ## Portfolio case status
 
-- Status: draft
+- Status: fallback case
 - Source audit status: partial
 - Public-safe: to validate
 - Domain: SaaS
 - Focus: role-based secret creation, Worker binding, and runtime access behavior
+
+## Current use
+
+This folder is the Phase 0 fallback case.
+
+It is more mature than the Document360 folder, but it is not the current primary scoping case.
+
+Use it if the Document360 case does not produce enough validated evidence within the Phase 0 proof criteria.
 
 ## Purpose
 

@@ -2,7 +2,7 @@
 
 ## Case decision
 
-Fallback portfolio case.
+Later fallback case.
 
 ## Exact scope
 
@@ -23,6 +23,10 @@ The reader must reconstruct how roles, plans, request visibility, sub-account re
 Fintech documentation requires operational understanding because permission ambiguity can create support risk, integration risk, and compliance-sensitive misunderstanding.
 
 This case can show how behavioral documentation makes role boundaries explicit without inventing undocumented permission inheritance.
+
+## Phase 0 boundary
+
+This case stays outside the Phase 0 active flow.
 
 ## Offer supported
 

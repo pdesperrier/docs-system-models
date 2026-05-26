@@ -27,6 +27,10 @@ It is about dependency visibility between:
 - local development limits
 - audit visibility
 
+## Phase 0 role
+
+Fallback case.
+
 ## Current status
 
 - Corpus collected: partial
