@@ -1,4 +1,4 @@
-# Saas Cloudflare Secrets Store Behavior Model
+# SaaS Cloudflare Secrets Store Behavior Model
 
 This public case page is derived from the internal portfolio case folder:
 

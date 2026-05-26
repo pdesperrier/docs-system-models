@@ -1,4 +1,4 @@
-# Saas Shopify Customer Account Auth Behavior Model
+# SaaS Shopify Customer Account Auth Behavior Model
 
 This public case page is derived from the internal portfolio case folder:
 

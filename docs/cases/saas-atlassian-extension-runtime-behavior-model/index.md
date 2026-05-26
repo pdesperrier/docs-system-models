@@ -1,4 +1,4 @@
-# Saas Atlassian Extension Runtime Behavior Model
+# SaaS Atlassian Extension Runtime Behavior Model
 
 This public case page is derived from the internal portfolio case folder:
 

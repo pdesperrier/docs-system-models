@@ -1,4 +1,4 @@
-# Saas Mistral AI Developer Workflow Behavior Model
+# SaaS Mistral AI Developer Workflow Behavior Model
 
 This public case page is derived from the internal portfolio case folder:
 
