@@ -25,3 +25,6 @@ Thumbs.db
 _archive/
 # MkDocs build output
 site/
+
+# Postman local config
+.postman/
