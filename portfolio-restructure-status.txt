@@ -1,0 +1,198 @@
+ M README.md
+ M VALE_RULES.md
+ M about.md
+ M cases/README.md
+ M cases/fintech-paymentbehaviormodel-payment-behavior-model/README.md
+ D cases/fintech-paymentbehaviormodel-payment-behavior-model/annotated-frictions.md
+ D cases/fintech-paymentbehaviormodel-payment-behavior-model/before-after.md
+ D cases/fintech-paymentbehaviormodel-payment-behavior-model/behavior-matrix.md
+ D cases/fintech-paymentbehaviormodel-payment-behavior-model/concept-map.md
+ D cases/fintech-paymentbehaviormodel-payment-behavior-model/openapi-findings.md
+ D cases/fintech-paymentbehaviormodel-payment-behavior-model/recommendations.md
+ D cases/fintech-paymentbehaviormodel-payment-behavior-model/sequence-diagram.md
+ D cases/fintech-paymentbehaviormodel-payment-behavior-model/signature-analysis.md
+ D cases/fintech-paymentbehaviormodel-payment-behavior-model/state-model.md
+ M cases/fintech-qonto-role-permission-payment-behavior-model/README.md
+ D cases/fintech-qonto-role-permission-payment-behavior-model/annotated-frictions.md
+ D cases/fintech-qonto-role-permission-payment-behavior-model/before-after.md
+ D cases/fintech-qonto-role-permission-payment-behavior-model/behavior-matrix.md
+ D cases/fintech-qonto-role-permission-payment-behavior-model/concept-map.md
+ D cases/fintech-qonto-role-permission-payment-behavior-model/openapi-findings.md
+ D cases/fintech-qonto-role-permission-payment-behavior-model/recommendations.md
+ D cases/fintech-qonto-role-permission-payment-behavior-model/sequence-diagram.md
+ D cases/fintech-qonto-role-permission-payment-behavior-model/state-model.md
+ M cases/saas-atlassian-extension-runtime-behavior-model/README.md
+ D cases/saas-atlassian-extension-runtime-behavior-model/annotated-frictions.md
+ D cases/saas-atlassian-extension-runtime-behavior-model/before-after.md
+ D cases/saas-atlassian-extension-runtime-behavior-model/behavior-matrix.md
+ D cases/saas-atlassian-extension-runtime-behavior-model/concept-map.md
+ D cases/saas-atlassian-extension-runtime-behavior-model/openapi-findings.md
+ D cases/saas-atlassian-extension-runtime-behavior-model/recommendations.md
+ D cases/saas-atlassian-extension-runtime-behavior-model/sequence-diagram.md
+ D cases/saas-atlassian-extension-runtime-behavior-model/state-model.md
+ M cases/saas-cloudflare-secrets-store-behavior-model/README.md
+ D cases/saas-cloudflare-secrets-store-behavior-model/annotated-frictions.md
+ D cases/saas-cloudflare-secrets-store-behavior-model/before-after.md
+ D cases/saas-cloudflare-secrets-store-behavior-model/behavior-matrix.md
+ D cases/saas-cloudflare-secrets-store-behavior-model/concept-map.md
+ D cases/saas-cloudflare-secrets-store-behavior-model/openapi-findings.md
+ D cases/saas-cloudflare-secrets-store-behavior-model/recommendations.md
+ D cases/saas-cloudflare-secrets-store-behavior-model/sequence-diagram.md
+ D cases/saas-cloudflare-secrets-store-behavior-model/signature-analysis.md
+ D cases/saas-cloudflare-secrets-store-behavior-model/state-model.md
+ M cases/saas-doctolib-connector-behavior-model/README.md
+ D cases/saas-doctolib-connector-behavior-model/annotated-frictions.md
+ D cases/saas-doctolib-connector-behavior-model/before-after.md
+ D cases/saas-doctolib-connector-behavior-model/behavior-matrix.md
+ D cases/saas-doctolib-connector-behavior-model/concept-map.md
+ D cases/saas-doctolib-connector-behavior-model/openapi-findings.md
+ D cases/saas-doctolib-connector-behavior-model/recommendations.md
+ D cases/saas-doctolib-connector-behavior-model/sequence-diagram.md
+ D cases/saas-doctolib-connector-behavior-model/state-model.md
+ M cases/saas-document360-api-workspace-behavior-model/README.md
+ D cases/saas-document360-api-workspace-behavior-model/annotated-frictions.md
+ D cases/saas-document360-api-workspace-behavior-model/before-after.md
+ D cases/saas-document360-api-workspace-behavior-model/behavior-matrix.md
+ D cases/saas-document360-api-workspace-behavior-model/concept-map.md
+ D cases/saas-document360-api-workspace-behavior-model/openapi-findings.md
+ D cases/saas-document360-api-workspace-behavior-model/recommendations.md
+ D cases/saas-document360-api-workspace-behavior-model/sequence-diagram.md
+ D cases/saas-document360-api-workspace-behavior-model/state-model.md
+ M cases/saas-mistral-ai-developer-workflow-behavior-model/README.md
+ D cases/saas-mistral-ai-developer-workflow-behavior-model/annotated-frictions.md
+ D cases/saas-mistral-ai-developer-workflow-behavior-model/before-after.md
+ D cases/saas-mistral-ai-developer-workflow-behavior-model/behavior-matrix.md
+ D cases/saas-mistral-ai-developer-workflow-behavior-model/concept-map.md
+ D cases/saas-mistral-ai-developer-workflow-behavior-model/openapi-findings.md
+ D cases/saas-mistral-ai-developer-workflow-behavior-model/recommendations.md
+ D cases/saas-mistral-ai-developer-workflow-behavior-model/sequence-diagram.md
+ D cases/saas-mistral-ai-developer-workflow-behavior-model/state-model.md
+ M cases/saas-shopify-customer-account-auth-behavior-model/README.md
+ D cases/saas-shopify-customer-account-auth-behavior-model/annotated-frictions.md
+ D cases/saas-shopify-customer-account-auth-behavior-model/before-after.md
+ D cases/saas-shopify-customer-account-auth-behavior-model/behavior-matrix.md
+ D cases/saas-shopify-customer-account-auth-behavior-model/concept-map.md
+ D cases/saas-shopify-customer-account-auth-behavior-model/openapi-findings.md
+ D cases/saas-shopify-customer-account-auth-behavior-model/recommendations.md
+ D cases/saas-shopify-customer-account-auth-behavior-model/sequence-diagram.md
+ D cases/saas-shopify-customer-account-auth-behavior-model/signature-analysis.md
+ D cases/saas-shopify-customer-account-auth-behavior-model/state-model.md
+ M docs/README.md
+ M docs/cases/index.md
+ M docs/index.md
+ D docs/methods/how-i-analyze-documentation-systems.md
+ M docs/methods/index.md
+ M docs/offers/index.md
+ D methods/behavior-model.md
+ D methods/documentation-architecture.md
+ D methods/how-i-analyze-documentation-systems.md
+ D offers/documentation-architecture-sprint.md
+ D offers/documentation-friction-audit.md
+ D offers/workflow-rewrite.md
+ D templates/behavioral-audit-template.md
+ M tests/mermaid-test_001.md
+?? cases/fintech-paymentbehaviormodel-payment-behavior-model/branch-summary.md
+?? cases/fintech-paymentbehaviormodel-payment-behavior-model/case-brief.md
+?? cases/fintech-paymentbehaviormodel-payment-behavior-model/conflict-summary.md
+?? cases/fintech-paymentbehaviormodel-payment-behavior-model/evidence-snapshot.md
+?? cases/fintech-paymentbehaviormodel-payment-behavior-model/implementation-notes.md
+?? cases/fintech-paymentbehaviormodel-payment-behavior-model/observability-gaps.md
+?? cases/fintech-paymentbehaviormodel-payment-behavior-model/portfolio-narrative.md
+?? cases/fintech-paymentbehaviormodel-payment-behavior-model/reconstructibility-findings.md
+?? cases/fintech-paymentbehaviormodel-payment-behavior-model/reconstructive-scope.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/branch-summary.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/case-brief.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/conflict-summary.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/evidence-snapshot.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/fallback-framing.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/implementation-notes.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/observability-gaps.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/portfolio-narrative.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/reconstructibility-findings.md
+?? cases/fintech-qonto-role-permission-payment-behavior-model/reconstructive-scope.md
+?? cases/saas-atlassian-extension-runtime-behavior-model/branch-summary.md
+?? cases/saas-atlassian-extension-runtime-behavior-model/case-brief.md
+?? cases/saas-atlassian-extension-runtime-behavior-model/conflict-summary.md
+?? cases/saas-atlassian-extension-runtime-behavior-model/evidence-snapshot.md
+?? cases/saas-atlassian-extension-runtime-behavior-model/implementation-notes.md
+?? cases/saas-atlassian-extension-runtime-behavior-model/observability-gaps.md
+?? cases/saas-atlassian-extension-runtime-behavior-model/portfolio-narrative.md
+?? cases/saas-atlassian-extension-runtime-behavior-model/reconstructibility-findings.md
+?? cases/saas-atlassian-extension-runtime-behavior-model/reconstructive-scope.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/branch-summary.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/case-brief.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/case-framing.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/conflict-summary.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/evidence-snapshot.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/implementation-notes.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/observability-gaps.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/portfolio-narrative.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/reconstructibility-findings.md
+?? cases/saas-cloudflare-secrets-store-behavior-model/reconstructive-scope.md
+?? cases/saas-doctolib-connector-behavior-model/branch-summary.md
+?? cases/saas-doctolib-connector-behavior-model/case-brief.md
+?? cases/saas-doctolib-connector-behavior-model/conflict-summary.md
+?? cases/saas-doctolib-connector-behavior-model/evidence-snapshot.md
+?? cases/saas-doctolib-connector-behavior-model/implementation-notes.md
+?? cases/saas-doctolib-connector-behavior-model/observability-gaps.md
+?? cases/saas-doctolib-connector-behavior-model/portfolio-narrative.md
+?? cases/saas-doctolib-connector-behavior-model/reconstructibility-findings.md
+?? cases/saas-doctolib-connector-behavior-model/reconstructive-scope.md
+?? cases/saas-document360-api-workspace-behavior-model/branch-summary.md
+?? cases/saas-document360-api-workspace-behavior-model/case-brief.md
+?? cases/saas-document360-api-workspace-behavior-model/conflict-summary.md
+?? cases/saas-document360-api-workspace-behavior-model/evidence-snapshot.md
+?? cases/saas-document360-api-workspace-behavior-model/implementation-notes.md
+?? cases/saas-document360-api-workspace-behavior-model/observability-gaps.md
+?? cases/saas-document360-api-workspace-behavior-model/portfolio-narrative.md
+?? cases/saas-document360-api-workspace-behavior-model/reconstructibility-findings.md
+?? cases/saas-document360-api-workspace-behavior-model/reconstructive-scope.md
+?? cases/saas-mistral-ai-developer-workflow-behavior-model/branch-summary.md
+?? cases/saas-mistral-ai-developer-workflow-behavior-model/case-brief.md
+?? cases/saas-mistral-ai-developer-workflow-behavior-model/conflict-summary.md
+?? cases/saas-mistral-ai-developer-workflow-behavior-model/evidence-snapshot.md
+?? cases/saas-mistral-ai-developer-workflow-behavior-model/implementation-notes.md
+?? cases/saas-mistral-ai-developer-workflow-behavior-model/observability-gaps.md
+?? cases/saas-mistral-ai-developer-workflow-behavior-model/portfolio-narrative.md
+?? cases/saas-mistral-ai-developer-workflow-behavior-model/reconstructibility-findings.md
+?? cases/saas-mistral-ai-developer-workflow-behavior-model/reconstructive-scope.md
+?? cases/saas-shopify-customer-account-auth-behavior-model/branch-summary.md
+?? cases/saas-shopify-customer-account-auth-behavior-model/case-brief.md
+?? cases/saas-shopify-customer-account-auth-behavior-model/conflict-summary.md
+?? cases/saas-shopify-customer-account-auth-behavior-model/evidence-snapshot.md
+?? cases/saas-shopify-customer-account-auth-behavior-model/implementation-notes.md
+?? cases/saas-shopify-customer-account-auth-behavior-model/observability-gaps.md
+?? cases/saas-shopify-customer-account-auth-behavior-model/portfolio-narrative.md
+?? cases/saas-shopify-customer-account-auth-behavior-model/reconstructibility-findings.md
+?? cases/saas-shopify-customer-account-auth-behavior-model/reconstructive-scope.md
+?? docs/cases/fintech-paymentbehaviormodel-payment-behavior-model/
+?? docs/cases/fintech-qonto-role-permission-payment-behavior-model/
+?? docs/cases/saas-atlassian-extension-runtime-behavior-model/
+?? docs/cases/saas-cloudflare-secrets-store-behavior-model/
+?? docs/cases/saas-doctolib-connector-behavior-model/
+?? docs/cases/saas-document360-api-workspace-behavior-model/
+?? docs/cases/saas-mistral-ai-developer-workflow-behavior-model/
+?? docs/cases/saas-shopify-customer-account-auth-behavior-model/
+?? docs/methods/behavioral-reconstructibility-audit.md
+?? docs/methods/evidence-lineage-method.md
+?? docs/methods/reconstructive-burden.md
+?? docs/methods/topology-preserving-documentation-analysis.md
+?? docs/offers/behavioral-debt-map.md
+?? docs/offers/documentation-topology-assessment.md
+?? docs/offers/reconstructibility-audit-sprint.md
+?? market-positioning-summary.md
+?? methods/README.md
+?? methods/behavioral-reconstructibility-audit.md
+?? methods/evidence-lineage-method.md
+?? methods/reconstructive-burden.md
+?? methods/topology-preserving-documentation-analysis.md
+?? offers/README.md
+?? offers/behavioral-debt-map.md
+?? offers/documentation-topology-assessment.md
+?? offers/reconstructibility-audit-sprint.md
+?? portfolio-restructure-before-commit.patch
+?? portfolio-restructure-status.txt
+?? proof-criteria.md
+?? templates/README.md
+?? templates/internal-case-brief-template.md
+?? templates/public-case-template.md

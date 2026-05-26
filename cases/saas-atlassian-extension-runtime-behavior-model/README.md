@@ -1,86 +1,40 @@
-# Atlassian — Extension Runtime Behavior Model
+# Saas Atlassian Extension Runtime Behavior Model
 
-## Case type
+## Portfolio case status
 
-Documentation architecture and behavioral modeling case study.
+- Status: draft
+- Source audit status: pending / partial / validated
+- Public-safe: to validate
+- Domain: SaaS
+- Focus: extension runtime behavior
 
-## Domain
+## Purpose
 
-SaaS / platform extensibility
+This case demonstrates behavioral reconstructibility analysis applied to extension runtime behavior.
 
-## Client / product surface
+It does not present a single stabilized workflow.
 
-Atlassian
+It preserves:
 
-## Audited object
+- evidence-supported branches
+- scope-local behavior
+- unresolved ambiguity
+- observability limits
+- conflict classes
+- reconstructive burden
 
-extension runtime behavior across targets and environments
+## Case files
 
-## Core friction
+- `case-brief.md`
+- `reconstructive-scope.md`
+- `evidence-snapshot.md`
+- `branch-summary.md`
+- `conflict-summary.md`
+- `observability-gaps.md`
+- `reconstructibility-findings.md`
+- `portfolio-narrative.md`
+- `implementation-notes.md`
 
-- runtime behavior is distributed across deployment, permissions, rendering constraints, and extension target pages
-- successful deployment does not guarantee runtime availability in every target
-- permission propagation and rendering constraints are not visible in one model
+## Rule
 
-## Behavioral dependency model
-
-```text
-extension target + runtime environment + deployment state + permission scope + authentication context -> allowed action -> state transition -> observable outcome -> next action
-```
-
-## Why this case matters
-
-The documentation may explain individual elements clearly, but the operational behavior appears only when several conditions are combined. The user has to reconstruct the model across concepts, role rules, lifecycle states, exceptions, and environment-specific behavior.
-
-This is not only a writing problem. It is a documentation architecture problem.
-
-## Main actors
-
-- App developer
-- Workspace admin
-- End user
-- Runtime host
-- Extension service
-
-## Main lifecycle states
-
-- created
-- configured
-- deployed
-- installed
-- available
-- partially_available
-- failed
-- disabled
-
-## Analysis outputs
-
-| File | Purpose |
-|---|---|
-| [behavior-matrix.md](behavior-matrix.md) | Maps conditions, roles, states, outcomes, and documentation gaps. |
-| [state-model.md](state-model.md) | Makes lifecycle states and transitions explicit. |
-| [sequence-diagram.md](sequence-diagram.md) | Shows runtime or operational sequence across actors. |
-| [before-after.md](before-after.md) | Compares current topic structure with behavior-oriented architecture. |
-| [concept-map.md](concept-map.md) | Maps core concepts and dependencies. |
-| [annotated-frictions.md](annotated-frictions.md) | Lists observable documentation frictions and their operational impact. |
-| [openapi-findings.md](openapi-findings.md) | Captures API/schema validation opportunities where applicable. |
-| [recommendations.md](recommendations.md) | Converts findings into concrete documentation actions. |
-
-## Recommended transformation
-
-- Create a runtime behavior map by extension target.
-- Add deployment-to-availability state transitions.
-- Centralize rendering constraints and permission prerequisites.
-
-## Outcome
-
-The target outcome is not more documentation. The target outcome is less reconstruction.
-
-A reader should be able to predict:
-
-- which actor can perform the action;
-- which state the object enters;
-- which exception path applies;
-- which downstream effect occurs;
-- which page explains the behavior;
-- which evidence supports the rule.
+Do not add raw internal evidence unless sanitized.

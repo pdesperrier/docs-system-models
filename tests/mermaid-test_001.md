@@ -1,7 +1,10 @@
+# Mermaid Test
+
+Use this file to test Mermaid rendering in the portfolio environment.
+
 ```mermaid
-flowchart LR
-    Role --> Permission
-    Permission --> Approval
-    Approval --> Payment
-    Payment --> Webhook
+stateDiagram-v2
+  [*] --> EvidenceCaptured
+  EvidenceCaptured --> BranchCreated : divergence detected
+  BranchCreated --> NotYetReconstructible : missing evidence
 ```

@@ -1,26 +1,9 @@
-# Documentation System Models
+# Behavioral Reconstructibility Portfolio
 
-This site provides a lightweight navigation layer for the `docs-system-models` repository.
+This site presents portfolio-safe case studies and methods derived from reconstructive audits.
 
-The repository focuses on:
-
-- behavior modeling
-- documentation governance
-- workflow analysis
-- operational friction
-- docs-as-code practices
-
-## Core Model
-
-```text
-condition + role + state + action
-→ outcome + event + next action
-```
-
-## Sections
+## Main sections
 
 - Cases
 - Methods
 - Offers
-
-The GitHub repository remains the source of truth for all detailed analyses.

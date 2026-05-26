@@ -1,86 +1,40 @@
-# Document360 — API Workspace and Content Lifecycle Behavior Model
+# Saas Document360 API Workspace Behavior Model
 
-## Case type
+## Portfolio case status
 
-Documentation architecture and behavioral modeling case study.
+- Status: draft
+- Source audit status: pending / partial / validated
+- Public-safe: to validate
+- Domain: SaaS
+- Focus: API workspace behavior and knowledge architecture
 
-## Domain
+## Purpose
 
-SaaS / knowledge base platform
+This case demonstrates behavioral reconstructibility analysis applied to API workspace behavior and knowledge architecture.
 
-## Client / product surface
+It does not present a single stabilized workflow.
 
-Document360
+It preserves:
 
-## Audited object
+- evidence-supported branches
+- scope-local behavior
+- unresolved ambiguity
+- observability limits
+- conflict classes
+- reconstructive burden
 
-API workspace and content publication lifecycle
+## Case files
 
-## Core friction
+- `case-brief.md`
+- `reconstructive-scope.md`
+- `evidence-snapshot.md`
+- `branch-summary.md`
+- `conflict-summary.md`
+- `observability-gaps.md`
+- `reconstructibility-findings.md`
+- `portfolio-narrative.md`
+- `implementation-notes.md`
 
-- workspace, OpenAPI import, Try It, access settings, and publication state are separate decision layers
-- reader-facing behavior depends on editor and access configuration
-- import failure and publication failure need a lifecycle view
+## Rule
 
-## Behavioral dependency model
-
-```text
-workspace + content type + editor state + access setting + import method -> allowed action -> state transition -> observable outcome -> next action
-```
-
-## Why this case matters
-
-The documentation may explain individual elements clearly, but the operational behavior appears only when several conditions are combined. The user has to reconstruct the model across concepts, role rules, lifecycle states, exceptions, and environment-specific behavior.
-
-This is not only a writing problem. It is a documentation architecture problem.
-
-## Main actors
-
-- Technical writer
-- Workspace admin
-- API consumer
-- Reviewer
-- Reader
-
-## Main lifecycle states
-
-- draft
-- imported
-- validated
-- published
-- restricted
-- deprecated
-- archived
-- failed_import
-
-## Analysis outputs
-
-| File | Purpose |
-|---|---|
-| [behavior-matrix.md](behavior-matrix.md) | Maps conditions, roles, states, outcomes, and documentation gaps. |
-| [state-model.md](state-model.md) | Makes lifecycle states and transitions explicit. |
-| [sequence-diagram.md](sequence-diagram.md) | Shows runtime or operational sequence across actors. |
-| [before-after.md](before-after.md) | Compares current topic structure with behavior-oriented architecture. |
-| [concept-map.md](concept-map.md) | Maps core concepts and dependencies. |
-| [annotated-frictions.md](annotated-frictions.md) | Lists observable documentation frictions and their operational impact. |
-| [openapi-findings.md](openapi-findings.md) | Captures API/schema validation opportunities where applicable. |
-| [recommendations.md](recommendations.md) | Converts findings into concrete documentation actions. |
-
-## Recommended transformation
-
-- Create an API workspace lifecycle model.
-- Map editor state to reader/developer behavior.
-- Add import validation and access-state matrices.
-
-## Outcome
-
-The target outcome is not more documentation. The target outcome is less reconstruction.
-
-A reader should be able to predict:
-
-- which actor can perform the action;
-- which state the object enters;
-- which exception path applies;
-- which downstream effect occurs;
-- which page explains the behavior;
-- which evidence supports the rule.
+Do not add raw internal evidence unless sanitized.

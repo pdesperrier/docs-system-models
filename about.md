@@ -1,61 +1,31 @@
-# About
+# About This Portfolio
 
-I work on documentation architecture for complex product systems.
+This portfolio demonstrates a documentation architecture approach based on behavioral reconstructibility.
 
-My focus is not only writing clearer pages. It is making product behavior, dependencies, conditions, and workflows explicit.
+The goal is not to rewrite documentation into a smoother narrative.
 
-## Core problem
+The goal is to show where documented behavior can or cannot be reconstructed from available evidence.
 
-In complex SaaS and API products, documentation often becomes fragmented:
+## Method
 
-- one page explains the concept
-- another page explains the workflow
-- another page lists API statuses
-- another page describes webhooks
-- another page contains exceptions
-- another page explains permissions or roles
+Each case is derived from a reconstructive audit that preserves:
 
-Each page can be correct in isolation.
-
-The user still has to reconstruct the behavior of the system.
-
-## What I do
-
-I identify where that reconstruction happens, then turn implicit relationships into explicit documentation structures.
-
-Typical outputs:
-
-- friction audits
-- behavior matrices
-- role/action models
-- state transition models
-- before/after documentation examples
-- workflow documentation redesigns
-- documentation architecture recommendations
-
-## Working model
-
-```text
-friction → behavior model → documentation transformation
-```
+- local truth
+- contradictions
+- divergences
+- irreconcilability
+- branch fragmentation
+- observability limits
+- uncertainty gradients
+- causal asymmetry
 
 ## Value
 
-This approach helps teams reduce:
+The portfolio shows how documentation can expose:
 
-- ambiguity
-- onboarding friction
-- support dependency
-- inconsistent explanations
-- duplicated documentation
-- undocumented edge cases
-
-## Best-fit contexts
-
-- SaaS platforms
-- API products
-- developer tools
-- fintech workflows
-- multi-role products
-- integration-heavy products
-- products with complex status, permission, or lifecycle behavior
+- hidden dependencies
+- ambiguous lifecycle states
+- cross-surface behavior drift
+- unclear permissions
+- fragile mental models
+- operational reconstruction burden
