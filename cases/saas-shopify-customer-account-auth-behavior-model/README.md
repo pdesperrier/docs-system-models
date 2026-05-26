@@ -1,16 +1,22 @@
-# Saas Shopify Customer Account Auth Behavior Model
+# SaaS Shopify Customer Account Auth Behavior Model
 
 ## Portfolio case status
 
-- Status: draft
-- Source audit status: pending / partial / validated
-- Public-safe: to validate
-- Domain: SaaS
-- Focus: customer account authentication behavior
+- Status: warm backlog skeleton
+- Source audit status: partial
+- Public-safe: not publishable
+- Domain: SaaS / Commerce
+- Focus: Customer Account API authentication and legacy customer access token boundary
+
+## Current use
+
+This folder is a warm backlog skeleton.
+
+It must not be presented as an analyzed portfolio case until evidence has been collected, validated, and reduced into a portfolio-safe narrative.
 
 ## Purpose
 
-This case demonstrates behavioral reconstructibility analysis applied to customer account authentication behavior.
+This case demonstrates behavioral reconstructibility analysis applied to customer account authentication, identity-provider session behavior, legacy token creation, and token expiration behavior.
 
 It does not present a single stabilized workflow.
 
@@ -22,6 +28,10 @@ It preserves:
 - observability limits
 - conflict classes
 - reconstructive burden
+
+## Exact scope
+
+How Shopify Customer Account API authentication differs from legacy Storefront CustomerAccessToken behavior.
 
 ## Case files
 

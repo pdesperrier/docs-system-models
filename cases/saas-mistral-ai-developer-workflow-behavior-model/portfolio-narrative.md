@@ -1,21 +1,28 @@
-# Portfolio Narrative — Saas Mistral AI Developer Workflow Behavior Model
+# Portfolio Narrative — SaaS Mistral AI Developer Workflow Behavior Model
 
 ## Public narrative
 
-This case examines how documented behavior around developer workflow reconstructibility can become difficult to reconstruct when evidence is distributed across multiple documentation surfaces.
+Mistral AI Libraries expose a focused reconstruction problem around RAG setup: documents are uploaded to a Library, processing status can be checked, the documented status moves from Running to Completed, and document search can retrieve relevant passages for grounded answers. The case remains a warm backlog skeleton until failure paths, retry behavior, indexing guarantees, and access boundaries are validated.
 
 The analysis does not force a single workflow.
 
-It preserves branch-local interpretations and identifies where additional validation is required.
+It separates reconstructible behavior from not-yet-reconstructible behavior and keeps unresolved gaps visible.
 
 ## What this demonstrates
 
-- ability to detect hidden documentation dependencies
-- ability to preserve incompatible interpretations
-- ability to distinguish ambiguity from irreconcilability
-- ability to translate technical fragmentation into operational risk
+- ability to analyze behavioral documentation
+- ability to make dependency visibility explicit
+- ability to preserve unresolved operational gaps
+- ability to separate documented behavior from inferred behavior
+- ability to translate documentation fragmentation into reconstruction effort
 - ability to produce evidence-safe portfolio material
 
 ## Short version
 
-[Write a concise public-facing version after the internal audit is complete.]
+Mistral AI Developer Workflow Behavior Model examines how a narrow documented behavior becomes harder to reconstruct when the relevant evidence is distributed across several documentation surfaces.
+
+## Offer connection
+
+Primary offer: AI-Ready Documentation Audit.
+
+Secondary offer: Reconstructibility Audit Sprint.

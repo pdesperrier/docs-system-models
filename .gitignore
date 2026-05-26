@@ -16,3 +16,10 @@ Thumbs.db
 # Temp
 *.log
 *.tmp
+
+# Git working artifacts
+*.patch
+*status*.txt
+
+# Local archive
+_archive/

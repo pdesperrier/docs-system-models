@@ -1,21 +1,23 @@
-# Portfolio Narrative — Saas Atlassian Extension Runtime Behavior Model
+# Portfolio Narrative — SaaS Atlassian Forge Extension Runtime Behavior Model
 
 ## Public narrative
 
-This case examines how documented behavior around extension runtime behavior can become difficult to reconstruct when evidence is distributed across multiple documentation surfaces.
+This candidate case examines how Atlassian Forge extension behavior becomes harder to reconstruct when manifest declarations, module behavior, permission scopes, runtime egress, app context trust, remote invocation contracts, event delivery, and rolling release permission states are documented across separate surfaces.
 
-The analysis does not force a single workflow.
+The case is not ready for publication.
 
-It preserves branch-local interpretations and identifies where additional validation is required.
+It is kept as a cold backlog skeleton because it has strong potential for behavioral documentation analysis once the scope is reduced to one runtime boundary.
 
 ## What this demonstrates
 
-- ability to detect hidden documentation dependencies
-- ability to preserve incompatible interpretations
-- ability to distinguish ambiguity from irreconcilability
-- ability to translate technical fragmentation into operational risk
-- ability to produce evidence-safe portfolio material
+- ability to identify candidate behavioral documentation cases
+- ability to make dependency visibility explicit before analysis
+- ability to separate configuration, permission, invocation, and runtime boundaries
+- ability to preserve not-yet-reconstructible behavior
+- ability to avoid presenting candidate evidence as validated proof
 
 ## Short version
 
-[Write a concise public-facing version after the internal audit is complete.]
+This candidate case shows how Forge runtime behavior depends on manifest-declared modules, permissions, egress, context trust, event scopes, and permission states.
+
+It should only become a portfolio case after one narrow runtime boundary is selected and validated.

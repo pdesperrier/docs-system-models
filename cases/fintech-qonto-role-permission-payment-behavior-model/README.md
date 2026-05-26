@@ -2,15 +2,21 @@
 
 ## Portfolio case status
 
-- Status: draft
-- Source audit status: pending / partial / validated
-- Public-safe: to validate
+- Status: fallback case skeleton
+- Source audit status: partial
+- Public-safe: not publishable
 - Domain: Fintech
-- Focus: role, permission, and payment behavior
+- Focus: role-driven request visibility and payment-request action boundaries
+
+## Current use
+
+This folder is a fallback case skeleton.
+
+It must not be presented as an analyzed portfolio case until evidence has been collected, validated, and reduced into a portfolio-safe narrative.
 
 ## Purpose
 
-This case demonstrates behavioral reconstructibility analysis applied to role, permission, and payment behavior.
+This case demonstrates behavioral reconstructibility analysis applied to role, permission, request visibility, and payment-request behavior.
 
 It does not present a single stabilized workflow.
 
@@ -23,9 +29,14 @@ It preserves:
 - conflict classes
 - reconstructive burden
 
+## Exact scope
+
+How Qonto role and plan conditions determine request visibility and payment-request action boundaries across API and support documentation.
+
 ## Case files
 
 - `case-brief.md`
+- `fallback-framing.md`
 - `reconstructive-scope.md`
 - `evidence-snapshot.md`
 - `branch-summary.md`

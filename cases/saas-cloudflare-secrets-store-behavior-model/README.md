@@ -1,16 +1,16 @@
-# Saas Cloudflare Secrets Store Behavior Model
+# SaaS Cloudflare Secrets Store Behavior Model
 
 ## Portfolio case status
 
 - Status: draft
-- Source audit status: pending / partial / validated
+- Source audit status: partial
 - Public-safe: to validate
 - Domain: SaaS
-- Focus: secrets storage behavior and cross-surface documentation
+- Focus: role-based secret creation, Worker binding, and runtime access behavior
 
 ## Purpose
 
-This case demonstrates behavioral reconstructibility analysis applied to secrets storage behavior and cross-surface documentation.
+This case demonstrates behavioral reconstructibility analysis applied to Cloudflare Secrets Store documentation.
 
 It does not present a single stabilized workflow.
 
@@ -26,6 +26,7 @@ It preserves:
 ## Case files
 
 - `case-brief.md`
+- `case-framing.md`
 - `reconstructive-scope.md`
 - `evidence-snapshot.md`
 - `branch-summary.md`
@@ -38,3 +39,7 @@ It preserves:
 ## Rule
 
 Do not add raw internal evidence unless sanitized.
+
+Do not convert missing behavior into documented behavior.
+
+Do not publish this case before the public-safe version is validated.

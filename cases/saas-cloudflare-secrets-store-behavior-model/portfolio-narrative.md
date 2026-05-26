@@ -1,21 +1,44 @@
-# Portfolio Narrative — Saas Cloudflare Secrets Store Behavior Model
+# Portfolio Narrative: Cloudflare Secrets Store Behavior Model
 
 ## Public narrative
 
-This case examines how documented behavior around secrets storage behavior and cross-surface documentation can become difficult to reconstruct when evidence is distributed across multiple documentation surfaces.
+This case examines how Cloudflare Secrets Store behavior becomes harder to reconstruct when secret creation, role permissions, Worker binding, runtime access, local development limits, and audit visibility are documented across separate surfaces.
 
 The analysis does not force a single workflow.
 
-It preserves branch-local interpretations and identifies where additional validation is required.
+It separates what is reconstructible from what remains not-yet-reconstructible: role failure paths, binding traceability, runtime error behavior, UI/API divergence, and update propagation.
 
 ## What this demonstrates
 
-- ability to detect hidden documentation dependencies
-- ability to preserve incompatible interpretations
-- ability to distinguish ambiguity from irreconcilability
-- ability to translate technical fragmentation into operational risk
-- ability to produce evidence-safe portfolio material
+- ability to analyze behavioral documentation
+- ability to make dependency visibility explicit
+- ability to separate documented behavior from inferred behavior
+- ability to preserve unresolved operational gaps
+- ability to translate documentation fragmentation into reconstruction effort
+- ability to build public-safe proof without leaking raw or speculative material
 
 ## Short version
 
-[Write a concise public-facing version after the internal audit is complete.]
+This case shows how role permissions, secret binding, and runtime access can be individually documented while still forcing the reader to reconstruct the operational chain.
+
+## Offer connection
+
+This case supports a Reconstructibility Audit Sprint.
+
+The audit would turn a distributed permission and runtime workflow into a behavior matrix, dependency visibility map, and evidence-safe findings summary.
+
+## Audience
+
+Primary audience:
+
+- documentation leaders
+- developer experience teams
+- product operations teams
+- support operations teams
+- AI documentation owners
+
+## Publication boundary
+
+This narrative is not yet a final public case study.
+
+It can be reused after source validation, evidence cleanup, and public-safe review.

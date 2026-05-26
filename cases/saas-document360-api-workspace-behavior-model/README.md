@@ -1,16 +1,22 @@
-# Saas Document360 API Workspace Behavior Model
+# SaaS Document360 API Workspace Behavior Model
 
 ## Portfolio case status
 
-- Status: draft
-- Source audit status: pending / partial / validated
-- Public-safe: to validate
+- Status: cold backlog skeleton
+- Source audit status: partial
+- Public-safe: not publishable
 - Domain: SaaS
-- Focus: API workspace behavior and knowledge architecture
+- Focus: API workspace creation, import, regeneration, and interactive reference behavior
+
+## Current use
+
+This folder is a cold backlog skeleton.
+
+It must not be presented as an analyzed portfolio case until evidence has been collected, validated, and reduced into a portfolio-safe narrative.
 
 ## Purpose
 
-This case demonstrates behavioral reconstructibility analysis applied to API workspace behavior and knowledge architecture.
+This case demonstrates behavioral reconstructibility analysis applied to API workspace, specification import, reference generation, regeneration, warning handling, and interactive API reference behavior.
 
 It does not present a single stabilized workflow.
 
@@ -22,6 +28,10 @@ It preserves:
 - observability limits
 - conflict classes
 - reconstructive burden
+
+## Exact scope
+
+How Document360 turns an API specification file, URL, or CI/CD flow into an API reference and how warnings, regeneration, workspace separation, and interactive behavior affect documentation operations.
 
 ## Case files
 

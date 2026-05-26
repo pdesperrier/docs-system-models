@@ -1,21 +1,28 @@
-# Portfolio Narrative — Saas Shopify Customer Account Auth Behavior Model
+# Portfolio Narrative — SaaS Shopify Customer Account Auth Behavior Model
 
 ## Public narrative
 
-This case examines how documented behavior around customer account authentication behavior can become difficult to reconstruct when evidence is distributed across multiple documentation surfaces.
+Shopify exposes a focused reconstruction problem around customer account authentication. Customer Account API documentation describes a newer authentication system for customer-scoped data and authenticated actions. Customer authentication documentation routes new accounts through an identity provider and states that legacy Multipass or Storefront token flows do not support new customer accounts. Storefront API documentation marks CustomerAccessToken behavior as legacy-only, with expiration and renewal behavior. The case remains a warm backlog skeleton until exchange flows, migration paths, and failure states are validated.
 
 The analysis does not force a single workflow.
 
-It preserves branch-local interpretations and identifies where additional validation is required.
+It separates reconstructible behavior from not-yet-reconstructible behavior and keeps unresolved gaps visible.
 
 ## What this demonstrates
 
-- ability to detect hidden documentation dependencies
-- ability to preserve incompatible interpretations
-- ability to distinguish ambiguity from irreconcilability
-- ability to translate technical fragmentation into operational risk
+- ability to analyze behavioral documentation
+- ability to make dependency visibility explicit
+- ability to preserve unresolved operational gaps
+- ability to separate documented behavior from inferred behavior
+- ability to translate documentation fragmentation into reconstruction effort
 - ability to produce evidence-safe portfolio material
 
 ## Short version
 
-[Write a concise public-facing version after the internal audit is complete.]
+Shopify Customer Account Auth Behavior Model examines how a narrow documented behavior becomes harder to reconstruct when the relevant evidence is distributed across several documentation surfaces.
+
+## Offer connection
+
+Primary offer: Reconstructibility Audit Sprint.
+
+Secondary offer: Documentation Topology Assessment.

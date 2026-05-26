@@ -1,21 +1,20 @@
-# Reconstructive Scope — Saas Mistral AI Developer Workflow Behavior Model
+# Reconstructive Scope — SaaS Mistral AI Developer Workflow Behavior Model
 
 ## Included scopes
 
 | Scope | Included? | Notes |
 |---|---|---|
-| API reference | TBD |  |
-| UI documentation | TBD |  |
-| Support documentation | TBD |  |
-| FAQ | TBD |  |
-| Release notes | TBD |  |
-| Error messages | TBD |  |
-| Webhooks | TBD |  |
+| API and workflow documentation | Yes | Source: Libraries. Defines Library behavior, document status checks, and processing status examples. |
+| Developer quickstart | Yes | Source: Set up RAG with document search. Defines a developer path from Library/document setup to retrieval-grounded chat completion. |
 
 ## Excluded scopes
 
 | Scope | Reason |
 |---|---|
+| Full Mistral platform workflow | Too broad. |
+| Model answer quality evaluation | Outside documentation behavior scope. |
+| OCR and multimodal ingestion | Adjacent, separate case. |
+| Enterprise access policy behavior | Requires deeper source validation. |
 
 ## Scope-locking rule
 
