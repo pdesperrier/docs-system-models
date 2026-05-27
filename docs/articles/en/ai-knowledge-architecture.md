@@ -7,7 +7,14 @@ portfolio_role: AI article
 
 # AI Knowledge Architecture
 
-![Structured documentation connecting fragmented knowledge to AI-assisted understanding](../../assets/articles/ai-knowledge-architecture/cover.png)
+<img
+  src="../../../assets/articles/ai-knowledge-architecture/cover.webp"
+  alt="Structured documentation connecting fragmented knowledge to AI-assisted understanding"
+  loading="lazy"
+  width="1280"
+  height="720"
+  style="width: 100%; height: auto;"
+/>
 
 ## Why AI systems need documentation that exposes behavior
 

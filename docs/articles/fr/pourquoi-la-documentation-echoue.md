@@ -7,7 +7,14 @@ portfolio_role: Article de diagnostic
 
 # Pourquoi la documentation échoue
 
-![Fragments documentaires dispersés obligeant l’utilisateur à reconstituer le comportement produit](../../assets/articles/why-documentation-fails/cover.png)
+<img
+  src="../../../assets/articles/why-documentation-fails/cover.webp"
+  alt="Fragments documentaires dispersés obligeant l’utilisateur à reconstituer le comportement produit"
+  loading="lazy"
+  width="1280"
+  height="720"
+  style="width: 100%; height: auto;"
+/>
 
 ## Ce que révèlent les offres d’emploi, les retours utilisateurs et les documentations de produits complexes
 

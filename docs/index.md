@@ -12,8 +12,8 @@ This portfolio documents how complex product behavior can be made easier to reas
 
 <table>
   <colgroup>
-    <col style="width: 15%; min-width: 10rem;">
-    <col style="width: 85%;">
+    <col style="width: 38%; min-width: 16rem;">
+    <col style="width: 62%;">
   </colgroup>
   <thead>
     <tr>

@@ -7,7 +7,14 @@ portfolio_role: Conceptual article
 
 # Designing for Mental Models
 
-![Scattered product signals becoming a structured mental model of the system](../../assets/articles/designing-for-mental-models/cover.png)
+<img
+  src="../../../assets/articles/designing-for-mental-models/cover.webp"
+  alt="Scattered product signals becoming a structured mental model of the system"
+  loading="lazy"
+  width="1280"
+  height="720"
+  style="width: 100%; height: auto;"
+/>
 
 ## Why understanding drives product adoption
 

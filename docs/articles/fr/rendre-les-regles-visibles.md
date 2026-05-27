@@ -7,7 +7,14 @@ portfolio_role: Article méthodologique
 
 # Rendre les règles visibles
 
-![Règles produit rendues visibles au point de décision](../../assets/articles/making-rules-visible/cover.png)
+<img
+  src="../../../assets/articles/making-rules-visible/cover.webp"
+  alt="Règles produit rendues visibles au point de décision"
+  loading="lazy"
+  width="1280"
+  height="720"
+  style="width: 100%; height: auto;"
+/>
 
 ## Pourquoi les utilisateurs reconstruisent ce que le produit n’explicite pas
 

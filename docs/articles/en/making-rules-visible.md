@@ -7,7 +7,14 @@ portfolio_role: Method article
 
 # Making Rules Visible
 
-![Product rules becoming visible as actions, effects, conditions, and exceptions](../../assets/articles/making-rules-visible/cover.png)
+<img
+  src="../../../assets/articles/making-rules-visible/cover.webp"
+  alt="Product rules becoming visible as actions, effects, conditions, and exceptions"
+  loading="lazy"
+  width="1280"
+  height="720"
+  style="width: 100%; height: auto;"
+/>
 
 ## Why users reconstruct what the product does not make explicit
 

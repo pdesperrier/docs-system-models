@@ -7,7 +7,14 @@ portfolio_role: Diagnostic article
 
 # Why Documentation Fails
 
-![Fragmented documentation paths forcing users to reconstruct product behavior](../../assets/articles/why-documentation-fails/cover.png)
+<img
+  src="../../../assets/articles/why-documentation-fails/cover.webp"
+  alt="Fragmented documentation paths forcing users to reconstruct product behavior"
+  loading="lazy"
+  width="1280"
+  height="720"
+  style="width: 100%; height: auto;"
+/>
 
 ## What job postings, user issues, and product documentation reveal about complex SaaS systems
 

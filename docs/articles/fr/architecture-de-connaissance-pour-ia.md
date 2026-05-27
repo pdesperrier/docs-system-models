@@ -7,7 +7,14 @@ portfolio_role: Article IA
 
 # Architecture de connaissance pour l’IA
 
-![Architecture de connaissance reliant les sources documentaires aux réponses IA](../../assets/articles/ai-knowledge-architecture/cover.png)
+<img
+  src="../../../assets/articles/ai-knowledge-architecture/cover.webp"
+  alt="Architecture de connaissance reliant les sources documentaires aux réponses IA"
+  loading="lazy"
+  width="1280"
+  height="720"
+  style="width: 100%; height: auto;"
+/>
 
 ## Pourquoi les systèmes IA ont besoin d’une documentation qui expose les comportements
 

@@ -7,7 +7,14 @@ portfolio_role: Article conceptuel
 
 # Concevoir pour les modèles mentaux
 
-![Modèle mental structuré à partir de fragments d’information dispersés](../../assets/articles/designing-for-mental-models/cover.png)
+<img
+  src="../../../assets/articles/designing-for-mental-models/cover.webp"
+  alt="Modèle mental structuré à partir de fragments d’information dispersés"
+  loading="lazy"
+  width="1280"
+  height="720"
+  style="width: 100%; height: auto;"
+/>
 
 ## Pourquoi la compréhension détermine l’adoption produit
 
