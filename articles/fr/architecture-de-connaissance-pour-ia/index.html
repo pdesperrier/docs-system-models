@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Patrick Desperrier">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Architecture de connaissance pour l’IA - Documentation System Models</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Documentation System Models</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cases</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../cases/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-document360-api-workspace-behavior-model/" class="dropdown-item">Document360 API Workspace</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-cloudflare-secrets-store-behavior-model/" class="dropdown-item">Cloudflare Secrets Store</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/fintech-qonto-role-permission-payment-behavior-model/" class="dropdown-item">Qonto Role Permission Payment</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-shopify-customer-account-auth-behavior-model/" class="dropdown-item">Shopify Customer Account Auth</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-mistral-ai-developer-workflow-behavior-model/" class="dropdown-item">Mistral AI Developer Workflow</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-atlassian-extension-runtime-behavior-model/" class="dropdown-item">Atlassian Extension Runtime</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Methods</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../methods/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/behavioral-reconstructibility-audit/" class="dropdown-item">Behavioral Reconstructibility Audit</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/evidence-lineage-method/" class="dropdown-item">Evidence Lineage Method</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/reconstructive-burden/" class="dropdown-item">Reconstructive Burden</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/topology-preserving-documentation-analysis/" class="dropdown-item">Topology-Preserving Documentation Analysis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Offers</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../offers/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../offers/reconstructibility-audit-sprint/" class="dropdown-item">Reconstructibility Audit Sprint</a>
+</li>
+                                    
+<li>
+    <a href="../../../offers/documentation-topology-assessment/" class="dropdown-item">Documentation Topology Assessment</a>
+</li>
+                                    
+<li>
+    <a href="../../../offers/behavioral-debt-map/" class="dropdown-item">Behavioral Debt Map</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Articles</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">English</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../en/making-rules-visible/" class="dropdown-item">Making Rules Visible</a>
+</li>
+            
+<li>
+    <a href="../../en/why-documentation-fails/" class="dropdown-item">Why Documentation Fails</a>
+</li>
+            
+<li>
+    <a href="../../en/designing-for-mental-models/" class="dropdown-item">Designing for Mental Models</a>
+</li>
+            
+<li>
+    <a href="../../en/ai-knowledge-architecture/" class="dropdown-item">AI Knowledge Architecture</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Français</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../rendre-les-regles-visibles/" class="dropdown-item">Rendre les règles visibles</a>
+</li>
+            
+<li>
+    <a href="../pourquoi-la-documentation-echoue/" class="dropdown-item">Pourquoi la documentation échoue</a>
+</li>
+            
+<li>
+    <a href="../concevoir-pour-les-modeles-mentaux/" class="dropdown-item">Concevoir pour les modèles mentaux</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Architecture de connaissance pour l’IA</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../concevoir-pour-les-modeles-mentaux/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#architecture-de-connaissance-pour-lia" class="nav-link">Architecture de connaissance pour l’IA</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#pourquoi-les-systemes-ia-ont-besoin-dune-documentation-qui-expose-les-comportements" class="nav-link">Pourquoi les systèmes IA ont besoin d’une documentation qui expose les comportements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#la-documentation-nest-pas-seulement-du-contenu-dans-les-contextes-ia" class="nav-link">La documentation n’est pas seulement du contenu dans les contextes IA</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#le-risque-central-reconstruction-fluide" class="nav-link">Le risque central : reconstruction fluide</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#du-referentiel-de-contenu-a-larchitecture-de-connaissance" class="nav-link">Du référentiel de contenu à l’architecture de connaissance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#la-documentation-comportementale-comme-substrat-ia" class="nav-link">La documentation comportementale comme substrat IA</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#le-role-de-la-visibilite-des-dependances" class="nav-link">Le rôle de la visibilité des dépendances</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#le-role-de-la-terminologie" class="nav-link">Le rôle de la terminologie</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#le-role-de-la-tracabilite-des-sources" class="nav-link">Le rôle de la traçabilité des sources</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fonction-dans-le-portfolio" class="nav-link">Fonction dans le portfolio</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="architecture-de-connaissance-pour-lia">Architecture de connaissance pour l’IA</h1>
+<p><img alt="Architecture de connaissance reliant les sources documentaires aux réponses IA" src="../../../assets/articles/ai-knowledge-architecture/cover.png" /></p>
+<h2 id="pourquoi-les-systemes-ia-ont-besoin-dune-documentation-qui-expose-les-comportements">Pourquoi les systèmes IA ont besoin d’une documentation qui expose les comportements</h2>
+<p>Les systèmes IA ne créent pas la clarté produit.</p>
+<p>Ils en dépendent.</p>
+<p>Un chatbot, un copilote, un système RAG ou un assistant interne ne comprend pas un produit comme un expert produit le comprend. Il reconstruit des réponses à partir de la connaissance qu’il peut récupérer, de la structure qu’il peut parcourir et des motifs linguistiques disponibles.</p>
+<p>Si la connaissance disponible est fragmentée, incohérente ou incomplète au niveau comportemental, le système IA hérite de cette faiblesse.</p>
+<p>Il peut répondre avec fluidité tout en conservant l’ambiguïté.</p>
+<p>C’est pourquoi l’architecture de connaissance pour l’IA devient un problème documentaire, pas seulement un problème d’outillage IA.</p>
+<h2 id="la-documentation-nest-pas-seulement-du-contenu-dans-les-contextes-ia">La documentation n’est pas seulement du contenu dans les contextes IA</h2>
+<p>La documentation traditionnelle est encore souvent traitée comme un livrable.</p>
+<p>Une release a lieu. Une fonctionnalité sort. Une page est mise à jour. Un guide est ajouté. Un article support est créé.</p>
+<p>Ce modèle est déjà fragile pour les humains.</p>
+<p>Il devient plus fragile pour les systèmes IA.</p>
+<p>La récupération IA n’a pas seulement besoin de contenu. Elle a besoin d’une connaissance structurée qui préserve :</p>
+<ul>
+<li>concepts stables ;</li>
+<li>comportements explicites ;</li>
+<li>dépendances visibles ;</li>
+<li>conditions cartographiées ;</li>
+<li>exceptions documentées ;</li>
+<li>traçabilité des sources ;</li>
+<li>terminologie cohérente entre surfaces.</li>
+</ul>
+<p>Sans cette structure, les systèmes IA récupèrent des fragments plutôt que des modèles opérationnels.</p>
+<h2 id="le-risque-central-reconstruction-fluide">Le risque central : reconstruction fluide</h2>
+<p>Les utilisateurs humains reconstruisent souvent le comportement produit manuellement.</p>
+<p>Ils passent entre articles d’aide, libellés d’interface, références API, notes de version, posts communautaires et réponses support jusqu’à obtenir un modèle utilisable.</p>
+<p>Les systèmes IA peuvent automatiser une partie de cette reconstruction.</p>
+<p>Cela ne signifie pas que la reconstruction est correcte.</p>
+<p>Le risque n’est pas seulement l’hallucination. Le risque plus profond est la reconstruction fluide depuis une connaissance instable.</p>
+<p>Une réponse IA peut être grammaticalement propre, confiante et localement appuyée tout en échouant à exposer le comportement réel du système.</p>
+<p>Cela se produit lorsque les sources contiennent :</p>
+<table>
+<thead>
+<tr>
+<th>Faiblesse source</th>
+<th>Mode d’échec IA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Règles fragmentées</td>
+<td>La réponse fusionne des règles partielles sans montrer leurs limites</td>
+</tr>
+<tr>
+<td>Terminologie divergente</td>
+<td>La réponse traite des termes différents comme équivalents</td>
+</tr>
+<tr>
+<td>Dépendances implicites</td>
+<td>La réponse omet la condition qui change le résultat</td>
+</tr>
+<tr>
+<td>Exceptions manquantes</td>
+<td>La réponse généralise abusivement le cas par défaut</td>
+</tr>
+<tr>
+<td>Décalage entre surfaces</td>
+<td>La réponse suit la documentation alors que l’interface ou l’API se comporte autrement</td>
+</tr>
+<tr>
+<td>Absence de traçabilité</td>
+<td>La réponse ne peut pas montrer quelle règle soutient quelle affirmation</td>
+</tr>
+</tbody>
+</table>
+<p>L’IA ne supprime pas le besoin de discipline documentaire. Elle augmente le coût de son absence.</p>
+<h2 id="du-referentiel-de-contenu-a-larchitecture-de-connaissance">Du référentiel de contenu à l’architecture de connaissance</h2>
+<p>Un référentiel de contenu stocke des pages.</p>
+<p>Une architecture de connaissance pour l’IA structure les relations qui permettent de fonder les réponses.</p>
+<p>La différence est opérationnelle.</p>
+<table>
+<thead>
+<tr>
+<th>Référentiel de contenu</th>
+<th>Architecture de connaissance pour l’IA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organise les articles par sujet</td>
+<td>Organise la connaissance par concepts, comportements, états et dépendances</td>
+</tr>
+<tr>
+<td>Optimise la navigation humaine</td>
+<td>Optimise la récupération, le grounding et le soutien au raisonnement</td>
+</tr>
+<tr>
+<td>Tolère une correction locale</td>
+<td>Exige une cohérence entre surfaces</td>
+</tr>
+<tr>
+<td>Accepte le contexte implicite</td>
+<td>Exige conditions et exceptions explicites</td>
+</tr>
+<tr>
+<td>Traite la terminologie comme du wording</td>
+<td>Traite la terminologie comme une couche de contrôle</td>
+</tr>
+</tbody>
+</table>
+<p>Ce déplacement ne remplace pas le travail documentaire. Il en modifie le centre de gravité.</p>
+<p>La question centrale n’est plus seulement de savoir si un article existe.</p>
+<p>Le point critique est de savoir si le comportement système peut être récupéré, comparé et tracé de manière fiable.</p>
+<h2 id="la-documentation-comportementale-comme-substrat-ia">La documentation comportementale comme substrat IA</h2>
+<p>La documentation comportementale fournit un meilleur substrat aux systèmes IA parce qu’elle documente comment le système se comporte, pas seulement ce que les pages disent.</p>
+<p>Elle rend explicite :</p>
+<pre><code class="language-text">objet -&gt; état -&gt; action -&gt; effet -&gt; condition -&gt; dépendance -&gt; exception -&gt; source
+</code></pre>
+<p>Cette structure soutient à la fois le raisonnement humain et la récupération machine.</p>
+<p>Pour les humains, elle réduit l’effort de reconstruction.</p>
+<p>Pour les systèmes IA, elle réduit l’ambiguïté du grounding.</p>
+<p>Un assistant support interrogé sur un workflow échoué a besoin de plus qu’une réponse procédurale. Il doit connaître les conditions qui affectent le workflow, les dépendances qui changent le résultat, les exceptions applicables et la source qui soutient la réponse.</p>
+<p>Un copilote produit interrogé sur un paramètre a besoin de plus qu’une définition. Il doit connaître les comportements modifiés par ce paramètre et les surfaces qui décrivent ces comportements.</p>
+<p>Un assistant développeur interrogé sur une API a besoin de plus que la syntaxe d’un endpoint. Il doit disposer des états documentés, conditions d’erreur, comportements de propagation et limites de version.</p>
+<h2 id="le-role-de-la-visibilite-des-dependances">Le rôle de la visibilité des dépendances</h2>
+<p>Les systèmes IA sont particulièrement vulnérables à l’opacité des dépendances.</p>
+<p>Une dépendance peut être évidente pour les équipes produit et invisible dans la documentation.</p>
+<p>Exemples :</p>
+<table>
+<thead>
+<tr>
+<th>Type de dépendance</th>
+<th>Échec si non documentée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dépendance au plan</td>
+<td>L’IA suggère une fonctionnalité indisponible pour l’utilisateur</td>
+</tr>
+<tr>
+<td>Dépendance au rôle</td>
+<td>L’IA recommande une action que l’utilisateur ne peut pas effectuer</td>
+</tr>
+<tr>
+<td>Dépendance régionale</td>
+<td>L’IA donne une réponse invalide dans la juridiction de l’utilisateur</td>
+</tr>
+<tr>
+<td>Dépendance à l’état</td>
+<td>L’IA explique le chemin par défaut alors que le compte est dans un état d’exception</td>
+</tr>
+<tr>
+<td>Dépendance d’intégration</td>
+<td>L’IA ignore le workflow en aval affecté par un changement de paramètre</td>
+</tr>
+<tr>
+<td>Dépendance de version</td>
+<td>L’IA mélange ancien et nouveau comportement</td>
+</tr>
+</tbody>
+</table>
+<p>La visibilité des dépendances n’est pas un sujet documentaire secondaire dans les contextes IA. C’est une exigence de grounding.</p>
+<h2 id="le-role-de-la-terminologie">Le rôle de la terminologie</h2>
+<p>Les systèmes IA sont sensibles à la dérive terminologique.</p>
+<p>Quand un même concept possède plusieurs noms, la récupération se fragmente. Quand un même nom décrit des comportements différents, la récupération généralise abusivement.</p>
+<p>Cela fait de la couche d’alignement terminologique une couche de contrôle pour l’architecture de connaissance pour l’IA.</p>
+<p>Elle doit définir :</p>
+<ul>
+<li>noms canoniques des objets, rôles, états, actions et workflows ;</li>
+<li>termes obsolètes ou hérités ;</li>
+<li>quasi-synonymes qui ne sont pas équivalents comportementalement ;</li>
+<li>significations contextuelles d’un même libellé ;</li>
+<li>liens entre libellés d’interface, noms API, termes support et termes documentaires.</li>
+</ul>
+<p>Ce n’est pas une finition éditoriale.</p>
+<p>C’est une hygiène de récupération.</p>
+<h2 id="le-role-de-la-tracabilite-des-sources">Le rôle de la traçabilité des sources</h2>
+<p>Les systèmes IA ont aussi besoin de traçabilité.</p>
+<p>Une réponse utile ne doit pas seulement énoncer une règle. Elle doit préserver le lien entre affirmation et source.</p>
+<p>La traçabilité des sources compte parce que le comportement produit change.</p>
+<p>Une règle peut être valide pour un plan, une version, une région, une interface, un endpoint API ou une plage de dates.</p>
+<p>Sans traçabilité, une réponse IA devient difficile à auditer.</p>
+<p>Une architecture de connaissance fiable exige donc :</p>
+<table>
+<thead>
+<tr>
+<th>Élément de traçabilité</th>
+<th>Fonction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Page ou objet source</td>
+<td>Identifie l’origine de la règle</td>
+</tr>
+<tr>
+<td>Date de dernière revue</td>
+<td>Indique le risque de fraîcheur</td>
+</tr>
+<tr>
+<td>Périmètre comportemental</td>
+<td>Définit où la règle s’applique</td>
+</tr>
+<tr>
+<td>Périmètre de version ou de plan</td>
+<td>Empêche la généralisation abusive</td>
+</tr>
+<tr>
+<td>Dépendances liées</td>
+<td>Montre ce qui peut changer la réponse</td>
+</tr>
+<tr>
+<td>Liens vers exceptions</td>
+<td>Empêche les réponses limitées au chemin par défaut de devenir trompeuses</td>
+</tr>
+</tbody>
+</table>
+<p>La fiabilité IA commence avant le prompt. Elle commence dans la structure de la base de connaissance.</p>
+<h2 id="fonction-dans-le-portfolio">Fonction dans le portfolio</h2>
+<p>Cet article reformule le travail documentaire pour l’IA comme un problème d’architecture.</p>
+<p>L’implication pour le portfolio est directe.</p>
+<p>Un audit documentaire pour contexte IA ne doit pas seulement évaluer la qualité des articles. Il doit évaluer si la connaissance peut soutenir des réponses fondées.</p>
+<p>Un audit d’architecture de connaissance pour l’IA doit examiner :</p>
+<ul>
+<li>stabilité conceptuelle ;</li>
+<li>alignement terminologique ;</li>
+<li>visibilité des dépendances ;</li>
+<li>couverture des conditions et exceptions ;</li>
+<li>traçabilité des sources ;</li>
+<li>cohérence entre surfaces ;</li>
+<li>récupérabilité au niveau comportemental.</li>
+</ul>
+<p>L’objectif n’est pas de rendre la documentation plus intelligente en surface.</p>
+<p>L’objectif est de rendre le comportement système récupérable, comparable et auditable.</p>
+<p>L’IA ne remplace pas l’architecture documentaire.</p>
+<p>Elle révèle si cette architecture existe.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

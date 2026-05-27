@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Patrick Desperrier">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Pourquoi la documentation échoue - Documentation System Models</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Documentation System Models</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cases</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../cases/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-document360-api-workspace-behavior-model/" class="dropdown-item">Document360 API Workspace</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-cloudflare-secrets-store-behavior-model/" class="dropdown-item">Cloudflare Secrets Store</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/fintech-qonto-role-permission-payment-behavior-model/" class="dropdown-item">Qonto Role Permission Payment</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-shopify-customer-account-auth-behavior-model/" class="dropdown-item">Shopify Customer Account Auth</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-mistral-ai-developer-workflow-behavior-model/" class="dropdown-item">Mistral AI Developer Workflow</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-atlassian-extension-runtime-behavior-model/" class="dropdown-item">Atlassian Extension Runtime</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Methods</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../methods/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/behavioral-reconstructibility-audit/" class="dropdown-item">Behavioral Reconstructibility Audit</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/evidence-lineage-method/" class="dropdown-item">Evidence Lineage Method</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/reconstructive-burden/" class="dropdown-item">Reconstructive Burden</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/topology-preserving-documentation-analysis/" class="dropdown-item">Topology-Preserving Documentation Analysis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Offers</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../offers/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../offers/reconstructibility-audit-sprint/" class="dropdown-item">Reconstructibility Audit Sprint</a>
+</li>
+                                    
+<li>
+    <a href="../../../offers/documentation-topology-assessment/" class="dropdown-item">Documentation Topology Assessment</a>
+</li>
+                                    
+<li>
+    <a href="../../../offers/behavioral-debt-map/" class="dropdown-item">Behavioral Debt Map</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Articles</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">English</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../en/making-rules-visible/" class="dropdown-item">Making Rules Visible</a>
+</li>
+            
+<li>
+    <a href="../../en/why-documentation-fails/" class="dropdown-item">Why Documentation Fails</a>
+</li>
+            
+<li>
+    <a href="../../en/designing-for-mental-models/" class="dropdown-item">Designing for Mental Models</a>
+</li>
+            
+<li>
+    <a href="../../en/ai-knowledge-architecture/" class="dropdown-item">AI Knowledge Architecture</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Français</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../rendre-les-regles-visibles/" class="dropdown-item">Rendre les règles visibles</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Pourquoi la documentation échoue</a>
+</li>
+            
+<li>
+    <a href="../concevoir-pour-les-modeles-mentaux/" class="dropdown-item">Concevoir pour les modèles mentaux</a>
+</li>
+            
+<li>
+    <a href="../architecture-de-connaissance-pour-ia/" class="dropdown-item">Architecture de connaissance pour l’IA</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../rendre-les-regles-visibles/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../concevoir-pour-les-modeles-mentaux/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#pourquoi-la-documentation-echoue" class="nav-link">Pourquoi la documentation échoue</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#ce-que-revelent-les-offres-demploi-les-retours-utilisateurs-et-les-documentations-de-produits-complexes" class="nav-link">Ce que révèlent les offres d’emploi, les retours utilisateurs et les documentations de produits complexes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#observation-centrale" class="nav-link">Observation centrale</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mode-dechec-1-les-comportements-conditionnels-ne-sont-pas-exposes" class="nav-link">Mode d’échec 1 : les comportements conditionnels ne sont pas exposés</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mode-dechec-2-les-parcours-de-decision-sont-fragmentes" class="nav-link">Mode d’échec 2 : les parcours de décision sont fragmentés</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mode-dechec-3-une-documentation-lineaire-decrit-des-systemes-non-lineaires" class="nav-link">Mode d’échec 3 : une documentation linéaire décrit des systèmes non linéaires</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mode-dechec-4-le-comportement-nest-pas-explicite-entre-les-surfaces" class="nav-link">Mode d’échec 4 : le comportement n’est pas explicite entre les surfaces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#la-sequence-dechec-recurrente" class="nav-link">La séquence d’échec récurrente</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ce-que-les-entreprises-cherchent-reellement" class="nav-link">Ce que les entreprises cherchent réellement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#le-decalage-de-fond" class="nav-link">Le décalage de fond</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#reponse-documentaire" class="nav-link">Réponse documentaire</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#fonction-dans-le-portfolio" class="nav-link">Fonction dans le portfolio</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pourquoi-la-documentation-echoue">Pourquoi la documentation échoue</h1>
+<p><img alt="Fragments documentaires dispersés obligeant l’utilisateur à reconstituer le comportement produit" src="../../../assets/articles/why-documentation-fails/cover.png" /></p>
+<h2 id="ce-que-revelent-les-offres-demploi-les-retours-utilisateurs-et-les-documentations-de-produits-complexes">Ce que révèlent les offres d’emploi, les retours utilisateurs et les documentations de produits complexes</h2>
+<p>La plupart des entreprises ne manquent pas de documentation.</p>
+<p>Elles manquent de documentation qui rend le système lisible.</p>
+<p>Cet article s’appuie sur une revue exploratoire de trois types de sources collectées pendant le travail de portfolio :</p>
+<ul>
+<li>offres d’emploi pour des rôles de Senior Technical Writer, Documentation produit, Developer Education et Documentation Architect ;</li>
+<li>retours utilisateurs issus de GitHub, communautés développeurs et discussions orientées support ;</li>
+<li>échantillons de documentation publique dans des produits SaaS, API, fintech, santé et e-commerce.</li>
+</ul>
+<p>Le corpus n’est pas statistique. Il est diagnostique.</p>
+<p>Son objectif est d’identifier les endroits récurrents où la documentation échoue en pratique et de relier ces échecs aux profils que les entreprises cherchent à recruter.</p>
+<h2 id="observation-centrale">Observation centrale</h2>
+<p>Dans les sources examinées, le même pattern apparaît.</p>
+<p>Les utilisateurs ne bloquent pas principalement parce qu’aucune information n’existe.</p>
+<p>Ils bloquent parce que le comportement produit n’est pas assez explicite pour soutenir une compréhension opérationnelle.</p>
+<p>La documentation décrit des actions. Le produit fonctionne par états, conditions, dépendances, exceptions et transitions.</p>
+<p>Quand la documentation reflète une structure de pages plutôt qu’un comportement système, les utilisateurs doivent reconstituer le système eux-mêmes.</p>
+<h2 id="mode-dechec-1-les-comportements-conditionnels-ne-sont-pas-exposes">Mode d’échec 1 : les comportements conditionnels ne sont pas exposés</h2>
+<p>Beaucoup de produits se comportent différemment selon la configuration, le plan, le rôle, l’état du compte, la région, l’état de l’appareil, la configuration d’authentification ou une action antérieure.</p>
+<p>Cette logique existe dans le produit. Elle peut aussi exister quelque part dans la documentation. Mais elle n’est souvent pas exposée comme un tout.</p>
+<p>Exemple de pattern :</p>
+<table>
+<thead>
+<tr>
+<th>Domaine</th>
+<th>Comportement fragmenté</th>
+<th>Échec créé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fintech</td>
+<td>Les modifications de compte dépendent de la vérification d’identité, de l’accès à l’appareil, de l’état d’authentification et de contrôles de risque</td>
+<td>Les utilisateurs suivent le mauvais chemin de récupération</td>
+</tr>
+<tr>
+<td>Outils développeurs</td>
+<td>Le déploiement dépend des permissions, de l’état de l’environnement, de la configuration projet et d’un setup préalable</td>
+<td>Les tutoriels fonctionnent seulement dans des conditions idéales</td>
+</tr>
+<tr>
+<td>Systèmes d’administration</td>
+<td>Les changements de rôle affectent les validations, la visibilité, la facturation et l’historique d’audit</td>
+<td>Les administrateurs interprètent mal le modèle de permissions</td>
+</tr>
+</tbody>
+</table>
+<p>Le problème n’est pas seulement l’absence de conditions. Le problème est leur absence d’intégration dans un modèle de décision unique.</p>
+<p>La documentation répond alors à des questions procédurales locales, mais elle n’explique pas la règle comportementale.</p>
+<h2 id="mode-dechec-2-les-parcours-de-decision-sont-fragmentes">Mode d’échec 2 : les parcours de décision sont fragmentés</h2>
+<p>Les utilisateurs doivent souvent déterminer dans quelle situation ils se trouvent avant d’agir.</p>
+<p>La documentation ne les aide pas toujours à faire cette classification.</p>
+<p>Un produit peut proposer des articles séparés pour des cas séparés. Chaque article peut être exact. Mais la logique de décision qui relie ces cas reste implicite.</p>
+<p>Exemple de pattern :</p>
+<table>
+<thead>
+<tr>
+<th>Besoin utilisateur</th>
+<th>Structure documentaire</th>
+<th>Reconstruction requise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Corriger un dossier client</td>
+<td>Articles séparés pour fusion, modification, suppression et doublons</td>
+<td>L’utilisateur doit déterminer quelle opération correspond à l’état réel des données</td>
+</tr>
+<tr>
+<td>Résoudre une erreur API</td>
+<td>Pages séparées pour endpoint, authentification, limites et format de payload</td>
+<td>Le développeur doit inférer quelle condition a produit l’erreur</td>
+</tr>
+<tr>
+<td>Modifier l’accès à une organisation</td>
+<td>Pages séparées pour équipes, rôles, invitations, facturation et audit logs</td>
+<td>L’administrateur doit reconstituer manuellement le modèle d’accès</td>
+</tr>
+</tbody>
+</table>
+<p>C’est une forme d’opacité des dépendances.</p>
+<p>L’utilisateur a besoin d’un parcours de décision. La documentation fournit des destinations déconnectées.</p>
+<h2 id="mode-dechec-3-une-documentation-lineaire-decrit-des-systemes-non-lineaires">Mode d’échec 3 : une documentation linéaire décrit des systèmes non linéaires</h2>
+<p>La documentation présente souvent les workflows comme des séquences propres.</p>
+<p>Le système se comporte rarement comme une séquence propre.</p>
+<p>Un guide peut présenter le setup ainsi :</p>
+<pre><code class="language-text">installer -&gt; configurer -&gt; connecter -&gt; déployer
+</code></pre>
+<p>Dans l’usage réel, le succès peut dépendre de ceci :</p>
+<pre><code class="language-text">permissions + état de l’environnement + configuration préalable + limites de plan + comportement API + récupération d’erreur
+</code></pre>
+<p>Le chemin documenté est linéaire. Le comportement système est conditionnel.</p>
+<p>Cet écart sépare la réussite procédurale de l’adoption réelle.</p>
+<p>Le guide peut être exact pour un chemin par défaut tout en laissant l’utilisateur sans modèle pour les écarts.</p>
+<p>Les effets prévisibles sont :</p>
+<ul>
+<li>workflows qui échouent hors happy path ;</li>
+<li>tentatives répétées sans diagnostic ;</li>
+<li>tickets support demandant pourquoi le chemin documenté n’a pas fonctionné ;</li>
+<li>dépendance interne aux personnes expérimentées qui connaissent les conditions invisibles.</li>
+</ul>
+<h2 id="mode-dechec-4-le-comportement-nest-pas-explicite-entre-les-surfaces">Mode d’échec 4 : le comportement n’est pas explicite entre les surfaces</h2>
+<p>Les produits complexes exposent leur comportement à travers plusieurs surfaces :</p>
+<ul>
+<li>libellés d’interface ;</li>
+<li>articles d’aide ;</li>
+<li>références API ;</li>
+<li>exemples SDK ;</li>
+<li>notes de version ;</li>
+<li>réponses support ;</li>
+<li>parcours d’onboarding ;</li>
+<li>runbooks internes.</li>
+</ul>
+<p>Ces surfaces décrivent souvent des parties proches du même comportement, mais pas toujours de la même manière.</p>
+<p>Un même état produit peut avoir plusieurs noms. Une même action peut avoir des effets documentés différemment. Une même règle peut être visible dans une surface et absente d’une autre.</p>
+<p>Cela crée une divergence de compréhension.</p>
+<p>Utilisateurs, support, produit et engineering opèrent alors avec des versions différentes du système.</p>
+<h2 id="la-sequence-dechec-recurrente">La séquence d’échec récurrente</h2>
+<p>Une séquence fréquente apparaît dans plusieurs domaines :</p>
+<ol>
+<li>L’utilisateur suit une action documentée.</li>
+<li>Le résultat diffère de l’attente.</li>
+<li>La documentation n’explique pas pourquoi.</li>
+<li>L’utilisateur navigue entre plusieurs pages pour reconstituer la logique.</li>
+<li>L’essai-erreur comble le manque.</li>
+<li>Le support reçoit un symptôme plutôt que l’ambiguïté sous-jacente.</li>
+</ol>
+<p>La documentation devient un ensemble de fragments, pas un modèle du système.</p>
+<h2 id="ce-que-les-entreprises-cherchent-reellement">Ce que les entreprises cherchent réellement</h2>
+<p>Les offres d’emploi examinées insistent sur des besoins qui dépassent la rédaction de pages :</p>
+<table>
+<thead>
+<tr>
+<th>Signal de recrutement</th>
+<th>Problème documentaire sous-jacent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Réduire la dépendance au support</td>
+<td>Les utilisateurs ne peuvent pas résoudre le comportement avec la documentation seule</td>
+</tr>
+<tr>
+<td>Améliorer l’onboarding</td>
+<td>Les nouveaux utilisateurs n’ont pas de modèle opérationnel stable</td>
+</tr>
+<tr>
+<td>Soutenir des produits SaaS ou API complexes</td>
+<td>Le comportement dépend d’états et de dépendances</td>
+</tr>
+<tr>
+<td>Aligner Produit, Engineering, Support et Documentation</td>
+<td>Les équipes détiennent des descriptions divergentes du système</td>
+</tr>
+<tr>
+<td>Mesurer l’efficacité documentaire</td>
+<td>Recherche, tickets et usage révèlent la friction, mais pas toujours ses causes</td>
+</tr>
+<tr>
+<td>Préparer le contenu pour assistants IA ou copilotes</td>
+<td>Les systèmes IA ont besoin d’une connaissance structurée, cohérente et récupérable</td>
+</tr>
+</tbody>
+</table>
+<p>Cela reflète une évolution du rôle.</p>
+<p>La documentation n’est pas seulement une production de contenu. C’est un levier d’adoption produit, de réduction du support et de cohérence opérationnelle.</p>
+<h2 id="le-decalage-de-fond">Le décalage de fond</h2>
+<p>La documentation est souvent structurée comme du contenu :</p>
+<pre><code class="language-text">pages -&gt; sections -&gt; articles -&gt; guides
+</code></pre>
+<p>Le produit fonctionne comme un système :</p>
+<pre><code class="language-text">états -&gt; conditions -&gt; dépendances -&gt; transitions -&gt; exceptions
+</code></pre>
+<p>Tant que la première structure ne représente pas la seconde, les utilisateurs doivent combler eux-mêmes l’écart.</p>
+<p>Cet écart correspond à l’effort de reconstruction.</p>
+<h2 id="reponse-documentaire">Réponse documentaire</h2>
+<p>Un système documentaire plus efficace doit exposer :</p>
+<table>
+<thead>
+<tr>
+<th>Élément système</th>
+<th>Réponse documentaire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>État</td>
+<td>Documenter ce qui est vrai maintenant et comment le système le sait</td>
+</tr>
+<tr>
+<td>Condition</td>
+<td>Documenter quand une action s’applique ou cesse de s’appliquer</td>
+</tr>
+<tr>
+<td>Dépendance</td>
+<td>Documenter quels paramètres, rôles, plans, régions ou objets affectent le comportement</td>
+</tr>
+<tr>
+<td>Transition</td>
+<td>Documenter comment le système passe d’un état à un autre</td>
+</tr>
+<tr>
+<td>Exception</td>
+<td>Documenter où la règle par défaut change</td>
+</tr>
+<tr>
+<td>Récupération</td>
+<td>Documenter comment identifier et corriger un état échoué ou non souhaité</td>
+</tr>
+</tbody>
+</table>
+<p>C’est la base opérationnelle de la documentation comportementale.</p>
+<h2 id="fonction-dans-le-portfolio">Fonction dans le portfolio</h2>
+<p>Cet article positionne l’échec documentaire comme un problème de lisibilité du système.</p>
+<p>Il montre la capacité à relier signaux de marché, retours utilisateurs et structure documentaire dans un modèle de diagnostic unique.</p>
+<p>La conclusion est pratique : la documentation échoue lorsqu’elle décrit des actions, mais pas le comportement.</p>
+<p>La réponse est tout aussi pratique : exposer les conditions, dépendances, transitions et exceptions que les utilisateurs doivent sinon reconstituer.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

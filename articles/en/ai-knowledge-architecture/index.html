@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Patrick Desperrier">
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>AI Knowledge Architecture - Documentation System Models</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Documentation System Models</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cases</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../cases/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-document360-api-workspace-behavior-model/" class="dropdown-item">Document360 API Workspace</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-cloudflare-secrets-store-behavior-model/" class="dropdown-item">Cloudflare Secrets Store</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/fintech-qonto-role-permission-payment-behavior-model/" class="dropdown-item">Qonto Role Permission Payment</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-shopify-customer-account-auth-behavior-model/" class="dropdown-item">Shopify Customer Account Auth</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-mistral-ai-developer-workflow-behavior-model/" class="dropdown-item">Mistral AI Developer Workflow</a>
+</li>
+                                    
+<li>
+    <a href="../../../cases/saas-atlassian-extension-runtime-behavior-model/" class="dropdown-item">Atlassian Extension Runtime</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Methods</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../methods/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/behavioral-reconstructibility-audit/" class="dropdown-item">Behavioral Reconstructibility Audit</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/evidence-lineage-method/" class="dropdown-item">Evidence Lineage Method</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/reconstructive-burden/" class="dropdown-item">Reconstructive Burden</a>
+</li>
+                                    
+<li>
+    <a href="../../../methods/topology-preserving-documentation-analysis/" class="dropdown-item">Topology-Preserving Documentation Analysis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Offers</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../offers/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../offers/reconstructibility-audit-sprint/" class="dropdown-item">Reconstructibility Audit Sprint</a>
+</li>
+                                    
+<li>
+    <a href="../../../offers/documentation-topology-assessment/" class="dropdown-item">Documentation Topology Assessment</a>
+</li>
+                                    
+<li>
+    <a href="../../../offers/behavioral-debt-map/" class="dropdown-item">Behavioral Debt Map</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Articles</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">English</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../making-rules-visible/" class="dropdown-item">Making Rules Visible</a>
+</li>
+            
+<li>
+    <a href="../why-documentation-fails/" class="dropdown-item">Why Documentation Fails</a>
+</li>
+            
+<li>
+    <a href="../designing-for-mental-models/" class="dropdown-item">Designing for Mental Models</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">AI Knowledge Architecture</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Français</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../fr/rendre-les-regles-visibles/" class="dropdown-item">Rendre les règles visibles</a>
+</li>
+            
+<li>
+    <a href="../../fr/pourquoi-la-documentation-echoue/" class="dropdown-item">Pourquoi la documentation échoue</a>
+</li>
+            
+<li>
+    <a href="../../fr/concevoir-pour-les-modeles-mentaux/" class="dropdown-item">Concevoir pour les modèles mentaux</a>
+</li>
+            
+<li>
+    <a href="../../fr/architecture-de-connaissance-pour-ia/" class="dropdown-item">Architecture de connaissance pour l’IA</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../designing-for-mental-models/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../fr/rendre-les-regles-visibles/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ai-knowledge-architecture" class="nav-link">AI Knowledge Architecture</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#why-ai-systems-need-documentation-that-exposes-behavior" class="nav-link">Why AI systems need documentation that exposes behavior</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#documentation-is-not-only-content-in-ai-contexts" class="nav-link">Documentation is not only content in AI contexts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-core-risk-fluent-reconstruction" class="nav-link">The core risk: fluent reconstruction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#from-content-repository-to-knowledge-architecture" class="nav-link">From content repository to knowledge architecture</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#behavioral-documentation-as-ai-substrate" class="nav-link">Behavioral Documentation as AI substrate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-role-of-dependency-visibility" class="nav-link">The role of Dependency Visibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-role-of-terminology" class="nav-link">The role of terminology</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-role-of-source-traceability" class="nav-link">The role of source traceability</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#portfolio-relevance" class="nav-link">Portfolio relevance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="ai-knowledge-architecture">AI Knowledge Architecture</h1>
+<p><img alt="Structured documentation connecting fragmented knowledge to AI-assisted understanding" src="../../../assets/articles/ai-knowledge-architecture/cover.png" /></p>
+<h2 id="why-ai-systems-need-documentation-that-exposes-behavior">Why AI systems need documentation that exposes behavior</h2>
+<p>AI systems do not create product clarity.</p>
+<p>They depend on it.</p>
+<p>A chatbot, copilot, RAG system, or internal assistant does not understand a product in the way a product expert does. It reconstructs answers from the knowledge it can retrieve, the structure it can traverse, and the language patterns it has been given.</p>
+<p>If the available knowledge is fragmented, inconsistent, or behaviorally incomplete, the AI system inherits that weakness.</p>
+<p>It may answer fluently while preserving the ambiguity.</p>
+<p>This is why AI Knowledge Architecture is becoming a documentation problem, not only an AI tooling problem.</p>
+<h2 id="documentation-is-not-only-content-in-ai-contexts">Documentation is not only content in AI contexts</h2>
+<p>Traditional documentation is often treated as a deliverable.</p>
+<p>A release happens. A feature ships. A page is updated. A guide is added. A support article is created.</p>
+<p>That model is already fragile for humans.</p>
+<p>It becomes more fragile for AI systems.</p>
+<p>AI retrieval does not only need content. It needs structured knowledge that preserves:</p>
+<ul>
+<li>stable concepts;</li>
+<li>explicit behavior;</li>
+<li>visible dependencies;</li>
+<li>mapped conditions;</li>
+<li>documented exceptions;</li>
+<li>source traceability;</li>
+<li>consistent terminology across surfaces.</li>
+</ul>
+<p>Without that structure, AI systems retrieve fragments rather than operational models.</p>
+<h2 id="the-core-risk-fluent-reconstruction">The core risk: fluent reconstruction</h2>
+<p>Human users often reconstruct product behavior manually.</p>
+<p>They move between help articles, UI labels, API references, release notes, community posts, and support replies until a usable model appears.</p>
+<p>AI systems can automate part of that reconstruction.</p>
+<p>That does not mean the reconstruction is correct.</p>
+<p>The risk is not only hallucination. The deeper risk is fluent reconstruction from unstable knowledge.</p>
+<p>An AI answer can be grammatically clean, confident, and locally supported while still failing to expose the real system behavior.</p>
+<p>This happens when the source material contains:</p>
+<table>
+<thead>
+<tr>
+<th>Source weakness</th>
+<th>AI failure mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fragmented rules</td>
+<td>The answer merges partial rules without showing limits</td>
+</tr>
+<tr>
+<td>Divergent terminology</td>
+<td>The answer treats different terms as equivalent</td>
+</tr>
+<tr>
+<td>Implicit dependencies</td>
+<td>The answer omits the condition that changes the outcome</td>
+</tr>
+<tr>
+<td>Missing exceptions</td>
+<td>The answer overgeneralizes the default case</td>
+</tr>
+<tr>
+<td>Surface mismatch</td>
+<td>The answer follows documentation while the UI or API behaves differently</td>
+</tr>
+<tr>
+<td>No source traceability</td>
+<td>The answer cannot show which rule supports which claim</td>
+</tr>
+</tbody>
+</table>
+<p>AI does not eliminate the need for documentation discipline. It raises the cost of not having it.</p>
+<h2 id="from-content-repository-to-knowledge-architecture">From content repository to knowledge architecture</h2>
+<p>A content repository stores pages.</p>
+<p>An AI Knowledge Architecture structures the relationships that allow answers to be grounded.</p>
+<p>The difference is operational.</p>
+<table>
+<thead>
+<tr>
+<th>Content repository</th>
+<th>AI Knowledge Architecture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organizes articles by topic</td>
+<td>Organizes knowledge by concepts, behaviors, states, and dependencies</td>
+</tr>
+<tr>
+<td>Optimizes for human browsing</td>
+<td>Optimizes for retrieval, grounding, and reasoning support</td>
+</tr>
+<tr>
+<td>Allows local correctness</td>
+<td>Requires cross-surface coherence</td>
+</tr>
+<tr>
+<td>Accepts implicit context</td>
+<td>Requires explicit conditions and exceptions</td>
+</tr>
+<tr>
+<td>Treats terminology as wording</td>
+<td>Treats terminology as a control layer</td>
+</tr>
+</tbody>
+</table>
+<p>This shift does not replace documentation work. It changes its center of gravity.</p>
+<p>The key question is no longer whether an article exists.</p>
+<p>The key issue is whether the system behavior can be retrieved, compared, and traced reliably.</p>
+<h2 id="behavioral-documentation-as-ai-substrate">Behavioral Documentation as AI substrate</h2>
+<p>Behavioral Documentation gives AI systems a better substrate because it documents how the system behaves, not only what pages say.</p>
+<p>It makes explicit:</p>
+<pre><code class="language-text">object -&gt; state -&gt; action -&gt; effect -&gt; condition -&gt; dependency -&gt; exception -&gt; source
+</code></pre>
+<p>This structure supports both human reasoning and machine retrieval.</p>
+<p>For humans, it reduces Reconstruction Effort.</p>
+<p>For AI systems, it reduces ambiguity in grounding.</p>
+<p>A support assistant asked about a failed workflow needs more than a procedural answer. It needs to know which conditions affect the workflow, which dependencies change the result, which exceptions apply, and which source supports the answer.</p>
+<p>A product copilot asked to explain a setting needs more than a definition. It needs to know which behaviors the setting modifies and which surfaces describe those behaviors.</p>
+<p>A developer assistant asked about API behavior needs more than endpoint syntax. It needs documented states, error conditions, propagation behavior, and version boundaries.</p>
+<h2 id="the-role-of-dependency-visibility">The role of Dependency Visibility</h2>
+<p>AI systems are especially vulnerable to Dependency Opacity.</p>
+<p>A dependency can be obvious to product teams and invisible in documentation.</p>
+<p>Examples:</p>
+<table>
+<thead>
+<tr>
+<th>Dependency type</th>
+<th>Failure if undocumented</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plan dependency</td>
+<td>AI suggests a feature unavailable to the user</td>
+</tr>
+<tr>
+<td>Role dependency</td>
+<td>AI recommends an action the user cannot perform</td>
+</tr>
+<tr>
+<td>Region dependency</td>
+<td>AI gives an answer invalid in the user’s jurisdiction</td>
+</tr>
+<tr>
+<td>State dependency</td>
+<td>AI explains the default path while the account is in an exception state</td>
+</tr>
+<tr>
+<td>Integration dependency</td>
+<td>AI ignores the downstream workflow affected by a setting change</td>
+</tr>
+<tr>
+<td>Version dependency</td>
+<td>AI mixes old and current behavior</td>
+</tr>
+</tbody>
+</table>
+<p>Dependency Visibility is not a secondary documentation concern in AI contexts. It is a grounding requirement.</p>
+<h2 id="the-role-of-terminology">The role of terminology</h2>
+<p>AI systems are sensitive to terminology drift.</p>
+<p>When the same concept has several names, retrieval fragments. When the same name describes different behaviors, retrieval overgeneralizes.</p>
+<p>This makes the Terminology Alignment Layer a control layer for AI Knowledge Architecture.</p>
+<p>It should define:</p>
+<ul>
+<li>canonical names for objects, roles, states, actions, and workflows;</li>
+<li>deprecated or legacy terms;</li>
+<li>near-synonyms that are not behaviorally equivalent;</li>
+<li>context-specific meanings of the same label;</li>
+<li>links between UI labels, API names, support terms, and documentation terms.</li>
+</ul>
+<p>This is not editorial polish.</p>
+<p>It is retrieval hygiene.</p>
+<h2 id="the-role-of-source-traceability">The role of source traceability</h2>
+<p>AI systems also need traceability.</p>
+<p>A useful answer should not only state a rule. It should preserve the link between claim and source.</p>
+<p>Source traceability matters because product behavior changes.</p>
+<p>A rule may be valid for one plan, one version, one region, one interface, one API endpoint, or one date range.</p>
+<p>Without traceability, an AI answer becomes difficult to audit.</p>
+<p>A reliable knowledge architecture therefore needs:</p>
+<table>
+<thead>
+<tr>
+<th>Traceability element</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source page or object</td>
+<td>Identifies where the rule comes from</td>
+</tr>
+<tr>
+<td>Last reviewed date</td>
+<td>Indicates freshness risk</td>
+</tr>
+<tr>
+<td>Behavior scope</td>
+<td>Defines where the rule applies</td>
+</tr>
+<tr>
+<td>Version or plan scope</td>
+<td>Prevents overgeneralization</td>
+</tr>
+<tr>
+<td>Related dependencies</td>
+<td>Shows what can change the answer</td>
+</tr>
+<tr>
+<td>Exception links</td>
+<td>Prevents default-path answers from becoming misleading</td>
+</tr>
+</tbody>
+</table>
+<p>AI reliability begins before prompting. It begins in the structure of the knowledge base.</p>
+<h2 id="portfolio-relevance">Portfolio relevance</h2>
+<p>This article reframes AI documentation work as an architecture problem.</p>
+<p>The portfolio implication is direct.</p>
+<p>A documentation audit for AI contexts should not only evaluate article quality. It should evaluate whether knowledge can support grounded answers.</p>
+<p>An AI Knowledge Architecture audit should inspect:</p>
+<ul>
+<li>concept stability;</li>
+<li>terminology alignment;</li>
+<li>dependency visibility;</li>
+<li>condition and exception coverage;</li>
+<li>source traceability;</li>
+<li>cross-surface coherence;</li>
+<li>behavior-level retrievability.</li>
+</ul>
+<p>The goal is not to make documentation sound more intelligent.</p>
+<p>The goal is to make the system behavior retrievable, comparable, and auditable.</p>
+<p>AI does not replace documentation architecture.</p>
+<p>It exposes whether that architecture exists.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

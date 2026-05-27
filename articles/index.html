@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Patrick Desperrier">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Overview - Documentation System Models</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Documentation System Models</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cases</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../cases/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../cases/saas-document360-api-workspace-behavior-model/" class="dropdown-item">Document360 API Workspace</a>
+</li>
+                                    
+<li>
+    <a href="../cases/saas-cloudflare-secrets-store-behavior-model/" class="dropdown-item">Cloudflare Secrets Store</a>
+</li>
+                                    
+<li>
+    <a href="../cases/fintech-qonto-role-permission-payment-behavior-model/" class="dropdown-item">Qonto Role Permission Payment</a>
+</li>
+                                    
+<li>
+    <a href="../cases/saas-shopify-customer-account-auth-behavior-model/" class="dropdown-item">Shopify Customer Account Auth</a>
+</li>
+                                    
+<li>
+    <a href="../cases/saas-mistral-ai-developer-workflow-behavior-model/" class="dropdown-item">Mistral AI Developer Workflow</a>
+</li>
+                                    
+<li>
+    <a href="../cases/saas-atlassian-extension-runtime-behavior-model/" class="dropdown-item">Atlassian Extension Runtime</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Methods</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../methods/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../methods/behavioral-reconstructibility-audit/" class="dropdown-item">Behavioral Reconstructibility Audit</a>
+</li>
+                                    
+<li>
+    <a href="../methods/evidence-lineage-method/" class="dropdown-item">Evidence Lineage Method</a>
+</li>
+                                    
+<li>
+    <a href="../methods/reconstructive-burden/" class="dropdown-item">Reconstructive Burden</a>
+</li>
+                                    
+<li>
+    <a href="../methods/topology-preserving-documentation-analysis/" class="dropdown-item">Topology-Preserving Documentation Analysis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Offers</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../offers/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../offers/reconstructibility-audit-sprint/" class="dropdown-item">Reconstructibility Audit Sprint</a>
+</li>
+                                    
+<li>
+    <a href="../offers/documentation-topology-assessment/" class="dropdown-item">Documentation Topology Assessment</a>
+</li>
+                                    
+<li>
+    <a href="../offers/behavioral-debt-map/" class="dropdown-item">Behavioral Debt Map</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Articles</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Overview</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">English</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="en/making-rules-visible/" class="dropdown-item">Making Rules Visible</a>
+</li>
+            
+<li>
+    <a href="en/why-documentation-fails/" class="dropdown-item">Why Documentation Fails</a>
+</li>
+            
+<li>
+    <a href="en/designing-for-mental-models/" class="dropdown-item">Designing for Mental Models</a>
+</li>
+            
+<li>
+    <a href="en/ai-knowledge-architecture/" class="dropdown-item">AI Knowledge Architecture</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Français</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="fr/rendre-les-regles-visibles/" class="dropdown-item">Rendre les règles visibles</a>
+</li>
+            
+<li>
+    <a href="fr/pourquoi-la-documentation-echoue/" class="dropdown-item">Pourquoi la documentation échoue</a>
+</li>
+            
+<li>
+    <a href="fr/concevoir-pour-les-modeles-mentaux/" class="dropdown-item">Concevoir pour les modèles mentaux</a>
+</li>
+            
+<li>
+    <a href="fr/architecture-de-connaissance-pour-ia/" class="dropdown-item">Architecture de connaissance pour l’IA</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../offers/behavioral-debt-map/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="en/making-rules-visible/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#articles" class="nav-link">Articles</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#reading-order" class="nav-link">Reading order</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#english" class="nav-link">English</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#francais" class="nav-link">Français</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#portfolio-function" class="nav-link">Portfolio function</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="articles">Articles</h1>
+<p>These articles give the conceptual and methodological frame behind the portfolio case studies.</p>
+<p>They are not archived LinkedIn posts. They are portfolio pages that explain how documentation can make product behavior, conditions, dependencies, exceptions, and AI-retrievable knowledge explicit.</p>
+<h2 id="reading-order">Reading order</h2>
+<table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Role in the portfolio</th>
+<th>Main concept</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Making Rules Visible</td>
+<td>Operational method</td>
+<td>Behavioral Documentation</td>
+</tr>
+<tr>
+<td>Why Documentation Fails</td>
+<td>Market and field diagnosis</td>
+<td>System Interpretability</td>
+</tr>
+<tr>
+<td>Designing for Mental Models</td>
+<td>Conceptual foundation</td>
+<td>Operational Understanding</td>
+</tr>
+<tr>
+<td>AI Knowledge Architecture</td>
+<td>AI-focused extension</td>
+<td>AI Knowledge Architecture</td>
+</tr>
+</tbody>
+</table>
+<h2 id="english">English</h2>
+<h3 id="making-rules-visible"><a href="en/making-rules-visible/">Making Rules Visible</a></h3>
+<p><a href="en/making-rules-visible/" aria-label="Open article">
+  <img src="../assets/articles/making-rules-visible/cover.png" alt="Product rules becoming visible as actions, effects, conditions, and exceptions" loading="lazy" style="max-width: 440px; width: 100%; height: auto; display: block; margin: 0.35rem 0 1.2rem;" />
+</a></p>
+<p>Operational method for exposing effects, conditions, exceptions, and recovery paths at the point of decision.</p>
+<h3 id="why-documentation-fails"><a href="en/why-documentation-fails/">Why Documentation Fails</a></h3>
+<p><a href="en/why-documentation-fails/" aria-label="Open article">
+  <img src="../assets/articles/why-documentation-fails/cover.png" alt="Fragmented documentation paths forcing users to reconstruct product behavior" loading="lazy" style="max-width: 440px; width: 100%; height: auto; display: block; margin: 0.35rem 0 1.2rem;" />
+</a></p>
+<p>Diagnostic article on why documentation fails when it describes actions but not system behavior.</p>
+<h3 id="designing-for-mental-models"><a href="en/designing-for-mental-models/">Designing for Mental Models</a></h3>
+<p><a href="en/designing-for-mental-models/" aria-label="Open article">
+  <img src="../assets/articles/designing-for-mental-models/cover.png" alt="Scattered product signals becoming a structured mental model of the system" loading="lazy" style="max-width: 440px; width: 100%; height: auto; display: block; margin: 0.35rem 0 1.2rem;" />
+</a></p>
+<p>Conceptual article on how documentation shapes Operational Understanding and reduces Mental Model Divergence.</p>
+<h3 id="ai-knowledge-architecture"><a href="en/ai-knowledge-architecture/">AI Knowledge Architecture</a></h3>
+<p><a href="en/ai-knowledge-architecture/" aria-label="Open article">
+  <img src="../assets/articles/ai-knowledge-architecture/cover.png" alt="Structured documentation connecting fragmented knowledge to AI-assisted understanding" loading="lazy" style="max-width: 440px; width: 100%; height: auto; display: block; margin: 0.35rem 0 1.2rem;" />
+</a></p>
+<p>AI-focused article on retrieval, grounding, Dependency Visibility, terminology alignment, and source traceability.</p>
+<h2 id="francais">Français</h2>
+<h3 id="rendre-les-regles-visibles"><a href="fr/rendre-les-regles-visibles/">Rendre les règles visibles</a></h3>
+<p><a href="fr/rendre-les-regles-visibles/" aria-label="Open article">
+  <img src="../assets/articles/making-rules-visible/cover.png" alt="Règles produit rendues visibles au point de décision" loading="lazy" style="max-width: 440px; width: 100%; height: auto; display: block; margin: 0.35rem 0 1.2rem;" />
+</a></p>
+<p>Méthode opérationnelle pour exposer effets, conditions, exceptions et chemins de récupération au point de décision.</p>
+<h3 id="pourquoi-la-documentation-echoue"><a href="fr/pourquoi-la-documentation-echoue/">Pourquoi la documentation échoue</a></h3>
+<p><a href="fr/pourquoi-la-documentation-echoue/" aria-label="Open article">
+  <img src="../assets/articles/why-documentation-fails/cover.png" alt="Fragments documentaires dispersés obligeant l’utilisateur à reconstituer le comportement produit" loading="lazy" style="max-width: 440px; width: 100%; height: auto; display: block; margin: 0.35rem 0 1.2rem;" />
+</a></p>
+<p>Article de diagnostic sur l’échec documentaire lorsqu’une documentation décrit les actions sans exposer le comportement système.</p>
+<h3 id="concevoir-pour-les-modeles-mentaux"><a href="fr/concevoir-pour-les-modeles-mentaux/">Concevoir pour les modèles mentaux</a></h3>
+<p><a href="fr/concevoir-pour-les-modeles-mentaux/" aria-label="Open article">
+  <img src="../assets/articles/designing-for-mental-models/cover.png" alt="Modèle mental structuré à partir de fragments d’information dispersés" loading="lazy" style="max-width: 440px; width: 100%; height: auto; display: block; margin: 0.35rem 0 1.2rem;" />
+</a></p>
+<p>Article conceptuel sur la documentation comme architecture de compréhension opérationnelle.</p>
+<h3 id="architecture-de-connaissance-pour-lia"><a href="fr/architecture-de-connaissance-pour-ia/">Architecture de connaissance pour l’IA</a></h3>
+<p><a href="fr/architecture-de-connaissance-pour-ia/" aria-label="Open article">
+  <img src="../assets/articles/ai-knowledge-architecture/cover.png" alt="Architecture de connaissance reliant les sources documentaires aux réponses IA" loading="lazy" style="max-width: 440px; width: 100%; height: auto; display: block; margin: 0.35rem 0 1.2rem;" />
+</a></p>
+<p>Article IA sur le grounding, la récupération, la visibilité des dépendances, l’alignement terminologique et la traçabilité des sources.</p>
+<h2 id="portfolio-function">Portfolio function</h2>
+<p>These articles support the case studies by defining the recurring problem: users and teams reconstruct system behavior from fragments.</p>
+<p>They also define the documentation response: make product behavior explicit through stable terms, visible dependencies, mapped conditions, documented exceptions, and recoverable workflows.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
