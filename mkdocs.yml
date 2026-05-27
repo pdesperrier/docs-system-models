@@ -29,3 +29,16 @@ nav:
       - Reconstructibility Audit Sprint: offers/reconstructibility-audit-sprint.md
       - Documentation Topology Assessment: offers/documentation-topology-assessment.md
       - Behavioral Debt Map: offers/behavioral-debt-map.md
+ 
+  - Articles:
+      - Overview: articles/index.md
+      - English:
+          - Making Rules Visible: articles/en/making-rules-visible.md
+          - Why Documentation Fails: articles/en/why-documentation-fails.md
+          - Designing for Mental Models: articles/en/designing-for-mental-models.md
+          - AI Knowledge Architecture: articles/en/ai-knowledge-architecture.md
+      - Français:
+          - Rendre les règles visibles: articles/fr/rendre-les-regles-visibles.md
+          - Pourquoi la documentation échoue: articles/fr/pourquoi-la-documentation-echoue.md
+          - Concevoir pour les modèles mentaux: articles/fr/concevoir-pour-les-modeles-mentaux.md
+          - Architecture de connaissance pour l’IA: articles/fr/architecture-de-connaissance-pour-ia.md
