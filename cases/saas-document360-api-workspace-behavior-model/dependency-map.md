@@ -299,7 +299,7 @@ The weakest or unconfirmed dependencies are:
 ## Quality check
 
 - [x] Only S1 is used as source.
-- [x] S2 references have been removed.
+- [x] References to non-S1 sources have been removed.
 - [x] File, URL and CI/CD branches remain separate.
 - [x] Publish and draft remain separate.
 - [x] CI/CD generation and CI/CD resync are not merged.

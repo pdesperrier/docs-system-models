@@ -4,7 +4,7 @@ Source URL: https://docs.document360.com/docs/manage-api-documentation
 Page title: Managing API documentation
 Section: Full page
 Date checked: 2026-05-28
-Scope: In scope for `05_portfolio/cases/document360-api-workspace-behavior-model/`
+Scope: In scope for `05_portfolio/cases/saas-document360-api-workspace-behavior-model/`
 
 ## Source metadata
 
@@ -12,7 +12,7 @@ Scope: In scope for `05_portfolio/cases/document360-api-workspace-behavior-model
 |---|---|
 | Product / system | Document360 |
 | Documentation area | API documentation |
-| Case folder | `05_portfolio/cases/document360-api-workspace-behavior-model/` |
+| Case folder | `05_portfolio/cases/saas-document360-api-workspace-behavior-model/` |
 | Source type | Documentation page |
 | Extraction status | Raw excerpt |
 | Analysis status | Not analyzed in this file |
@@ -265,7 +265,7 @@ Currently, there is no option to download articles as PDFs through the API endpo
 
 After extraction, use this raw source in:
 
-- `05_portfolio/cases/document360-api-workspace-behavior-model/source-log.md`
-- `05_portfolio/cases/document360-api-workspace-behavior-model/extraction-notes.md`
-- `05_portfolio/cases/document360-api-workspace-behavior-model/behavior-matrix.md`
-- `05_portfolio/cases/document360-api-workspace-behavior-model/dependency-map.md`
+- `05_portfolio/cases/saas-document360-api-workspace-behavior-model/source-log.md`
+- `05_portfolio/cases/saas-document360-api-workspace-behavior-model/extraction-notes.md`
+- `05_portfolio/cases/saas-document360-api-workspace-behavior-model/behavior-matrix.md`
+- `05_portfolio/cases/saas-document360-api-workspace-behavior-model/dependency-map.md`

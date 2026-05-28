@@ -2,7 +2,7 @@
 
 ## Case
 
-Case folder: `05_portfolio/cases/document360-api-workspace-behavior-model/`
+Case folder: `05_portfolio/cases/saas-document360-api-workspace-behavior-model/`
 
 Source excerpt:
 
