@@ -23,19 +23,19 @@ This portfolio documents how complex product behavior can be made easier to reas
   </thead>
   <tbody>
     <tr>
-      <td><a href="cases/">Case studies</a></td>
+      <td><a href="cases/index.md">Case studies</a></td>
       <td>Applied analyses of documentation, workflows, dependencies, and product behavior.</td>
     </tr>
     <tr>
-      <td><a href="methods/">Methods</a></td>
+      <td><a href="methods/index.md">Methods</a></td>
       <td>Reusable frameworks for Behavioral Documentation, System Interpretability, Dependency Visibility, and workflow reconstruction.</td>
     </tr>
     <tr>
-      <td><a href="offers/">Offers</a></td>
+      <td><a href="offers/index.md">Offers</a></td>
       <td>Service formats derived from the portfolio methods, including audits, sprints, and documentation architecture work.</td>
     </tr>
     <tr>
-      <td><a href="articles/">Articles</a></td>
+      <td><a href="articles/index.md">Articles</a></td>
       <td>Conceptual and methodological articles supporting the portfolio case studies.</td>
     </tr>
   </tbody>
@@ -43,10 +43,10 @@ This portfolio documents how complex product behavior can be made easier to reas
 
 ## Suggested reading path
 
-1. Start with [Articles](articles/) to understand the conceptual frame.
-2. Continue with [Methods](methods/) to see the reusable analysis models.
-3. Read [Case studies](cases/) to see the methods applied to real or reconstructed product documentation problems.
-4. Use [Offers](offers/) to connect the methods to concrete service formats.
+1. Start with [Articles](articles/index.md) to understand the conceptual frame.
+2. Continue with [Methods](methods/index.md) to see the reusable analysis models.
+3. Read [Case studies](cases/index.md) to see the methods applied to real or reconstructed product documentation problems.
+4. Use [Offers](offers/index.md) to connect the methods to concrete service formats.
 
 ## Portfolio focus
 
