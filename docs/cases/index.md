@@ -8,16 +8,16 @@ Each case preserves evidence-safe findings and reconstructibility limits.
 
 | Role | Case | Folder | Status |
 |---|---|---|---|
-| Primary scoping case | Document360 API Workspace Behavior Model | `05_portfolio/cases/saas-document360-api-workspace-behavior-model/` | Active for Phase 0 scoping, not publishable yet |
+| Public portfolio case | Document360 API Workspace Behavior Model | `05_portfolio/cases/saas-document360-api-workspace-behavior-model/` | Public version available |
 | Fallback case | Cloudflare Secrets Store Behavior Model | `05_portfolio/cases/saas-cloudflare-secrets-store-behavior-model/` | More mature working scaffold, used if Document360 blocks |
-| Later fallback | Qonto Role Permission Payment Behavior Model | `05_portfolio/cases/fintech-qonto-role-permission-payment-behavior-model/` | Outside the Phase 0 active flow |
+| Later fallback | Qonto Role Permission Payment Behavior Model | `05_portfolio/cases/fintech-qonto-role-permission-payment-behavior-model/` | Outside the active public case flow |
 
 
 ## Current cases
 
 | Case | Status | Page |
 |---|---|---|
-| Document360 API Workspace | Primary scoping case, not publishable yet | [Open](saas-document360-api-workspace-behavior-model/index.md) |
+| Document360 API Workspace | Public portfolio case | [Open](saas-document360-api-workspace-behavior-model.md) |
 | Cloudflare Secrets Store | Fallback case | [Open](saas-cloudflare-secrets-store-behavior-model/index.md) |
 | Qonto Role Permission Payment | Later fallback | [Open](fintech-qonto-role-permission-payment-behavior-model/index.md) |
 | Shopify Customer Account Auth | Warm backlog skeleton | [Open](saas-shopify-customer-account-auth-behavior-model/index.md) |
@@ -28,8 +28,8 @@ Each case preserves evidence-safe findings and reconstructibility limits.
 
 Use the status as an execution signal, not as a publication signal.
 
-Document360 is active for Phase 0 scoping. It is not a completed case study.
+Document360 now has a minimal public case page. The internal case folder remains the working evidence package.
 
 Cloudflare remains available as fallback proof.
 
-Qonto remains available only as a later fallback outside the active Phase 0 flow.
+Qonto remains available only as a later fallback outside the active public case flow.
