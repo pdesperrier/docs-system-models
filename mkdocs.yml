@@ -10,7 +10,7 @@ nav:
 
   - Cases:
       - Overview: cases/index.md
-      - Document360 API Workspace: cases/saas-document360-api-workspace-behavior-model/index.md
+      - Document360 API Workspace Behavior Model: cases/saas-document360-api-workspace-behavior-model.md
       - Cloudflare Secrets Store: cases/saas-cloudflare-secrets-store-behavior-model/index.md
       - Qonto Role Permission Payment: cases/fintech-qonto-role-permission-payment-behavior-model/index.md
       - Shopify Customer Account Auth: cases/saas-shopify-customer-account-auth-behavior-model/index.md
