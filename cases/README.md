@@ -1,47 +1,38 @@
 # Portfolio Cases
 
-This directory contains portfolio-safe case folders for behavioral documentation and reconstructibility analysis.
+This directory contains public-safe case material used by the portfolio.
 
-The folders are not raw audit repositories.
+Only cases that have been validated and reduced into a public-safe version should remain in this directory.
 
-They contain sanitized case material, candidate evidence, findings, public-safe narratives, and backlog scaffolds.
+## Public case folders
 
-## Canonical Phase 0 case decision
-
-| Role | Case | Folder | Status |
-|---|---|---|---|
-| Primary scoping case | Document360 API Workspace Behavior Model | `05_portfolio/cases/saas-document360-api-workspace-behavior-model/` | Active for Phase 0 scoping, not publishable yet |
-| Fallback case | Cloudflare Secrets Store Behavior Model | `05_portfolio/cases/saas-cloudflare-secrets-store-behavior-model/` | More mature working scaffold, used if Document360 blocks |
-| Later fallback | Qonto Role Permission Payment Behavior Model | `05_portfolio/cases/fintech-qonto-role-permission-payment-behavior-model/` | Outside the Phase 0 active flow |
-
-
-## Status categories
-
-| Status | Meaning |
-|---|---|
-| Primary scoping case | Current case used to test whether a visible portfolio proof can be produced during Phase 0. |
-| Fallback case | Secondary case kept available if the primary scoping case blocks. |
-| Later fallback | Case kept outside the Phase 0 active flow, used only if both the primary scoping case and fallback case fail. |
-| Warm backlog skeleton | Candidate case likely useful soon, but not part of Phase 0 execution. |
-| Cold backlog skeleton | Candidate case kept for later positioning or evidence exploration. |
-
-## Current case inventory
-
-| Case | Status | Use |
+| Case | Folder | Status |
 |---|---|---|
-| `saas-document360-api-workspace-behavior-model` | Primary scoping case | Use first for Phase 0 proof selection. Not publishable yet. |
-| `saas-cloudflare-secrets-store-behavior-model` | Fallback case | Use if Document360 does not produce enough validated evidence within the Phase 0 proof criteria. |
-| `fintech-qonto-role-permission-payment-behavior-model` | Later fallback | Keep outside the Phase 0 active flow. Use only if Document360 and Cloudflare both block. |
-| `saas-shopify-customer-account-auth-behavior-model` | Warm backlog skeleton | Keep for later proof exploration. |
-| `saas-mistral-ai-developer-workflow-behavior-model` | Warm backlog skeleton | Keep for later proof exploration. |
-| `saas-atlassian-extension-runtime-behavior-model` | Cold backlog skeleton | Keep for later positioning or evidence exploration. |
+| Document360 API Workspace Behavior Model | `saas-document360-api-workspace-behavior-model/` | Minimal public case complete |
 
-## Operating rule
+## Local working cases
 
-A case can be the primary scoping case without being publishable.
+Other candidate cases must stay outside Git until they are validated, reduced, and explicitly prepared for public release.
 
-Document360 is currently selected for scoping because it connects API workspace behavior, knowledge architecture, AI-ready documentation, and acquisition context. It must not be presented as a finished portfolio case until evidence has been validated and reduced into a public-safe narrative.
+Recommended local location:
 
-Cloudflare is more mature as a folder, but it is not the current primary scoping case.
+```text
+_local_work/cases-backlog/
+```
 
-Qonto is no longer the immediate fallback. It is a later fallback outside Phase 0 execution.
+Do not commit `_local_work/`.
+
+## Publication rule
+
+A case is public only when both conditions are true:
+
+1. it has a public-safe case folder in `cases/`;
+2. it has a public page or planned public page in `docs/cases/`.
+
+Working notes, candidate evidence, unfinished narratives, backlog scaffolds, and unvalidated reconstructibility findings must remain local.
+
+## Current public case
+
+| Case | Public page | Internal evidence package |
+|---|---|---|
+| Document360 API Workspace Behavior Model | `docs/cases/saas-document360-api-workspace-behavior-model.md` | `cases/saas-document360-api-workspace-behavior-model/` |
